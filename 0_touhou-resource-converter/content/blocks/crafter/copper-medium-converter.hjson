@@ -1,0 +1,25 @@
+type: GenericCrafter
+size: 1
+itemCapacity: 10
+hasPower: false
+hasItems: true
+craftTime: 0.999999
+consumes: {
+  items: {
+    items: [
+      copper/1
+    ]
+  }
+}
+updateEffect: fuelburn
+outputItem: medium/1
+category: crafting
+requirements: [
+  copper/50
+]
+research: {
+  parent: mechanical-drill
+  requirements: [
+    copper/250
+  ]
+}

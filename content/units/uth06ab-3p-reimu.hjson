@@ -1,0 +1,161 @@
+type: mech
+createScorch: false
+speed: 1
+drag: 1
+accel: 1
+rotateSpeed: 360
+baseRotateSpeed: 360
+health: 1
+armor: 0
+boostMultiplier: 2
+canBoost: true
+buildSpeed: 0.3
+engineSize: 1
+engineOffset: 0
+// landshake: 0
+stepShake: 0
+// mechStepShake: 0
+mechStepParticles: false
+range: 216
+maxRange: 216
+outlines: false
+ammoType: aa-reimu
+mechLegColor: FFFFFF00
+itemCapacity: 20
+hitSize: 2
+mechSideSway: 0
+mechFrontSway: 0
+deathSound: thbiu
+deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 120
+      particles: 16
+      length: 40
+      spin: 2
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-ya-p-point
+    }
+  ]
+}
+weapons: [
+  {
+    name: reimu-fuzha
+    mirror: true
+    ejectEffect: none
+    alternate: false
+    x: 3
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 2
+    shootSound: none
+    noAmmoSound: none
+    reload: 2.8174305
+    rotateSpeed: 360
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      keepVelocity: false
+      damage: 0.5
+      splashDamage: 0.7
+      splashDamageRadius: 15
+      pierce: false
+      pierceBuilding: false
+      lifetime: 70
+      rangeOverride: 216
+      speed: 3.2
+      setDefaults: false
+      despawnEffect: none
+      width: 10
+      height: 10
+      makeFire: false
+      status: none
+      hitEffect: none
+      smokeEffect: none
+      reflectable: false
+      shootEffect: none
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 0
+      backColor: FF0000FF
+      frontColor: FFFFFFFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-reimu-paper"
+    }
+  }
+  {
+    name: reimu-pins
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 2
+    shootSound: none
+    noAmmoSound: none
+    reload: 15
+    rotateSpeed: 360
+    shoot: {
+      type: ShootAlternate
+      shots: 3
+      barrels: 3
+      shotDelay: 0
+      spread: 3
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      keepVelocity: false
+      damage: 1.5
+      hitSize: 2
+      spin: 0
+      pierce: false
+      pierceBuilding: false
+      lifetime: 70
+      rangeOverride: 216
+      speed: 3.2
+      setDefaults: false
+      despawnEffect: none
+      width: 16
+      height: 16
+      makeFire: false
+      status: none
+      hitEffect: none
+      smokeEffect: none
+      reflectable: true
+      hittable: false
+      shootEffect: none
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 0
+      backColor: FFFFFFFF
+      frontColor: FFFFFFFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-reimu-pin"
+    }
+  }
+]
+immunities: [
+  burning
+  maid-fairy-lifetime
+]
+research: {
+  parent: uth06ab-2p-reimu
+  requirements: [
+    aa-reimu/2000
+    ya-p-point/10
+  ]
+}

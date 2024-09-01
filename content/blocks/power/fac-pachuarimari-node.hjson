@@ -1,0 +1,14 @@
+type: PowerNode
+size: 2
+laserRange: 15
+maxNodes: 15
+laserColor1: FFFFDFFF
+laserColor2: FF7FBFFF
+requirements: [
+  ae-patchouli/5
+  azac-alice/3
+  ab-marisa/10
+]
+squareSprite: false
+research: fab-patchouli-beamnode
+category: power

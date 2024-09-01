@@ -1,0 +1,17 @@
+type: CoreBlock
+size: 4
+health: 2750
+requirements: [
+  ae-patchouli/2000
+  azac-alice/2000
+  aa-reimu/1500
+  ab-marisa/1500
+]
+thrusterLength: 8.5
+destroySound: none
+unitType: u0bf-seven-observation-semiauto-doll
+category: effect
+research: core-a-reimari
+researchCostMultiplier: 0.25
+itemCapacity: 15000
+unitCapModifier: 6

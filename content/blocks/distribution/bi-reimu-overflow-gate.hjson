@@ -1,0 +1,7 @@
+type: OverflowGate
+health: 80
+requirements: [
+  aa-reimu/6
+]
+category: distribution
+research: bg-reimu-sorter

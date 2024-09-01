@@ -1,0 +1,11 @@
+type: ItemBridge
+hasPower: false
+health: 80
+range: 4
+requirements: [
+  aa-reimu/12
+]
+transportTime: 5
+category: distribution
+research: bd-reimu-router
+underBullets: true

@@ -1,0 +1,52 @@
+type: ConsumeGenerator
+itemDuration: 300
+requirements: [
+  azaa-letty/10
+  ad-cirno/30
+]
+consumes: {
+  items:[
+    azaa-letty/1
+    ad-cirno/1
+  ]
+}
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawCrucibleFlame
+      flameColor: 00BFFFFF
+      midColor: BFBFFFFF
+      flameRad: 2
+      circleSpace: 1
+      flameRadiusScl: 0
+      flameRadiusMag: 0
+      circleStroke: 0.8
+      particles: 12
+      particleLife: 99
+      particleRad: 9
+      particleSize: 2
+      fadeMargin: 0.3
+    }
+/*
+    {
+      type: DrawFlame
+      flameColor: BFBFFFFF
+      lightRadius: 28
+      lightSinScl: 0
+      lightSinMag: 0
+      flameRadius: 2
+      flameRadiusIn: 1.3
+      flameRadiusScl: 0
+      flameRadiusMag: 0
+      flameRadiusInMag: 0
+    }
+*/
+  ]
+}
+powerProduction: 0.3
+research: fca-marisa-burner
+category: power

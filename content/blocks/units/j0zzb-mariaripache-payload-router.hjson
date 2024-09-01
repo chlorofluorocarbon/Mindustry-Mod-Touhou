@@ -1,0 +1,10 @@
+type: PayloadRouter
+size: 3
+requirements: [
+  ab-marisa/8
+  azac-alice/6
+  ae-patchouli/4
+]
+research: j0zza-mariaripache-payload-conveyor
+category: units
+underBullets: false

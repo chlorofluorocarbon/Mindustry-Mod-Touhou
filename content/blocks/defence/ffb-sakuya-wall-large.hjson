@@ -1,0 +1,81 @@
+type: PowerTurret
+shootType: {
+  type: BasicBulletType
+  shrinkX: 0
+  shrinkY: 0
+  backColor: 00000000
+  frontColor: 00000000
+  mixColorFrom: 00000000
+  mixColorTo: 00000000
+  lightColor: 00000000
+  lightRadius: 0
+  width: 0
+  height: 0
+  lifetime: 0
+  speed: 0
+  damage: 0
+  splashDamage: 0
+  splashDamageRadius: 52
+  splashDamagePierce: true
+  incendChance: 0
+  shootEffect: none
+  smokeEffect: none
+  chargeEffect: none
+  hitEffect: {
+    type: WaveEffect
+    colorFrom: 7F7F7FAF
+    colorTo: 7F7F7F00
+    lifetime: 30
+    sizeFrom: 2
+    sizeTo: 44
+    strokeFrom: 2
+    strokeTo: 2
+  }
+  despawnEffect: none
+  hitSound: none
+  despawnSound: none
+  ammoMultiplier: 1
+  recoil: 0
+  pierce: true
+  pierceBuilding: true
+  pierceCap: -1
+  drawSize: 0.01
+  hitSize: 0.01
+  status: sakuya-timestop
+  statusDuration: 60
+  hittable: false
+  reflectable: false
+  absorbable: false
+  setDefaults: true
+  hitColor: 00000000
+  healColor: 00000000
+  healEffect: none
+}
+size: 2
+health: 800
+reload: 240
+range: 48
+rotateSpeed: 360
+fogRadiusMultiplier: 0
+coolEffect: none
+coolantMultiplier: 1
+hasLiquids: false
+hasItems: false
+shootCone: 180
+shootX: 0
+shootY: 0
+targetAir: true
+targetGround: true
+shootSound: none
+smokeEffect: none
+ammoUseEffect: none
+heatColor: 00000000
+requirements: [
+  af-sakuya/24
+]
+conductivePower: true
+category: defense
+research: ffa-sakuya-wall
+buildCostMultiplier: 3.2
+outlineRadius: 1.5
+outlineColor: FFFFFF00

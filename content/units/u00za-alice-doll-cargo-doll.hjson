@@ -1,0 +1,66 @@
+type: tether
+createScorch: false
+controller: CargoAI
+// useUnitCap: false
+isEnemy: false
+envDisabled: 0
+range: 32
+allowedInPayloads: false
+logicControllable: false
+playerControllable: false
+payloadCapacity: 0
+lowAltitude: false
+flying: true
+drag: 0.04
+speed: 3.2
+rotateSpeed: 7
+accel: 0.05
+itemCapacity: 60
+health: 16
+hitSize: 8
+engineOffset: 6.5
+engineLayer: -10
+engineSize: 3.2
+engineColor: FFFF7F9F
+engineColorInner: FFFFFF9F
+itemOffsetY: 0
+targetable: true
+hittable: true
+fogRadius: 32
+vulnerableWithPayloads: true
+outlineColor: 00000000
+// Change deathSound to "Marisa" (doll) later
+deathSound: thbiu
+deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 60
+      particles: 4
+      length: 20
+      spin: 2
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-ya-p-point
+    }
+  ]
+}
+outlines: false
+immunities: [
+  damage-flying
+  burning
+  maid-fairy-lifetime
+]
+research: {
+  parent: kd-alice-doll-cargo-loader
+  requirements: [
+    azac-alice/100
+    ab-marisa/100
+  ]
+}

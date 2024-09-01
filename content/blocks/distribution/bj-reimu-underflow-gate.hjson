@@ -1,0 +1,9 @@
+type: OverflowGate
+health: 80
+requirements: [
+  aa-reimu/6
+]
+invert: true
+category: distribution
+research: bi-reimu-overflow-gate
+underBullets: true

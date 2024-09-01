@@ -1,0 +1,77 @@
+type: PowerTurret
+destroySound: hourai
+conductivePower: true
+reload: 15
+range: 24
+shootY: 0
+shootType: {
+  type: PointBulletType
+  knockback: 8
+  recoil: 0
+  damage: 2
+  speed: 6
+  trailSpacing: 2
+  collidesTiles: true
+  trailEffect: {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 60
+    sizeFrom: 2
+    sizeTo: 2
+    region: touhou-point-line
+    colorFrom: FF0000FF
+    colorTo: FF000000
+  }
+  ammoMultiplier: 1
+  absorbable: true
+  reflectable: true
+  smokeEffect: none
+  shootEffect: {
+    type: WaveEffect
+    lifetime: 60
+    sizeFrom: 6
+    sizeTo: 6
+    strokeFrom: 2
+    strokeTo: 2
+    colorFrom: FF0000FF
+    colorTo: FF000000
+  }
+  despawnEffect: {
+    type: WaveEffect
+    lifetime: 60
+    sizeFrom: 6
+    sizeTo: 6
+    strokeFrom: 2
+    strokeTo: 2
+    colorFrom: FF0000FF
+    colorTo: FF000000
+  }
+  hitEffect: {
+    type: WaveEffect
+    lifetime: 60
+    sizeFrom: 6
+    sizeTo: 6
+    strokeFrom: 2
+    strokeTo: 2
+    colorFrom: FF0000FF
+    colorTo: FF000000
+  }
+}
+shootSound: hourai
+size: 2
+health: 320
+requirements: [
+  azac-alice/12
+]
+consumes: {
+  power: 0.2
+}
+hasItems: false
+itemCapacity: 0
+hasLiquids: false
+liquidCapacity: 0
+baseExplosiveness: 5
+category: defense
+research: fzcca-hourai-wall
+buildCostMultiplier: 1.6

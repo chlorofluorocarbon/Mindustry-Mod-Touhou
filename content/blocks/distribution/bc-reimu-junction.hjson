@@ -1,0 +1,12 @@
+type: Junction
+health: 80
+requirements: [
+  aa-reimu/2
+]
+category: distribution
+research: bb-reimu-conveyor
+underBullets: true
+speed: 0.02
+researchCost: [
+  aa-reimu/20
+]

@@ -1,0 +1,270 @@
+type: payload
+createScorch: false
+coreUnitDock: true
+controller: BuilderAI
+isEnemy: false
+envDisabled: 0
+range: 32
+aimDst: 0
+faceTarget: true
+targetPriority: -2
+lowAltitude: false
+mineWalls: true
+mineFloor: true
+mineRange: 32
+buildRange: 32
+mineHardnessScaling: true
+itemOffsetY: 0
+flying: true
+mineSpeed: 0.2
+mineTier: 1
+buildSpeed: 0.1
+buildBeamOffset: 3
+drag: 0.04
+speed: 3.2
+rotateSpeed: 7
+accel: 0.05
+itemCapacity: 10
+health: 1
+armor: 0
+hitSize: 6
+engineOffset: 0
+engineLayer: -10
+engineSize: 6
+engineColor: FF00007F
+engineColorInner: FFFFFF00
+allowedInPayloads: true
+payloadCapacity: 64
+pickupUnits: true
+vulnerableWithPayloads: true
+fogRadius: 0
+targetable: true
+hittable: true
+weapons: [
+  {
+    type: PointDefenseWeapon
+    name: maid-fairy-defense
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 2
+    shootSound: none
+    noAmmoSound: none
+    reload: 120
+    rotateSpeed: 360
+    targetInterval: 1
+    targetSwitchInterval: 1
+    bullet: {
+      shootEffect: none
+      maxRange: 16
+      damage: 8
+    }
+  }
+  {
+    name: maid-fairy-fire-weapon
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 2
+    shootSound: none
+    noAmmoSound: none
+    reload: 90
+    predictTarget: false
+    rotateSpeed: 360
+    shoot: {
+      type: ShootPattern
+      shots: 1
+      // spread: 0
+      shotDelay: 0
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: true
+      buildingDamageMultiplier: 0
+      damage: 8
+      hitSize: 6
+      healAmount: 18
+      pierce: false
+      pierceBuilding: false
+      lifetime: 128
+      rangeOverride: 32
+      speed: 0.5
+      setDefaults: false
+      despawnEffect: none
+      width: 8
+      height: 8
+      makeFire: false
+      status: none
+      hitEffect: none
+      smokeEffect: none
+      reflectable: true
+      shootEffect: none
+      
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 24
+      backColor: FFFFFFFF
+      frontColor: FF0000FF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-normal-bullet"
+    }
+  }
+  {
+    name: fire-earth-producer
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 12000
+    alwaysShooting: true
+    predictTarget: false
+    rotateSpeed: 360
+    shoot: {
+      type: ShootPattern
+      shots: 1
+      // spread: 0
+      shotDelay: 0
+      firstShotDelay: 2400
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 0
+      inaccuracy: 180
+      hitSize: 3
+      pierce: false
+      pierceBuilding: false
+      lifetime: 60
+      speed: 0.5
+      setDefaults: false
+      despawnHit: true
+      despawnUnit: u0th06b-maid-fairy-earth
+      despawnUnitRadius: 0
+      despawnEffect: none
+      width: 8
+      height: 8
+      makeFire: false
+      status: none
+      hitEffect: {
+        type: WaveEffect
+        colorFrom: 7F3F00FF
+        colorTo: 7F3F00FF
+        sizeFrom: 1
+        strokeFrom: 2
+        sizeTo: 12
+        strokeTo: 2
+        lifetime: 15
+      }
+      smokeEffect: none
+      hittable: false
+      reflectable: false
+      absorbable: false
+      shootEffect: none
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 24
+      backColor: FF0000FF
+      frontColor: FF0000FF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-shanghai-spawn"
+    }
+  }
+]
+outlineColor: 00000000
+mechSideSway: 0
+mechFrontSway: 0
+// Change deathSound to "Dasukette" (fire fairy) later
+deathSound: thbiu
+deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 60
+      particles: 4
+      length: 20
+      spin: 2
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-ya-p-point
+    }
+  ]
+}
+outlines: false
+mineItems: [
+  aa-reimu
+  ab-marisa
+  ac-rumia
+  acz-daiyousei
+  ad-cirno
+  adz-meiling
+  adzz-koakuma
+  ae-patchouli
+  af-sakuya
+  ag-remilia
+  ah-flandre
+  azaa-letty
+  azab-chen
+  azac-alice
+  azae-youmu
+  azaf-yuyuko
+  azag-ran
+  azah-yukari
+]
+immunities: [
+  burning
+  damage-flying
+]
+abilities: [
+// Force field example. 
+// The damage for maid fairy timer always applys on the force field first, so I deleted this. 
+// I'm changing to use PointDefenseWeapon. 
+/*
+  {
+    type: ForceFieldAbility
+    radius: 16
+    max: 7.8
+    regen: 0.01333333333
+    cooldown: 600
+    sides: 48
+  }
+*/
+  {
+    type: StatusFieldAbility
+    effect: maid-fairy-lifetime
+    duration: 27000
+    reload: 120
+    applyEffect: none
+    activeEffect: none
+    range: 0.5
+  }
+]
+research: {
+  parent: u0bf-seven-observation-semiauto-doll
+  requirements: [
+    azzzzd-stablized-five-element-mixture/100
+    ae-patchouli/100
+  ]
+}
+useUnitCap: false

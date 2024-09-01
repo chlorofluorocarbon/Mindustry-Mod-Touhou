@@ -1,0 +1,9 @@
+type: Wall
+size: 2
+health: 800
+requirements: [
+  adzz-koakuma/24
+]
+category: defense
+research: fdzza-koakuma-wall
+buildCostMultiplier: 1.2

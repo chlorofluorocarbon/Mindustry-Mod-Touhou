@@ -1,0 +1,40 @@
+// type: ForceProjector
+type: Wall
+size: 2
+health: 720
+requirements: [
+  ac-rumia/24
+]
+/*
+hasItems: false
+itemCapacity: 0
+hasLiquids: false
+liquidCapacity: 0
+phaseUseTime: 2147483647
+shieldHealth: 400
+*/
+category: defense
+research: fba-marisa-wall
+/*
+radius: 17
+sides: 100
+shieldBreakEffect: {
+  type: WaveEffect
+  sizeFrom: 17
+  sizeTo: 17
+  colorFrom: FFD37FFF
+  colorTo: FFD37FFF
+  sides: -1
+  strokeFrom: 2
+  strokeTo: 0
+  rotWithParent: true
+}
+cooldownNormal: 0.13333
+cooldownBrokenBase: 0.13333
+hasPower: false
+phaseShieldBoost: 0
+phaseRadiusBoost: 0
+lightColor: 00000000
+consumeCoolant: false
+*/
+buildCostMultiplier: 3.2

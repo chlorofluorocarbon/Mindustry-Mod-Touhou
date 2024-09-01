@@ -1,0 +1,16 @@
+type: StackConveyor
+health: 40
+requirements: [
+  azac-alice/1
+]
+glowColor: FFFF7FFF
+category: distribution
+baseEfficiency: 0.666666667
+speed: 0.1
+research: jb-patchouli-duct
+underBullets: false
+consumes: {
+  power: 0.01666666
+}
+conductivePower: true
+hasPower: true

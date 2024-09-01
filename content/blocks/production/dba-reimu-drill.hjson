@@ -1,0 +1,22 @@
+type: Drill
+size: 2
+drillTime: 600
+tier: 4
+hardnessDrillMultiplier: 100
+requirements: [
+  aa-reimu/12
+]
+consumes: {
+  liquid: {
+    liquid: ea-reimu-juice
+    amount: 0.04166666667
+    booster: true
+    optional: true
+  }
+}
+liquidBoostIntensity: 1.58114
+category: production
+research: core-a-reimari
+researchCost: [
+  aa-reimu/12
+]

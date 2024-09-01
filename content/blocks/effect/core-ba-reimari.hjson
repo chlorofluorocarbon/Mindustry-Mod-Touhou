@@ -1,0 +1,17 @@
+type: CoreBlock
+size: 4
+health: 2750
+requirements: [
+  aa-reimu/2000
+  ab-marisa/2000
+  azac-alice/1500
+  ae-patchouli/1500
+]
+thrusterLength: 8.5
+destroySound: none
+unitType: u0ba-rinnosuke 
+category: effect
+research: core-a-reimari
+researchCostMultiplier: 0.25
+itemCapacity: 9000
+unitCapModifier: 5

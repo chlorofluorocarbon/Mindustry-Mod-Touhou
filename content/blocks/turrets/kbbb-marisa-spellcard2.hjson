@@ -1,0 +1,255 @@
+type: PowerTurret
+targetAir: true
+size: 2
+solid: false
+squareSprite: false
+placeableLiquid: true
+maxAmmo: 2
+health: 18
+category: turret
+research: uth06bb-0p-marisa
+// No reloadTime for PowerTurret. 
+// reloadTime: 0.000001
+coolantMultiplier: 25
+rotateSpeed: 10000
+// acceptCoolant: false
+destroySound: none
+destroyEffect: none
+shootSound: spellcard
+range: 240
+shootY: 0
+playerControllable: false
+buildCostMultiplier: 0.001
+requirements: [
+  yc-bomb/1
+  ab-marisa/5
+]
+shoot: {
+/*
+  type: ShootAlternate
+  shots: 4
+  barrels: 4
+  shotDelay: 0
+  spread: 16
+*/
+  type: ShootPattern
+  shots: 1
+}
+shootType: {
+// Should be laser, but the width of it is strange and I gave up on it. 
+// 4 rays
+/*
+    type: ContinuousLaserBulletType
+    ammoMultiplier: 1
+    incendChance: 0
+    fadeTime: 30
+    lifetime: 300
+    length: 720
+    damage: 1.25
+    width: 52
+    hitSize: 620
+    drawSize: 620
+    divisions: 96
+    damageInterval: 5
+    pierce: true
+    pierceBuliding: true
+    pierceCap: -1
+    status: none
+    strokeFrom: 1
+    strokeTo: 1
+    setDefaults: false
+    makeFire: false
+    reflectable: false
+    absorbable: false
+    hittable: false
+    hitEffect: none
+    despawnEffect: none
+    smokeEffect: none
+    shootEffect: none
+    colors: [FF00003F, FF7FBF7F, FFFF00BF, FFFF7FFF]
+    oscScl: 0
+    oscMag: 0
+    lightStroke: 80
+*/
+// 1 ray
+/*
+  type: ContinuousLaserBulletType
+  ammoMultiplier: 1
+  incendChance: 0
+  killShooter: true
+  fadeTime: 30
+  lifetime: 300
+  length: 720
+  damage: 3
+  width: 240
+  hitSize: 40
+  drawSize: 40
+  divisions: 96
+  damageInterval: 5
+  pierce: true
+  pierceBuliding: true
+  pierceCap: -1
+  status: none
+  strokeFrom: 1
+  strokeTo: 1
+  setDefaults: false
+  makeFire: false
+  reflectable: false
+  absorbable: false
+  hittable: false
+  hitEffect: none
+  despawnEffect: none
+  smokeEffect: none
+  shootEffect: none
+  colors: [FF00003F, FF7FBF7F, FFFF00BF, FFFF7FFF]
+  oscScl: 0
+  oscMag: 0
+  lightStroke: 320
+*/
+  type: BasicBulletType
+  ammoMultiplier: 1
+  speed: 0
+  lifetime: 240
+  damage: 0
+  splashDamage: 0
+  status: none
+  reflectable: false
+  absorbable: false
+  hittable: false
+  killShooter: true
+  hitEffect: none
+  despawnEffect: none
+  smokeEffect: none
+  shootEffect: {
+    type: ParticleEffect
+    colorFrom: FFFFFFFF
+    colorTo: FFFFFF00
+    particles: 1
+    randLength: false
+    cone: 0
+    length: 0
+    baseLength: 0
+    lightScl: 0
+    lightOpacity: 0
+    sizeFrom: 480
+    sizeTo: 480
+    offset: -90
+    region: "touhou-marisa-laser"
+    strokeFrom: 0
+    lenFrom: 0
+    lenTo: 0
+    lifetime: 300
+  }
+  intervalBullets: 1
+  bulletInterval: 5
+  intervalRandomSpread: 0
+  intervalBullet: {
+    type: BasicBulletType
+    collidesTeam: false
+    keepVelocity: false
+    damage: 3
+    hitSize: 224
+    spin: 0
+    pierce: true
+    pierceBuilding: true
+    buildingDamageMultiplier: 0.1
+    pierceCap: -1
+    lifetime: 60
+    rangeOverride: 480
+    speed: 8
+    setDefaults: false
+    despawnEffect: none
+    width: 224
+    height: 224
+    makeFire: false
+    status: none
+    hitEffect: none
+    smokeEffect: none
+    reflectable: false
+    absorbable: false
+    hittable: false
+    shootEffect: none
+    collideTerrain: false
+    collidesAir: true
+    collidesGround: true
+    backColor: 00000000
+    frontColor: FFFFFF00
+    lightRadius: 224
+    shrinkX: 0
+    shrinkY: 0
+    sprite: "touhou-marisa-nobullet"
+  }
+  reflectable: false
+  absorbable: false
+  hittable: false
+  collideTerrain: false
+  collidesAir: true
+  collidesGround: true
+  backColor: 00000000
+  frontColor: FFFFFF00
+  lightRadius: 0
+  shrinkX: 0
+  shrinkY: 0
+  sprite: "touhou-marisa-nobullet"
+}
+destroyBulletSameTeam: true
+destroyBullet: {
+  type: BasicBulletType
+  shrinkX: 0
+  shrinkY: 0
+  backColor: 00000000
+  frontColor: 00000000
+  mixColorFrom: 00000000
+  mixColorTo: 00000000
+  lightColor: 00000000
+  lightRadius: 0
+  width: 0
+  height: 0
+  lifetime: 0
+  speed: 0
+  damage: 0
+  splashDamage: 0
+  splashDamageRadius: 0
+  incendChance: 0
+  shootEffect: none
+  smokeEffect: none
+  chargeEffect: none
+  hitEffect: none
+  knockback: 0
+  despawnEffect: none
+  hitSound: none
+  despawnSound: none
+  ammoMultiplier: 1
+  recoil: 0
+  pierce: true
+  pierceBuilding: true
+  pierceCap: -1
+  drawSize: 0.01
+  hitSize: 0.01
+  status: none
+  hittable: false
+  reflectable: false
+  absorbable: false
+  setDefaults: true
+  hitColor: 00000000
+  healColor: 00000000
+  healEffect: none
+  fragBullets: 1
+  fragRandomSpread: 0
+  fragOffsetMax: 0
+  fragOffsetMin: 0
+  fragVelocityMin: 0
+  fragVelocityMax: 0
+  fragBullet: {
+    type: BasicBulletType
+    spawnUnit: u00-bomb-bullet-cleaner
+  }
+}
+researchCost: [
+  ab-marisa/1000
+  yc-bomb/1
+]
+rebuildable: false
+// powerUse: 0
+outlineRadius: 1.5
+outlineColor: FFFFFF00

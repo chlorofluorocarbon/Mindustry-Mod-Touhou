@@ -1,0 +1,63 @@
+type: PowerTurret
+targetAir: true
+targetGround: false
+size: 2
+solid: false
+squareSprite: false
+placeableLiquid: true
+maxAmmo: 600
+category: turret
+coolantMultiplier: 25
+rotateSpeed: 10000
+destroySound: none
+destroyEffect: none
+range: 16000
+shootY: 0
+playerControllable: false
+buildCostMultiplier: 0.001
+health: 2147483647
+buildVisibility: editorOnly
+requirements: [
+
+]
+shootCone: 360
+shootSound: none
+reload: 10
+shootType: {
+  type: BasicBulletType
+  ammoMultiplier: 1
+  shrinkX: 0
+  shrinkY: 0
+  backColor: 00000000
+  frontColor: 00000000
+  mixColorFrom: 00000000
+  mixColorTo: 00000000
+  lightColor: 00000000
+  lightRadius: 0
+  width: 0
+  height: 0
+  lifetime: 0
+  speed: 0
+  collides: false
+  collidesAir: true
+  collidesGround: false
+  hittable: false
+  reflectable: false
+  absorbable: false
+  status: damage-flying
+  statusDuration: 120
+  damage: 0
+  splashDamage: 0
+  splashDamageRadius: 16000
+  knockback: 0
+  hitEffect: none
+  despawnEffect: none
+  despawnHit: true
+  shootEffect: none
+  smokeEffect: none
+}
+research: kaa-reimari-defender
+category: turret
+fogRadiusMultiplier: 0
+outlineColor: FFFFFF00
+outlineRadius: 0

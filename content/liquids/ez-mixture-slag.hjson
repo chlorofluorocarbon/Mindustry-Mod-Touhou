@@ -1,0 +1,11 @@
+research: ea-reimu-juice
+color: 7F7F7FFF
+barColor: 7F7F7FFF
+lightColor: 7F7F7F3F
+flammability: 0
+temperature: 1
+heatCapacity: 0.5
+viscosity: 0.8
+explosiveness: 0
+effect: none
+coolant: false

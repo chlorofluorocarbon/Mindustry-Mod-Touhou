@@ -1,0 +1,44 @@
+type: GenericCrafter
+size: 2
+itemCapacity: 12
+hasPower: true
+hasLiquids: false
+hasItems: true
+craftTime: 180
+consumes: {
+  power: 0.4
+  items: [
+    aa-reimu/3
+    azac-alice/3
+  ]
+}
+drawer: {
+  type: DrawMulti
+  drawers: [
+    DrawDefault
+    {
+      type: DrawCrucibleFlame
+      flameColor: BFBF00BF
+      midColor: 7F7FFF7F
+      flameRad: 5
+      circleSpace: 2
+      flameRadiusScl: 0
+      flameRadiusMag: 0
+      circleStroke: 1.4
+      particles: 14
+      particleLife: 120
+      particleRad: 16
+      particleSize: 4
+      fadeMargin: 0.3
+    }
+  ]
+}
+craftEffect: mine
+updateEffect: none
+outputItem: azzzzbzb-old-friend-friendship/5
+category: crafting
+requirements: [
+  aa-reimu/80
+  azac-alice/80
+]
+research: hbza-reimu-ruukoto-converter

@@ -1,0 +1,86 @@
+type: tether
+createScorch: false
+controller: CargoAI
+// useUnitCap: false
+isEnemy: false
+envDisabled: 0
+range: 32
+faceTarget: true
+allowedInPayloads: false
+logicControllable: false
+playerControllable: false
+payloadCapacity: 0
+lowAltitude: false
+flying: true
+drag: 1
+speed: 40
+rotateSpeed: 15
+accel: 0.4
+waveTrailX: 0
+waveTrailY: 0
+trailScl: 4
+itemCapacity: 120
+health: 16
+hitSize: 8
+engineOffset: 0
+engineLayer: -10
+engineSize: 9
+engineColor: 00FF007F
+engineColorInner: FFFFFF00
+/*
+engines: [
+  {
+    x: -5.75
+    y: -2.25
+    radius: 3.0
+    rotation: -162
+  }
+  {
+    x: 5.75
+    y: -2.25
+    radius: 3.0
+    rotation: -18
+  }
+]
+*/
+itemOffsetY: 0
+targetable: true
+hittable: true
+fogRadius: 32
+vulnerableWithPayloads: true
+outlineColor: 00000000
+// Change deathSound to "Koachann" (Daiyousei) later
+deathSound: thbiu
+deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 60
+      particles: 4
+      length: 20
+      spin: 2
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-ya-p-point
+    }
+  ]
+}
+outlines: false
+immunities: [
+  damage-flying
+  burning
+  maid-fairy-lifetime
+]
+research: {
+  parent: kd-alice-doll-cargo-loader
+  requirements: [
+    azac-alice/100
+    ab-marisa/100
+  ]
+}

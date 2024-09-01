@@ -1,0 +1,15 @@
+type: BeamNode
+laserColor1: FFBFFFFF
+laserColor2: FF7FBFFF
+range: 16
+requirements: [
+  ae-patchouli/4
+  ab-marisa/1
+]
+consumesPower: true
+outputsPower: true
+consumes: {
+  powerBuffered: 690
+}
+research: faa-marisa-node
+category: power

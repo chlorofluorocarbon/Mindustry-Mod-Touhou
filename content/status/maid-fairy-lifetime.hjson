@@ -1,0 +1,7 @@
+// type: StatusEffect
+damage: 0.0000370370370370
+permanent: true
+effectChance: 0
+effect: none
+applyEffect: none
+applyColor: 000000FF

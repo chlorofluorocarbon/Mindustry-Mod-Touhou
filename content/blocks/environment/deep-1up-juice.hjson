@@ -1,0 +1,8 @@
+type: Floor
+isLiquid: true
+liquidDrop: eyb-1up-juice
+liquidMultiplier: 1.5
+variants: 0
+speedMultiplier: 0.2
+drownTime: 240
+status: none

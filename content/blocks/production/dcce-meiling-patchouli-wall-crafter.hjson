@@ -1,0 +1,15 @@
+type: WallCrafter
+size: 2
+health: 360
+drillTime: 90
+requirements: [
+  adz-meiling/20
+  ae-patchouli/4
+]
+consumes: {
+  power: 0.4
+}
+output: ae-patchouli
+category: production
+attribute: wall-patchouli
+research: dcc0-meiling-beamdrill

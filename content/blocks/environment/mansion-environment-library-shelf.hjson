@@ -1,0 +1,6 @@
+type: StaticWall
+attributes: {
+  wall-koakuma: 1.0
+  wall-patchouli: 0.2
+}
+variants: 8

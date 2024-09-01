@@ -1,0 +1,11 @@
+type: OverflowDuct
+health: 30
+requirements: [
+  ae-patchouli/12
+]
+squareSprite: false
+category: distribution
+speed: 3.3333333
+research: jd-patchouli-overflow-duct
+underBullets: false
+invert: true

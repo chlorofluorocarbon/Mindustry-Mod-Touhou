@@ -1,0 +1,32 @@
+type: GenericCrafter
+size: 2
+itemCapacity: 45
+hasPower: true
+hasItems: true
+craftTime: 180
+consumes: {
+  items: [
+    ad-cirno/9
+    ae-patchouli/1
+  ]
+  power: 1
+}
+craftEffect: mine
+updateEffect: none
+outputItem: acz-daiyousei/7
+category: crafting
+requirements: [
+  ad-cirno/80
+  ae-patchouli/5
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    DrawDefault
+    {
+      type: DrawFlame
+      flameColor: 00BFFFFF
+    }
+  ]
+}
+research: hbc-cirno-juicer

@@ -1,0 +1,52 @@
+type: PowerTurret
+shoot: {
+  type: ShootAlternate
+  shots: 4
+  barrels: 4
+  shotDelay: 5
+  spread: 2
+}
+shootType: {
+  type: SapBulletType
+  ammoMultiplier: 1
+  damage: 1
+  length: 32
+  sapStrength: 0.9
+  setDefaults: false
+  status: remilia-vampire
+  statusDuration: 180
+  width: 0.4
+  color: FF7F7FFF
+  shootEffect: none
+  lifetime: 18
+  hitEffect: none
+}
+size: 2
+health: 1120
+reload: 15
+range: 30
+rotateSpeed: 360
+fogRadiusMultiplier: 0
+coolEffect: none
+coolantMultiplier: 1
+hasLiquids: false
+hasItems: false
+shootCone: 30
+shootX: 0
+shootY: 0
+targetAir: true
+targetGround: true
+shootSound: none
+shootEffect: none
+smokeEffect: none
+ammoUseEffect: none
+heatColor: 00000000
+requirements: [
+  ag-remilia/24
+]
+conductivePower: true
+category: defense
+research: fga-remilia-wall
+buildCostMultiplier: 3.2
+outlineRadius: 1.5
+outlineColor: FFFFFF00

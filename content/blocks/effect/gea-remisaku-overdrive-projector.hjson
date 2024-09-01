@@ -1,0 +1,31 @@
+type: OverdriveProjector
+size: 2
+range: 84
+speedBoost: 1.5
+speedBoostPhase: 1
+useTime: 60
+phaseRangeBoost: 0
+hasBoost: true
+hasPower: true
+hasItems: true
+requirements: [
+  ag-remilia/64
+  af-sakuya/64
+  ae-patchouli/40
+  adz-meiling/40
+]
+category: effect
+research: gbb-daisaku-mender
+consumes: {
+  items: {
+    items: [ 
+      af-sakuya/1
+    ]
+    booster: true
+    optional: true
+  }
+  power: 2.5
+}
+baseColor: FF3F00FF
+phaseColor: 007FFFFF
+squareSprite: true

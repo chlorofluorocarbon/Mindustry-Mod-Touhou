@@ -1,0 +1,17 @@
+type: Incinerator
+size: 1
+itemCapacity: 20
+liquidCapacity: 30
+hasPower: true
+hasLiquids: true
+hasItems: true
+flameColor: FFFFFFFF
+consumes: {
+  power: 0.5
+}
+category: crafting
+requirements: [
+  aa-reimu/15
+  ab-marisa/15
+]
+research: hcb-marisa-reimu-converter

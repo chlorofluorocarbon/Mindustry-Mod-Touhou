@@ -1,0 +1,35 @@
+type: GenericCrafter
+size: 2
+itemCapacity: 10
+liquidCapacity: 30
+hasPower: true
+hasLiquids: true
+hasItems: true
+craftTime: 30
+consumes: {
+  power: 0.2
+  items: [
+    ad-cirno/1
+  ]
+}
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: ed-cirno-juice
+    }
+    DrawDefault
+  ]
+}
+outputLiquid: ed-cirno-juice/0.2
+category: crafting
+requirements: [
+  aa-reimu/15
+  ad-cirno/30
+]
+research: hba-reimu-juicer

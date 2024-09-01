@@ -1,0 +1,209 @@
+type: mech
+createScorch: false
+speed: 0.12
+drag: 1
+accel: 1
+rotateSpeed: 360
+baseRotateSpeed: 360
+health: 479.8
+armor: 0
+canBoost: false
+// landshake: 0
+stepShake: 0
+// mechStepShake: 0
+mechStepParticles: false
+range: 240
+maxRange: 240
+outlines: false
+ammoType: adz-meiling
+mechLegColor: FFFFFF00
+itemCapacity: 0
+hitSize: 48
+mechSideSway: 0
+mechFrontSway: 0
+deathSound: neirinokinasai
+deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 120
+      particles: 20
+      length: 48
+      spin: 2
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-ya-p-point
+    }
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 120
+      particles: 20
+      spin: -1.5
+      length: 48
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-yd-point-item
+    }
+  ]
+}
+weapons: [
+  {
+    name: meiling-qia
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 120
+    predictTarget: false
+    rotateSpeed: 360
+    alwaysShooting: true
+    shoot: {
+      type: ShootSpread
+      shots: 20
+      spread: 9
+      shotDelay: 6
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      keepVelocity: false
+      damage: 8
+      hitSize: 3
+      pierce: false
+      pierceBuilding: false
+      lifetime: 120
+      speed: 0.42
+      setDefaults: false
+      despawnEffect: none
+      width: 8
+      height: 8
+      makeFire: false
+      status: none
+      hitEffect: none
+      smokeEffect: none
+      reflectable: true
+      shootEffect: none
+      
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 24
+      backColor: FFFFFFFF
+      frontColor: 00000000
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-meiling-colorful-bullet"
+      despawnHit: true
+      fragBullets: 4
+      fragRandomSpread: 15
+      fragSpread: 30
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragOffsetMax: 0
+      fragOffsetMin: 0
+      fragBullet: {
+        type: BasicBulletType
+        collidesTeam: false
+        keepVelocity: false
+        damage: 6
+        hitSize: 3
+        pierce: false
+        pierceBuilding: false
+        lifetime: 1800
+        speed: 0.42
+        setDefaults: false
+        despawnEffect: none
+        width: 8
+        height: 8
+        makeFire: false
+        status: none
+        hitEffect: none
+        smokeEffect: none
+        reflectable: true
+        shootEffect: none
+        
+        collidesAir: true
+        collidesGround: true
+        lightRadius: 24
+        backColor: FFFFFFFF
+        frontColor: 00000000
+        shrinkX: 0
+        shrinkY: 0
+        sprite: "touhou-meiling-colorful-bullet"
+      }
+    }
+  }
+  {
+    name: meiling-qib
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 120
+    rotateSpeed: 360
+    predictTarget: false
+    shoot: {
+      type: ShootSpread
+      shots: 12
+      spread: 15
+      shotDelay: 0
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      keepVelocity: false
+      damage: 6
+      pierce: false
+      pierceBuilding: false
+      lifetime: 1800
+      rangeOverride: 240
+      speed: 0.48
+      setDefaults: false
+      despawnEffect: none
+      width: 8
+      height: 8
+      makeFire: false
+      status: none
+      hitEffect: none
+      smokeEffect: none
+      reflectable: false
+      shootEffect: none
+      
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 24
+      backColor: FFFFFFFF
+      frontColor: FF0000FF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-normal-bullet"
+    }
+  }
+]
+immunities: [
+  burning
+  maid-fairy-lifetime
+]
+research: v6dzb-meiling

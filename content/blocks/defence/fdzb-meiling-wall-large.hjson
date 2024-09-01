@@ -1,0 +1,9 @@
+type: Door
+size: 2
+health: 3200
+requirements: [
+  adz-meiling/24
+]
+category: defense
+research: fdza-meiling-wall
+buildCostMultiplier: 3.2

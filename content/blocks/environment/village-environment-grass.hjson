@@ -1,0 +1,7 @@
+type: Floor
+wall: village-environment-grass-wall
+speedMultiplier: 0.9
+attributes: {
+  p-boost: 0.2
+}
+variants: 3

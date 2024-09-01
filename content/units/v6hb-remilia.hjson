@@ -1,0 +1,167 @@
+type: mech
+createScorch: false
+speed: 0.4
+drag: 1
+accel: 1
+rotateSpeed: 360
+baseRotateSpeed: 360
+health: 31.8
+armor: 0
+canBoost: false
+// landshake: 0
+stepShake: 0
+// mechStepShake: 0
+mechStepParticles: false
+range: 240
+maxRange: 240
+outlines: false
+ammoType: ag-remilia
+mechLegColor: FFFFFF00
+itemCapacity: 0
+hitSize: 12
+mechSideSway: 0
+mechFrontSway: 0
+deathSound: ojyousamaa
+weapons: [
+  {
+    name: remilia-teeth-a
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 96
+    predictTarget: false
+    rotateSpeed: 360
+    shoot: {
+      type: ShootSpread
+      shots: 4
+      spread: 10
+      shotDelay: 0
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      keepVelocity: false
+      damage: 12
+      hitSize: 6
+      pierce: false
+      lifetime: 1800
+      speed: 0.7
+      setDefaults: false
+      despawnEffect: none
+      width: 12
+      height: 12
+      makeFire: false
+      hitEffect: none
+      smokeEffect: none
+      reflectable: true
+      shootEffect: none
+      status: none
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 24
+      backColor: FFFFFFFF
+      frontColor: BF0000FF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-normal-bullet"
+    }
+  }
+  {
+    name: remilia-teeth-b
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    alwaysShooting: true
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 192
+    predictTarget: false
+    rotateSpeed: 360
+    shoot: {
+      type: ShootSpread
+      shots: 1
+      spread: 0
+      shotDelay: 0
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 0
+      hitSize: 3
+      pierce: true
+      pierceBuilding: true
+      pierceCap: -1
+      lifetime: 175
+      speed: 0.1
+      inaccuracy: 7.5
+      setDefaults: false
+      despawnEffect: none
+      keepVelocity: false
+      width: 0
+      height: 0
+      makeFire: false
+      hitEffect: none
+      smokeEffect: none
+      reflectable: false
+      absorbable: false
+      hittable: false
+      shootEffect: none
+      status: none
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 0
+      backColor: FFFFFFFF
+      frontColor: FFFFFFFF
+      shrinkX: 0
+      shrinkY: 0
+      intervalBullets: 1
+      bulletInterval: 30
+      intervalRandomSpread: 0
+      intervalBullet: {
+        type: BasicBulletType
+        collidesTeam: false
+        damage: 16
+        hitSize: 8
+        pierce: false
+        lifetime: 1800
+        speed: 0.6
+        setDefaults: false
+        despawnEffect: none
+        width: 24
+        height: 24
+        makeFire: false
+        hitEffect: none
+        smokeEffect: none
+        reflectable: true
+        hittable: false
+        shootEffect: none
+        status: none
+        collidesAir: true
+        collidesGround: true
+        lightRadius: 32
+        backColor: BF0000FF
+        frontColor: FFFFFF7F
+        shrinkX: 0
+        shrinkY: 0
+        sprite: "touhou-huge-bullet"
+      }
+    }
+  }
+]
+immunities: [
+  burning
+  maid-fairy-lifetime
+]
+research: v6ha-remilia

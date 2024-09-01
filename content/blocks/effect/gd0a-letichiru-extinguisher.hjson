@@ -1,0 +1,43 @@
+type: LiquidTurret
+size: 2
+health: 600
+hasPower: false
+requirements: [
+  azaa-letty/40
+  ad-cirno/40
+]
+shootCone: 15
+shootY: 0
+shootSound: none
+coolantMultiplier: 1
+reload: 2
+range: 80
+ammoPerShot: 1
+maxAmmo: 60
+inaccuracy: 9
+ammoTypes: {
+  ed-cirno-juice: {
+    type: LiquidBulletType
+    damage: 0
+    // LiquidBulletType does not extend BasicB.T., but extends BulletType, which doesn't have height or width. 
+    // height: 6
+    // width: 6
+    ammoMultiplier: 9
+    speed: 2
+    orbSize: 4
+    smokeEffect: none
+    shootEffect: none
+    lifetime: 40
+    intervalBullets: 1
+    despawnEffect: none
+    hitEffect: none
+    liquid: ed-cirno-juice
+    knockback: 0
+    puddleSize: 0
+  }
+}
+research: kaa-reimari-defender
+category: effect
+fogRadiusMultiplier: 0
+outlineColor: FFFFFF00
+outlineRadius: 0

@@ -1,0 +1,17 @@
+type: CoreBlock
+size: 4
+health: 3000
+requirements: [
+  ae-patchouli/2000
+  aa-reimu/2000
+  ab-marisa/1500
+  azac-alice/1500
+]
+thrusterLength: 8.5
+destroySound: none
+unitType: u0bc-seven-observation-orb
+category: effect
+research: core-a-reimari
+researchCostMultiplier: 0.25
+itemCapacity: 12000
+unitCapModifier: 4

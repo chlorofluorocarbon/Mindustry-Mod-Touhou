@@ -1,0 +1,6 @@
+type: Floor
+wall: mansion-environment-outer-wall
+attributes: {
+  th06-boost: 0.2
+}
+variants: 3

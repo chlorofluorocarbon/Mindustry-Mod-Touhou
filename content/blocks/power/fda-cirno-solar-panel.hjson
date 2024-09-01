@@ -1,0 +1,7 @@
+type: SolarGenerator
+requirements: [
+  ad-cirno/20
+]
+powerProduction: 0.1
+research: fcb-light-generator
+category: power

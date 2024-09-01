@@ -1,0 +1,151 @@
+type: payload
+createScorch: false
+coreUnitDock: true
+controller: BuilderAI
+isEnemy: false
+envDisabled: 0
+range: 32
+aimDst: 0
+faceTarget: true
+targetPriority: -2
+lowAltitude: false
+mineWalls: true
+mineFloor: true
+mineRange: 32
+buildRange: 128
+mineHardnessScaling: true
+itemOffsetY: 0
+flying: true
+mineSpeed: 1
+mineTier: 2
+buildSpeed: 0.3
+buildBeamOffset: 3
+drag: 0.04
+speed: 3.2
+rotateSpeed: 7
+accel: 0.05
+itemCapacity: 10
+health: 0.41
+armor: 0
+hitSize: 6
+engineOffset: 0
+engineLayer: -10
+engineSize: 0
+engineColor: DF6F6F9F
+engineColorInner: FFFFFF9F
+engines: [
+  {
+    x: -4.3333333
+    y: 0
+    radius: 2.13333333
+    rotation: -180
+  }
+  {
+    x: 4.3333333
+    y: 0
+    radius: 2.13333333
+    rotation: 0
+  }
+]
+allowedInPayloads: true
+payloadCapacity: 128
+pickupUnits: true
+vulnerableWithPayloads: true
+fogRadius: 0
+targetable: false
+hittable: false
+weapons: [
+  {
+    type: RepairBeamWeapon
+    layerOffset: 10
+    reload: 20
+    x: 0
+    y: 3
+    rotate: false
+    shootY: 0
+    beamWidth: 0.7
+    repairSpeed: 0.8
+    fractionRepairSpeed: 0.02
+    shootCone: 15
+    mirror: false
+    targetUnits: false
+    targetBuildings: true
+    autoTarget: false
+    controllable: true
+    laserColor: 7FBFBF9F
+    healColor: 7FBFBFFF
+    bullet: 
+    {
+      type: BulletType
+      maxRange: 32
+    }
+  }
+]
+outlineColor: 00000000
+mechSideSway: 0
+mechFrontSway: 0
+// Change deathSound to "Itaiyo" (Tokiko) later
+deathSound: thbiu
+deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 60
+      particles: 4
+      length: 20
+      spin: 2
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-ya-p-point
+    }
+  ]
+}
+outlines: false
+mineItems: [
+  aa-reimu
+  ab-marisa
+  ac-rumia
+  acz-daiyousei
+  ad-cirno
+  adz-meiling
+  adzz-koakuma
+  ae-patchouli
+  af-sakuya
+  ag-remilia
+  ah-flandre
+  azaa-letty
+  azab-chen
+  azac-alice
+  azae-youmu
+  azaf-yuyuko
+  azag-ran
+  azah-yukari
+]
+immunities: [
+  burning
+  damage-flying
+]
+abilities: [
+  {
+    type: StatusFieldAbility
+    effect: maid-fairy-lifetime
+    duration: 27000
+    reload: 120
+    applyEffect: none
+    activeEffect: none
+    range: 0.5
+  }
+]
+research: {
+  parent: u0ba-rinnosuke
+  requirements: [
+    azzzzbza-village-protector/200
+  ]
+}
+useUnitCap: false

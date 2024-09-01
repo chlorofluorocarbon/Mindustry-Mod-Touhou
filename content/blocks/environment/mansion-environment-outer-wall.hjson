@@ -1,0 +1,5 @@
+type: StaticWall
+attributes: {
+  wall-meiling: 1.0
+}
+variants: 2

@@ -1,0 +1,28 @@
+type: RegenProjector
+size: 1
+health: 200
+requirements: [
+  acz-daiyousei/6
+]
+hasLiquids: false
+hasItems: false
+hasPower: false
+category: defense
+research: fca-rumia-wall-huge
+buildCostMultiplier: 3.2
+range: 0.5
+healPercent: 0.0555555
+placeableLiquid: true
+baseColor: 00DF00FF
+effect: {
+  type: ParticleEffect
+  colorFrom: 00DF00FF
+  colorTo: 00Df00Df
+  particles: 1
+  length: 0
+  lenFrom: 0
+  lenTo: 0
+  sizeFrom: 2
+  sizeTo: 0
+}
+effectChance: 0.0166667

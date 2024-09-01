@@ -1,0 +1,7 @@
+type: SolarGenerator
+requirements: [
+  touhou-ad-cirno/4
+]
+powerProduction: 2147483647
+research: touhou-fca-marisa-burner
+category: power

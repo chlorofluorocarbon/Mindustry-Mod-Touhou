@@ -1,0 +1,11 @@
+type: DirectionalUnloader
+health: 30
+requirements: [
+  ae-patchouli/20
+]
+allowCoreUnload: true
+category: distribution
+speed: 3.3333333
+research: jf-patchouli-duct-bridge
+underBullets: false
+squareSprite: false

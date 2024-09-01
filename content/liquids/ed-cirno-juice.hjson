@@ -1,0 +1,11 @@
+research: eb-marisa-juice
+color: 00BFFFFF
+barColor: 00BFFFFF
+lightColor: 00BFFF00
+flammability: 0
+temperature: 0
+heatCapacity: 1.2
+viscosity: 0.2
+explosiveness: 0
+effect: none
+coolant: true

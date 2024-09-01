@@ -1,0 +1,12 @@
+name: touhou-cheater
+displayName: Touhou cheater
+author: Chlorofluorocarbon0902
+description:
+  '''
+  Helps you cheat in the mod Touhou. 
+  '''
+dependencies: [
+  touhou
+]
+version: 1.1
+minGameVersion: 144

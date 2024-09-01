@@ -1,0 +1,12 @@
+type: Wall
+size: 1
+health: 240
+requirements: [
+  ad-cirno/6
+]
+category: defense
+research: fcza-daiyousei-wall
+buildCostMultiplier: 3.2
+absorbLasers: true
+insulated: true
+placeableLiquid: true

@@ -1,0 +1,23 @@
+type: Drill
+size: 2
+drillTime: 240
+tier: 2
+itemCapacity: 20
+hardnessDrillMultiplier: 0
+requirements: [
+  ab-marisa/12
+]
+consumes: {
+  liquid: {
+    liquid: eb-marisa-juice
+    amount: 0.05
+    booster: true
+    optional: true
+  }
+}
+liquidBoostIntensity: 2.449489743
+category: production
+research: dba-reimu-drill
+researchCost: [
+  ab-marisa/12
+]

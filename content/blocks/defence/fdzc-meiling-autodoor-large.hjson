@@ -1,0 +1,10 @@
+type: AutoDoor
+size: 2
+health: 3200
+requirements: [
+  adz-meiling/24
+  af-sakuya/4
+]
+category: defense
+research: fdzb-meiling-wall-large
+buildCostMultiplier: 3.6

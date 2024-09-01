@@ -1,0 +1,4 @@
+type: Floor
+wall: cirno-environment-ice-wall
+dragMultiplier: 0.05
+variants: 3

@@ -1,0 +1,126 @@
+type: payload
+createScorch: false
+coreUnitDock: true
+controller: BuilderAI
+isEnemy: false
+envDisabled: 0
+range: 48
+aimDst: 0
+faceTarget: true
+targetPriority: -2
+lowAltitude: false
+mineWalls: true
+mineFloor: true
+mineRange: 48
+mineHardnessScaling: true
+itemOffsetY: 0
+flying: true
+mineSpeed: 4
+mineTier: 2
+buildSpeed: 1.1
+buildBeamOffset: 4
+buildRange: 192
+drag: 0.04
+speed: 4.0
+rotateSpeed: 7
+accel: 0.052
+itemCapacity: 50
+health: 1
+armor: 0
+hitSize: 8
+engineOffset: 6.5
+engineLayer: -10
+engineSize: 3.2
+engineColor: BFBF009F
+engineColorInner: EFEFCF9F
+allowedInPayloads: true
+payloadCapacity: 192
+pickupUnits: true
+vulnerableWithPayloads: true
+fogRadius: 0
+targetable: false
+hittable: false
+weapons: [
+  {
+    type: RepairBeamWeapon
+    layerOffset: 10
+    reload: 20
+    x: 0
+    y: 4
+    rotate: false
+    shootY: 0
+    beamWidth: 0.7
+    repairSpeed: 2.5
+    fractionRepairSpeed: 0.12
+    shootCone: 15
+    mirror: false
+    targetUnits: false
+    targetBuildings: true
+    autoTarget: false
+    controllable: true
+    laserColor: BFBF3F9F
+    healColor: BFBF3FFF
+    bullet: 
+    {
+      type: BulletType
+      maxRange: 48
+    }
+  }
+]
+outlineColor: 00000000
+mechSideSway: 0
+mechFrontSway: 0
+// Change deathSound to Shinki's "Arisachann" later
+deathSound: thbiu
+deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 120
+      particles: 8
+      length: 40
+      spin: 2
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-ya-p-point
+    }
+  ]
+}
+outlines: false
+mineItems: [
+  aa-reimu
+  ab-marisa
+  ac-rumia
+  acz-daiyousei
+  ad-cirno
+  adz-meiling
+  adzz-koakuma
+  ae-patchouli
+  af-sakuya
+  ag-remilia
+  ah-flandre
+  azaa-letty
+  azab-chen
+  azac-alice
+  azae-youmu
+  azaf-yuyuko
+  azag-ran
+  azah-yukari
+]
+immunities: [
+  damage-flying
+  burning
+  maid-fairy-lifetime
+]
+research: {
+  parent: u0a-ruukoto
+  requirements: [
+    azzzzbzd-mysterious-magic-material/200
+  ]
+}

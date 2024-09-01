@@ -1,0 +1,9 @@
+type: Wall
+size: 1
+health: 400
+requirements: [
+  aa-reimu/6
+]
+category: defense
+research: core-a-reimari
+buildCostMultiplier: 3.2

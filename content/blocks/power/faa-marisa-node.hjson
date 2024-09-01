@@ -1,0 +1,11 @@
+type: PowerNode
+laserRange: 6
+maxNodes: 10
+laserColor1: FFFFBFFF
+laserColor2: DFDF3FFF
+requirements: [
+  ab-marisa/4
+]
+squareSprite: false
+research: fca-marisa-burner
+category: power

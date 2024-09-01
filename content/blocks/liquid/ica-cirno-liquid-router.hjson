@@ -1,0 +1,9 @@
+type: LiquidRouter
+requirements: [
+  ad-cirno/6
+]
+placeableLiquid: true
+liquidCapacity: 20
+category: liquid
+research: id-cirno-liquid-junction
+underBullets: false

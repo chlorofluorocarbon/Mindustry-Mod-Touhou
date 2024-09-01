@@ -1,0 +1,44 @@
+type: Separator
+size: 2
+itemCapacity: 20
+hasPower: true
+hasItems: true
+hasLiquids: true
+craftTime: 30
+consumes: {
+  power: 2
+  liquid: {
+    liquid: ez-mixture-slag
+    amount: 0.1333333333
+  }
+}
+results: [
+  ac-rumia/1
+  ad-cirno/1
+]
+category: crafting
+requirements: [
+  aa-reimu/10
+  ab-marisa/10
+  ac-rumia/100
+  ad-cirno/80
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: "-bottom"
+    }
+    DrawDefault
+    {
+      type: DrawLiquidRegion
+      drawLiquid: ez-mixture-slag
+    }
+    {
+      type: DrawBlurSpin
+      suffix: "-rotator"
+    }
+  ]
+}
+research: hfc-mixture-th6-456-ground-separator

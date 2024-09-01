@@ -1,0 +1,25 @@
+type: GenericCrafter
+size: 1
+itemCapacity: 15
+hasPower: false
+hasItems: true
+craftTime: 0.999999
+consumes: {
+  items: {
+    items: [
+      metaglass/1
+    ]
+  }
+}
+updateEffect: fuelburn
+outputItem: medium/2
+category: crafting
+requirements: [
+  metaglass/50
+]
+research: {
+  parent: graphite-medium-converter
+  requirements: [
+    metaglass/250
+  ]
+}

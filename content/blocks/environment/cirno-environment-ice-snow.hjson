@@ -1,0 +1,5 @@
+type: Floor
+wall: cirno-environment-snow-wall
+speedMultiplier: 0.9
+dragMultiplier: 0.3
+variants: 3

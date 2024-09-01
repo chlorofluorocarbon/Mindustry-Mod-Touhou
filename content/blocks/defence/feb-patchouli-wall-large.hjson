@@ -1,0 +1,23 @@
+type: ShieldWall
+size: 2
+health: 640
+shieldHealth: 800
+requirements: [
+  ae-patchouli/24
+]
+consumes: {
+  power: 0.0666666667
+}
+conductivePower: true
+hasPower: true
+breakCooldown: 1500
+category: defense
+research: fea-patchouli-wall
+regenSpeed: 0.533333
+buildCostMultiplier: 3.2
+chanceDeflect: 8
+absorbLasers: true
+insulated: false
+flashHit: true
+flashColor: FF7FBFBF
+glowColor: FF7FBF7F

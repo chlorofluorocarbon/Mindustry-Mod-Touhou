@@ -1,0 +1,10 @@
+research: aa-reimu
+color: FF0000FF
+barColor: FF0000FF
+lightColor: FF000000
+flammability: 0
+temperature: 0.5
+heatCapacity: 0.5
+viscosity: 0.4
+explosiveness: 0
+effect: none

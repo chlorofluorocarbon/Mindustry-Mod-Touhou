@@ -1,0 +1,14 @@
+type: WallCrafter
+size: 2
+health: 360
+drillTime: 90
+requirements: [
+  adz-meiling/24
+]
+consumes: {
+  power: 0.3
+}
+output: adz-meiling
+category: production
+attribute: wall-meiling
+research: dcc0-meiling-beamdrill

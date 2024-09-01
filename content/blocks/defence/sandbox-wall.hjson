@@ -1,0 +1,6 @@
+type: Wall
+size: 1
+health: 10000000000000000000000000000000000000000000000000000000000000000000000000000000000
+category: defense
+placeableLiquid: true
+buildVisibility: sandboxOnly

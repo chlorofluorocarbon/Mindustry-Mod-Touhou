@@ -1,0 +1,44 @@
+type: Separator
+size: 2
+itemCapacity: 20
+hasPower: true
+hasItems: true
+hasLiquids: true
+craftTime: 30
+consumes: {
+  power: 1
+  liquid: {
+    liquid: ez-mixture-slag
+    amount: 0.066666667
+  }
+}
+results: [
+  ac-rumia/1
+  ad-cirno/1
+]
+category: crafting
+requirements: [
+  aa-reimu/10
+  ab-marisa/10
+  ac-rumia/100
+  ad-cirno/80
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: "-bottom"
+    }
+    DrawDefault
+    {
+      type: DrawLiquidRegion
+      drawLiquid: ez-mixture-slag
+    }
+    {
+      type: DrawBlurSpin
+      suffix: "-rotator"
+    }
+  ]
+}
+research: hfa-mixture-reimari-separator

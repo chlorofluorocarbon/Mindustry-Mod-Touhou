@@ -1,0 +1,16 @@
+type: StackRouter
+health: 40
+requirements: [
+  azac-alice/5
+]
+glowColor: FFFF7FFF
+category: distribution
+baseEfficiency: 0.666666667
+speed: 3.333333
+research: kb-alice-stack-conveyor
+underBullets: false
+consumes: {
+  power: 0.05
+}
+conductivePower: true
+hasPower: true

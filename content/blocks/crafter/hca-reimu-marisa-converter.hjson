@@ -1,0 +1,22 @@
+type: GenericCrafter
+size: 2
+itemCapacity: 20
+hasPower: false
+hasItems: true
+craftTime: 60
+consumes: {
+  items: [
+    aa-reimu/5
+  ]
+}
+craftEffect: mine
+updateEffect: none
+outputItem: ab-marisa/4
+category: crafting
+requirements: [
+  aa-reimu/120
+]
+research: hba-reimu-juicer
+researchCost: [
+  aa-reimu/600
+]

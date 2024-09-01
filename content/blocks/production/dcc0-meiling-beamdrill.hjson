@@ -1,0 +1,26 @@
+type: BeamDrill
+size: 2
+health: 360
+drillTime: 90
+tier: 2
+range: 1
+requirements: [
+  adz-meiling/20
+]
+consumes: {
+  liquid: {
+    liquid: eb-marisa-juice
+    amount: 0.1
+    booster: true
+    optional: true
+  }
+  power: 0.2
+}
+optionalBoostIntensity: 3
+sparks: 4
+sparkColor: 007F009F
+glowColor: 007F00FF
+heatColor: 007F007F
+boostHeatColor: 007F00DF
+category: production
+research: dcb-reimarichiru-beamdrill

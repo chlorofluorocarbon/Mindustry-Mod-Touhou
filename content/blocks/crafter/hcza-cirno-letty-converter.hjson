@@ -1,0 +1,41 @@
+type: GenericCrafter
+size: 2
+itemCapacity: 15
+hasPower: true
+hasItems: true
+craftTime: 60
+consumes: {
+  items: [
+    ad-cirno/3
+  ]
+  power: 0.5
+}
+craftEffect: mine
+updateEffect: none
+outputItem: azaa-letty/2
+category: crafting
+requirements: [
+  ad-cirno/90
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawPistons
+      lenOffset: -1
+      sinMag: 1
+    }
+    DrawDefault
+    {
+      type: DrawFlame
+      lightRadius: 48
+      lightAlpha: 0.4
+      flameColor: BFBFFFFF
+    }
+  ]
+}
+research: hbc-cirno-juicer

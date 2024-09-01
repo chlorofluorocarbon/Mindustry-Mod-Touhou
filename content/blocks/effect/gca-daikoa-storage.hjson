@@ -1,0 +1,10 @@
+type: StorageBlock
+size: 2
+health: 200
+requirements: [
+  adzz-koakuma/48
+  acz-daiyousei/48
+]
+category: effect
+research: gba-reimari-mender
+itemCapacity: 300

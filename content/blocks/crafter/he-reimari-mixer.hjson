@@ -1,0 +1,38 @@
+type: GenericCrafter
+size: 2
+itemCapacity: 20
+hasPower: true
+hasItems: true
+craftTime: 60
+consumes: {
+  power: 1
+  items: [
+    aa-reimu/5
+    ab-marisa/5
+  ]
+}
+craftEffect: mine
+updateEffect: none
+outputItem: zz-mixture/2
+category: crafting
+requirements: [
+  ab-marisa/60
+  aa-reimu/60
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    DrawDefault
+    {
+      type: DrawBlurSpin
+      rotateSpeed: 1.5
+      blurThresh: 1.1
+      suffix: "-rotator"
+    }
+    {
+      type: DrawRegion
+      suffix: "-top"
+    }
+  ]
+}
+research: hcb-marisa-reimu-converter

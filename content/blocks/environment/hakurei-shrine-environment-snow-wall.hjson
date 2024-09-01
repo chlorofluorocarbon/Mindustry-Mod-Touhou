@@ -1,0 +1,6 @@
+type: StaticWall
+attributes: {
+  wall-reimu: 1.0
+  wall-marisa: 0.5
+}
+variants: 3

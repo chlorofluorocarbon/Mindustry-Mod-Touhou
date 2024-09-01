@@ -1,0 +1,41 @@
+type: Reconstructor
+size: 5
+itemCapacity: 20
+requirements: [
+  af-sakuya/1600
+  ag-remilia/1200
+  ae-patchouli/800
+  adzz-koakuma/1600
+]
+constructTime: 900
+research: jzab-th6-2-factory
+category: units
+consumes: {
+  power: 2.5
+  items: [
+    ya-p-point/10
+    yza-th6-enemy/1
+  ]
+}
+upgrades: [
+  [
+    v6ab-rumia
+    v6ac-rumia
+  ]
+  [
+    v6db-meiling
+    v6dc-meiling
+  ]
+  [
+    v6fb-patchouli
+    v6fc-patchouli
+  ]
+  [
+    v6gb-sakuya
+    v6gc-sakuya
+  ]
+  [
+    v6hb-remilia
+    v6hc-remilia
+  ]
+]

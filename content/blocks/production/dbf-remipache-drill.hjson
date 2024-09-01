@@ -1,0 +1,25 @@
+type: Drill
+size: 3
+drillTime: 450
+tier: 4
+itemCapacity: 30
+liquidCapacity: 30
+hardnessDrillMultiplier: 40
+requirements: [
+  ag-remilia/32
+  ae-patchouli/48
+]
+consumes: {
+  liquid: {
+    liquid: ed-cirno-juice
+    amount: 0.1
+    booster: true
+    optional: true
+  }
+  power: 1.5
+}
+drawRim: true
+heatColor: FF0000FF
+liquidBoostIntensity: 1.6
+category: production
+research: dbc-patchouli-drill

@@ -1,0 +1,15 @@
+type: Pump
+size: 2
+pumpAmount: 0.2
+liquidCapacity: 40
+requirements: [
+  ad-cirno/120
+  af-sakuya/50
+]
+hasPower: true
+consumes: {
+  power: 0.2
+}
+squareSprite: false
+category: liquid
+research: iaa-cirno-pump

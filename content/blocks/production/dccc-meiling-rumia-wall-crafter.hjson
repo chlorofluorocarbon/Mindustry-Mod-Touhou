@@ -1,0 +1,15 @@
+type: WallCrafter
+size: 2
+health: 360
+drillTime: 90
+requirements: [
+  adz-meiling/20
+  ac-rumia/4
+]
+consumes: {
+  power: 0.2
+}
+output: ac-rumia
+category: production
+attribute: wall-rumia
+research: dcc0-meiling-beamdrill

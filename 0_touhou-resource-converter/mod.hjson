@@ -1,0 +1,13 @@
+name: touhou-resource-converter
+displayName: Touhou resource
+author: Chlorofluorocarbon0902
+description:
+  '''
+  Convert resources into mod Touhou. 
+  Must be used with mod Touhou. 
+  '''
+dependencies: [
+  touhou
+]
+version: 1.0
+minGameVersion: 144

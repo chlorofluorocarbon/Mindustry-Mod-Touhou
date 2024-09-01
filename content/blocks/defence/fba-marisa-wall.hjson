@@ -1,0 +1,13 @@
+type: Wall
+size: 1
+health: 320
+requirements: [
+  ab-marisa/6
+]
+category: defense
+research: faa-reimu-wall
+buildCostMultiplier: 3.2
+lightningChance: 0.03
+lightningDamage: 20
+lightningLength: 15
+lightningColor: FFFF00FF

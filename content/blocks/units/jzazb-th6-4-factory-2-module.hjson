@@ -1,0 +1,9 @@
+type: UnitAssemblerModule
+size: 3
+requirements: [
+  ah-flandre/320
+  af-sakuya/160
+]
+research: jzaza-th6-4-factory-1-module
+category: units
+tier: 2

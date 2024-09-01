@@ -1,0 +1,60 @@
+type: missile
+wobble: false
+createScorch: false
+lowAltitude: true
+accel: 0.2
+drag: 0.2
+hitSize: 12
+missileAccelTime: 60
+speed: 2
+lifetime: 227
+physics: false
+allowedInPayloads: false
+homingDelay: 15
+health: 72
+createWreck: false
+createScorch: false
+deathExplosionEffect: hitBulletSmall
+useUnitCap: false
+isEnemy: false
+controller: MissileAI
+playerControllable: false
+rotateSpeed: 0
+range: 8
+engineOffset: 0
+maxRange: 8
+flying: true
+weapons: [
+  {
+    name: weapon
+    shootCone: 360
+    mirror: false
+    x: 0
+    y: 0
+    reload: 10
+    shootOnDeath: true
+    shootSound: none
+    shootX: 0
+    shootY: 0
+    bullet: {
+      type: ExplosionBulletType
+      hitShake: 0
+      hitEffect: hitBulletSmall
+      despawnEffect: hitBulletSmall
+      killShooter: true
+      ammoMultiplier: 1
+      splashDamage: 36
+      splashDamageRadius: 48
+      instantDisappear: true
+      // width: 0
+      // height: 0
+      keepVelocity: false
+    }
+  }
+]
+outlineColor: 00000000
+outlineRadius: 0
+outlines: false
+immunities: [
+  damage-flying
+]

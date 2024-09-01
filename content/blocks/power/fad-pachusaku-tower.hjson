@@ -1,0 +1,15 @@
+type: PowerNode
+size: 2
+laserRange: 40
+maxNodes: 2
+laserColor1: FFBFDFFF
+laserColor2: FF7FBFFF
+requirements: [
+  ae-patchouli/40
+  af-sakuya/20
+  ab-marisa/5
+  azac-alice/5
+]
+squareSprite: true
+research: fac-pachuarimari-node
+category: power

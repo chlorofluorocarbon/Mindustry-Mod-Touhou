@@ -1,0 +1,27 @@
+type: BeamDrill
+size: 2
+drillTime: 120
+tier: 3
+range: 4
+requirements: [
+  aa-reimu/12
+  ab-marisa/20
+  ad-cirno/20
+]
+consumes: {
+  liquid: {
+    liquid: ed-cirno-juice
+    amount: 0.08
+    booster: true
+    optional: true
+  }
+  power: 0.6
+}
+optionalBoostIntensity: 2.4
+sparks: 12
+sparkColor: FFFF009F
+glowColor: FFFF00FF
+heatColor: FFFF009F
+boostHeatColor: 007FFFFF
+category: production
+research: dca-reimari-beamdrill

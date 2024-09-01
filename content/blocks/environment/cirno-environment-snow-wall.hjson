@@ -1,0 +1,7 @@
+type: StaticWall
+attributes: {
+  wall-letty: 1.0
+  wall-cirno: 0.3
+  wall-daiyousei: 0.3
+}
+variants: 2

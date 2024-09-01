@@ -1,0 +1,30 @@
+type: Separator
+size: 1
+itemCapacity: 24
+hasPower: false
+hasItems: true
+craftTime: 8
+consumes: {
+  items: [
+    medium/2
+  ]
+}
+hasLiquids: false
+// No such field.
+// updateEffect: fuelburn
+results: [
+  touhou-ac-rumia/3
+  touhou-acz-daiyousei/3
+  touhou-ad-cirno/3
+  touhou-adz-meiling/2
+]
+category: crafting
+requirements: [
+  medium/100
+]
+research: {
+  parent: medium-reimari-separator
+  requirements: [
+    medium/500
+  ]
+}

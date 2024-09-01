@@ -1,0 +1,11 @@
+type: Unloader
+size: 1
+health: 40
+requirements: [
+  adzz-koakuma/8
+  acz-daiyousei/8
+]
+speed: 5
+underBullets: false
+category: effect
+research: gca-daikoa-storage

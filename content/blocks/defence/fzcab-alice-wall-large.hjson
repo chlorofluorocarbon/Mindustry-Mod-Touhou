@@ -1,0 +1,89 @@
+type: ForceProjector
+size: 2
+health: 1080
+requirements: [
+  azac-alice/24
+]
+hasItems: false
+itemCapacity: 0
+hasLiquids: false
+liquidCapacity: 0
+phaseUseTime: 2147483647
+shieldHealth: 480
+category: defense
+research: fzcaa-alice-wall
+radius: 30
+sides: 100
+shieldBreakEffect: {
+  type: WaveEffect
+  sizeFrom: 30
+  sizeTo: 30
+  colorFrom: FFD37FFF
+  colorTo: FFD37FFF
+  sides: -1
+  strokeFrom: 2
+  strokeTo: 0
+  rotWithParent: true
+}
+// Change destroyBullet bullets to units (dolls)
+destroyBullet: {
+  type: BasicBulletType
+  shrinkX: 0
+  shrinkY: 0
+  backColor: 00000000
+  frontColor: 00000000
+  mixColorFrom: 00000000
+  mixColorTo: 00000000
+  lightColor: 00000000
+  lightRadius: 0
+  width: 0
+  height: 0
+  lifetime: 0
+  speed: 0
+  damage: 0
+  splashDamage: 12
+  splashDamageRadius: 20
+  incendChance: 0
+  shootEffect: none
+  smokeEffect: none
+  chargeEffect: none
+  hitEffect: none
+  knockback: 0
+  despawnEffect: none
+  hitSound: none
+  despawnSound: none
+  ammoMultiplier: 1
+  recoil: 0
+  pierce: true
+  pierceBuilding: true
+  pierceCap: -1
+  drawSize: 0.01
+  hitSize: 0.01
+  status: none
+  hittable: false
+  reflectable: false
+  absorbable: false
+  setDefaults: true
+  hitColor: 00000000
+  healColor: 00000000
+  healEffect: none
+  fragBullets: 8
+  fragRandomSpread: 360
+  fragOffsetMax: 0
+  fragOffsetMin: 0
+  fragVelocityMin: 0.6
+  fragVelocityMax: 1.2
+  fragBullet: {
+    type: BasicBulletType
+    spawnUnit: v7dy-titania
+  }
+}
+destroyBulletSameTeam: true
+cooldownNormal: 0.088889
+cooldownBrokenBase: 0.177777
+hasPower: false
+phaseShieldBoost: 0
+phaseRadiusBoost: 0
+lightColor: 00000000
+consumeCoolant: false
+buildCostMultiplier: 3.2

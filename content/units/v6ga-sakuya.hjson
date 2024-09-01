@@ -1,0 +1,82 @@
+type: mech
+createScorch: false
+speed: 0.4
+drag: 1
+accel: 1
+rotateSpeed: 360
+baseRotateSpeed: 360
+health: 0.8
+armor: 0
+canBoost: false
+// landshake: 0
+stepShake: 0
+// mechStepShake: 0
+mechStepParticles: false
+range: 240
+maxRange: 240
+outlines: false
+ammoType: af-sakuya
+mechLegColor: FFFFFF00
+itemCapacity: 0
+hitSize: 8
+mechSideSway: 0
+mechFrontSway: 0
+deathSound: bujikasakuyasann
+weapons: [
+  {
+    name: sakuya-knife
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 2
+    shootSound: none
+    noAmmoSound: none
+    reload: 108
+    predictTarget: false
+    rotateSpeed: 360
+    shoot: {
+      type: ShootPattern
+      shots: 1
+      // spread: 0
+      shotDelay: 0
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 12
+      hitSize: 3
+      pierce: false
+      pierceBuilding: false
+      lifetime: 1800
+      speed: 0.64
+      setDefaults: false
+      despawnEffect: none
+      width: 16
+      height: 16
+      makeFire: false
+      hitEffect: none
+      smokeEffect: none
+      reflectable: true
+      shootEffect: none
+      status: sakuya-timestop
+      statusDuration: 30
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 24
+      backColor: FFFFFFFF
+      frontColor: 0000FFFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-knife"
+    }
+  }
+]
+immunities: [
+  burning
+  maid-fairy-lifetime
+]
+research: v6fa-patchouli

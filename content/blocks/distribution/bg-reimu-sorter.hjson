@@ -1,0 +1,8 @@
+type: Sorter
+health: 80
+requirements: [
+  aa-reimu/4
+]
+category: distribution
+research: bf-reimu-bridge-conveyor
+underBullets: true

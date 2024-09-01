@@ -1,0 +1,124 @@
+type: UnitFactory
+size: 3
+itemCapacity: 1200
+requirements: [
+  aa-reimu/120
+  ab-marisa/120
+  azzzza-ruukoto/5
+  azzzzb-mimichan/5
+]
+research: core-a-reimari
+researchCost: [
+  aa-reimu/300
+  ab-marisa/300
+  azzzza-ruukoto/20
+  azzzzb-mimichan/20
+]
+category: units
+consumes: {
+  power: 1
+}
+plans: [
+  {
+    unit: u0a-ruukoto
+    time: 600
+    requirements: [
+      azzzza-ruukoto/600
+      azzzzb-mimichan/600
+      yb-1up/1
+    ]
+  }
+  {
+    unit: u0ba-rinnosuke
+    time: 600
+    requirements: [
+      azzzzbza-village-protector/1200
+      yb-1up/1
+    ]
+  }
+  {
+    unit: u0bb-miko-alice
+    time: 600
+    requirements: [
+      azzzzbzb-old-friend-friendship/1200
+      yb-1up/1
+    ]
+  }
+  {
+    unit: u0bc-seven-observation-orb
+    time: 600
+    requirements: [
+      azzzzbzc-grimoire-about-shrine-maiden/1200
+      yb-1up/1
+    ]
+  }
+  {
+    unit: u0bd-arisa
+    time: 600
+    requirements: [
+      azzzzbzd-mysterious-magic-material/1200
+      yb-1up/1
+    ]
+  }
+  {
+    unit: u0be-librarian-marisa
+    time: 600
+    requirements: [
+      azzzzbze-stolen-book/1200
+      yb-1up/1
+    ]
+  }
+  {
+    unit: u0bf-seven-observation-semiauto-doll
+    time: 600
+    requirements: [
+      azzzzc-double-seven-doll-material/1200
+      yb-1up/1
+    ]
+  }
+  {
+    unit: u0th06a-maid-fairy-fire
+    time: 180
+    requirements: [
+      azzzzd-stablized-five-element-mixture/200
+      ae-patchouli/200
+      ya-p-point/2
+    ]
+  }
+  {
+    unit: u0th06b-maid-fairy-earth
+    time: 180
+    requirements: [
+      azzzzd-stablized-five-element-mixture/200
+      adz-meiling/200
+      ya-p-point/2
+    ]
+  }
+  {
+    unit: u0th06c-maid-fairy-metal
+    time: 180
+    requirements: [
+      azzzzd-stablized-five-element-mixture/200
+      af-sakuya/200
+      ya-p-point/2
+    ]
+  }
+  {
+    unit: u0th06d-maid-fairy-water
+    time: 180
+    requirements: [
+      azzzzd-stablized-five-element-mixture/200
+      ad-cirno/200
+      ya-p-point/2
+    ]
+  }
+  {
+    unit: u0th06e-maid-fairy-wood
+    time: 180
+    requirements: [
+      azzzzd-stablized-five-element-mixture/200
+      acz-daiyousei/200
+      ya-p-point/2
+    ]
+  }
+]

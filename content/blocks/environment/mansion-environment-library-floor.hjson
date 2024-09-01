@@ -1,0 +1,6 @@
+type: Floor
+wall: mansion-environment-library-shelf
+attributes: {
+  th06-boost: 0.69
+}
+variants: 3

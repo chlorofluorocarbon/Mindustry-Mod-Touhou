@@ -1,0 +1,35 @@
+type: GenericCrafter
+size: 1
+itemCapacity: 10
+liquidCapacity: 30
+hasPower: true
+hasLiquids: true
+hasItems: true
+craftTime: 12
+consumes: {
+  power: 0.5
+  items: [
+    zz-mixture/1
+  ]
+}
+outputLiquid: ez-mixture-slag/0.25
+category: crafting
+requirements: [
+  aa-reimu/20
+  ab-marisa/10
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: "-bottom"
+    }
+    DrawDefault
+    {
+      type: DrawLiquidRegion
+      drawLiquid: ez-mixture-slag
+    }
+  ]
+}
+research: hba-reimu-juicer

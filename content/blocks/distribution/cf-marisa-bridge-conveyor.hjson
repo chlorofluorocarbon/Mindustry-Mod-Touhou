@@ -1,0 +1,11 @@
+type: ItemBridge
+hasPower: false
+health: 40
+range: 6
+transportTime: 1
+requirements: [
+  ab-marisa/12
+]
+category: distribution
+research: cd-marisa-router
+underBullets: false

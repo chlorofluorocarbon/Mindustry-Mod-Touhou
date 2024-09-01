@@ -1,0 +1,6 @@
+type: Floor
+wall: hakurei-shrine-environment-floor-boulder
+attributes: {
+  1up-boost: 0.2
+}
+variants: 4

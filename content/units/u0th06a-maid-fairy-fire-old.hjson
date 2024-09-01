@@ -1,0 +1,307 @@
+type: payload
+createScorch: false
+coreUnitDock: true
+controller: BuilderAI
+isEnemy: false
+envDisabled: 0
+range: 32
+aimDst: 0
+faceTarget: true
+targetPriority: -2
+lowAltitude: true
+mineWalls: true
+mineFloor: true
+mineRange: 32
+mineHardnessScaling: true
+itemOffsetY: 0
+flying: true
+mineSpeed: 0.2
+mineTier: 1
+buildSpeed: 0.1
+buildBeamOffset: 3
+drag: 0.04
+speed: 3.2
+rotateSpeed: 7
+accel: 0.05
+itemCapacity: 10
+health: 1
+armor: 0
+hitSize: 6
+engineOffset: 0
+engineLayer: -10
+engineSize: 6
+engineColor: FF00007F
+engineColorInner: FFFFFF00
+allowedInPayloads: true
+payloadCapacity: 64
+pickupUnits: true
+vulnerableWithPayloads: true
+fogRadius: 0
+targetable: true
+hittable: true
+weapons: [
+  {
+    name: maid-fairy-fire-weapon
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 2
+    shootSound: none
+    noAmmoSound: none
+    reload: 90
+    predictTarget: false
+    rotateSpeed: 360
+    shoot: {
+      type: ShootPattern
+      shots: 1
+      // spread: 0
+      shotDelay: 0
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      buildingDamageMultiplier: 0
+      damage: 8
+      hitSize: 6
+      pierce: false
+      pierceBuilding: false
+      lifetime: 128
+      rangeOverride: 32
+      speed: 0.5
+      setDefaults: false
+      despawnEffect: none
+      width: 8
+      height: 8
+      makeFire: false
+      status: none
+      hitEffect: none
+      smokeEffect: none
+      reflectable: true
+      shootEffect: none
+      
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 24
+      backColor: FFFFFFFF
+      frontColor: FF0000FF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-normal-bullet"
+    }
+  }
+  {
+    name: fire-earth-producer
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 12000
+    alwaysShooting: true
+    predictTarget: false
+    rotateSpeed: 360
+    shoot: {
+      type: ShootPattern
+      shots: 1
+      // spread: 0
+      shotDelay: 0
+      firstShotDelay: 2400
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 0
+      inaccuracy: 180
+      hitSize: 3
+      pierce: false
+      pierceBuilding: false
+      lifetime: 60
+      speed: 0.5
+      setDefaults: false
+      despawnHit: true
+      despawnUnit: u0th06b-maid-fairy-earth
+      despawnUnitRadius: 0
+      despawnEffect: none
+      width: 8
+      height: 8
+      makeFire: false
+      status: none
+      hitEffect: {
+        type: WaveEffect
+        colorFrom: 7F3F00FF
+        colorTo: 7F3F00FF
+        sizeFrom: 1
+        strokeFrom: 2
+        sizeTo: 12
+        strokeTo: 2
+        lifetime: 15
+      }
+      smokeEffect: none
+      hittable: false
+      reflectable: false
+      absorbable: false
+      shootEffect: none
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 24
+      backColor: FF0000FF
+      frontColor: FF0000FF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-shanghai-spawn"
+    }
+  }
+  {
+    name: yousei-timer
+    alwaysShooting: true
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    layerOffset: 0
+    recoil: 0
+    shootSound: explosion
+    noAmmoSound: none
+    reload: 27000
+    top: false
+    predictTarget: false
+    rotateSpeed: 360
+    shoot: {
+      type: ShootPattern
+      shots: 1
+      // spread: 0
+      shotDelay: 0
+      firstShotDelay: 27000
+    }
+    bullet: {
+      type: BasicBulletType
+      chargeEffect: {
+        type: MultiEffect
+        effects: [
+          {
+             type: WaveEffect
+             lifetime: 27000
+             sizeFrom: 16
+             sizeTo: 16
+             strokeFrom: 2
+             strokeTo: 2
+             colorFrom: FF00009F
+             colorTo: FF00009F
+          }
+          {
+             type: WaveEffect
+             lifetime: 27000
+             sizeFrom: 0
+             sizeTo: 16
+             strokeFrom: 0
+             strokeTo: 2
+             colorFrom: FF5F009F
+             colorTo: FF5F009F
+          }
+        ]
+      }          
+      collidesTeam: false
+      killShooter: true
+      damage: 0
+      splashDamage: 16
+      splashDamageRadius: 16
+      hitSize: 6
+      pierce: true
+      pierceCap: -1
+      pierceBuilding: false
+      rangeOverride: 16
+      lifetime: 0
+      speed: 0
+      setDefaults: true
+      despawnEffect: none
+      width: 0
+      height: 0
+      makeFire: false
+      status: none
+      hitEffect: none
+      smokeEffect: none
+      reflectable: false
+      absorbable: false
+      hittable: false
+      shootEffect: none
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 0
+      backColor: FFFFFFFF
+      frontColor: FFFFFFFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-normal-bullet"
+    }
+  }
+]
+outlineColor: 00000000
+mechSideSway: 0
+mechFrontSway: 0
+// Change deathSound to "Dasukette" (fire fairy) later
+deathSound: thbiu
+deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 60
+      particles: 4
+      length: 20
+      spin: 2
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-ya-p-point
+    }
+  ]
+}
+outlines: false
+mineItems: [
+  aa-reimu
+  ab-marisa
+  ac-rumia
+  acz-daiyousei
+  ad-cirno
+  adz-meiling
+  adzz-koakuma
+  ae-patchouli
+  af-sakuya
+  ag-remilia
+  ah-flandre
+  azaa-letty
+  azab-chen
+  azac-alice
+  azae-youmu
+  azaf-yuyuko
+  azag-ran
+  azah-yukari
+]
+immunities: [
+  damage-flying
+]
+research: {
+  parent: u0bf-seven-observation-semiauto-doll
+  requirements: [
+    azzzzd-stablized-five-element-mixture/100
+    ae-patchouli/100
+  ]
+}
+useUnitCap: false

@@ -1,0 +1,31 @@
+type: ConsumeGenerator
+size: 2
+itemDuration: 120
+requirements: [
+  ab-marisa/80
+  ac-rumia/15
+  aa-reimu/25
+]
+consumes: {
+  items:[
+    ab-marisa/1
+    ac-rumia/1
+  ]
+}
+drawer: {
+  type: DrawMulti
+  drawers:[
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -glow
+      color: FFFF00FF
+    }
+  ]
+}
+powerProduction: 3
+research: fca-marisa-burner
+category: power
+lightColor: 0000007F

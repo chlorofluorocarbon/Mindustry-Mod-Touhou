@@ -1,0 +1,58 @@
+type: UnitAssembler
+size: 5
+itemCapacity: 20
+requirements: [
+  af-sakuya/1600
+  ag-remilia/1200
+  ae-patchouli/800
+  adzz-koakuma/1600
+  af-sakuya/2000
+]
+areaSize: 5
+consumes: {
+  power: 3
+  liquids: [
+    ed-cirno-juice/0.4
+    eya-p-juice/0.5
+  ]
+}
+plans: [
+  {
+    unit: v6gza-sakuya
+    requirements: [
+      touhou-ffb-sakuya-wall-large/4
+      touhou-v6gc-sakuya/1
+      touhou-th6-enemy-block/1
+    ]
+    time: 1200
+  }
+  {
+    unit: v6gzb-sakuya
+    requirements: [
+      touhou-ffb-sakuya-wall-large/5
+      touhou-v6gc-sakuya/1
+      touhou-th6-enemy-block/1
+    ]
+    time: 1200
+  }
+  {
+    unit: v6gzc-sakuya
+    requirements: [
+      touhou-ffb-sakuya-wall-large/6
+      touhou-v6gc-sakuya/1
+      touhou-th6-enemy-block/1
+    ]
+    time: 1200
+  }
+  {
+    unit: v6gzd-sakuya
+    requirements: [
+      touhou-ffb-sakuya-wall-large/8
+      touhou-v6gc-sakuya/1
+      touhou-th6-enemy-block/1
+    ]
+    time: 1200
+  }
+]
+research: jzadef-koapache-factory
+category: units

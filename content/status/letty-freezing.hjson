@@ -1,0 +1,25 @@
+// type: StatusEffect
+speedMultiplier: 0.5
+reloadMultiplier: 0.5
+buildSpeedMultiplier: 0.5
+effect: {
+  type: ParticleEffect
+  colorFrom: 00BFFFFF
+  colorTo: BFBFFF00
+  lifetime: 60
+  particles: 2
+  length: 0.5
+  sizeFrom: 1.8
+  sizeTo: 0
+  followParent: true
+}
+applyEffect: {
+  type: WaveEffect
+  colorFrom: 00BFFF7F
+  colorTo: BFBFFF00
+  lifetime: 40
+  sizeFrom: 6
+  sizeTo: 6
+  strokeFrom: 11.7
+  strokeTo: 11.7
+}

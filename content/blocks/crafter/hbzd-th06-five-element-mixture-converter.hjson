@@ -1,0 +1,41 @@
+type: GenericCrafter
+size: 3
+itemCapacity: 20
+hasPower: true
+hasLiquids: false
+hasItems: true
+craftTime: 120
+consumes: {
+  power: 1
+  items: [
+    ae-patchouli/2
+    acz-daiyousei/1
+    ad-cirno/1
+    adz-meiling/1
+    af-sakuya/1
+  ]
+}
+drawer: {
+  type: DrawMulti
+  drawers: [
+    DrawDefault
+    {
+      type: DrawFlame
+      flameColor: 9F9F9FFF
+      lightRadius: 60
+      lightAlpha: 0.7
+    }
+  ]
+}
+craftEffect: mine
+updateEffect: none
+outputItem: azzzzd-stablized-five-element-mixture/5
+category: crafting
+requirements: [
+  ae-patchouli/40
+  acz-daiyousei/20
+  ad-cirno/20
+  adz-meiling/20
+  af-sakuya/20
+]
+research: hbzc-aripache-doll-material-converter

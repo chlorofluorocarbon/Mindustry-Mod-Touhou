@@ -1,0 +1,17 @@
+type: CoreBlock
+size: 4
+health: 2500
+requirements: [
+  azac-alice/2000
+  ab-marisa/2000
+  aa-reimu/1500
+  ae-patchouli/1500
+]
+thrusterLength: 8.5
+destroySound: none
+unitType: u0bd-arisa
+category: effect
+research: core-a-reimari
+researchCostMultiplier: 0.25
+itemCapacity: 12000
+unitCapModifier: 6

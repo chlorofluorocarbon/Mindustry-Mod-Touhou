@@ -1,0 +1,12 @@
+type: BaseShield
+size: 1
+health: 40
+radius: 80
+sides: 8
+requirements: [
+]
+consumes: {
+}
+category: effect
+conductivePower: true
+buildVisibility: sandboxOnly

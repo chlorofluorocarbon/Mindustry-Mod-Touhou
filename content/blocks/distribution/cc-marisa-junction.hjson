@@ -1,0 +1,13 @@
+type: Junction
+health: 80
+requirements: [
+  ab-marisa/2
+]
+category: distribution
+research: bb-reimu-conveyor
+underBullets: false
+speed: 48
+capacity: 12
+researchCost: [
+  ab-marisa/20
+]

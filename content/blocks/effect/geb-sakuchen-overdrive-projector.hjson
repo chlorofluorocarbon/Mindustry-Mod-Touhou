@@ -1,0 +1,29 @@
+type: OverdriveProjector
+size: 2
+range: 84
+speedBoost: 1.25
+speedBoostPhase: 0.5
+useTime: 60
+phaseRangeBoost: 0
+hasBoost: true
+hasPower: true
+hasItems: true
+requirements: [
+  af-sakuya/40
+  azab-chen/40
+]
+category: effect
+research: gba-reimari-mender
+consumes: {
+  items: {
+    items: [ 
+      azab-chen/1
+    ]
+    booster: true
+    optional: true
+  }
+  power: 0.5
+}
+baseColor: 007FFFFF
+phaseColor: FF7F00FF
+squareSprite: true

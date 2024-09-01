@@ -1,0 +1,56 @@
+type: GenericCrafter
+size: 2
+itemCapacity: 10
+hasPower: true
+hasLiquids: false
+hasItems: true
+craftTime: 30
+consumes: {
+  power: 1
+  items: [
+    azac-alice/1
+    ab-marisa/1
+  ]
+}
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawFlame
+      flameRadius: 0
+      flameColor: BFBF00FF
+      lightRadius: 112
+      lightAlpha: 0.8
+    }
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawArcSmelt
+      flameColor: BFBF009F
+      midColor: BFBF5FAF
+      flameRad: 0.9
+      circleSpace: 0.8
+      flameRadiusScl: 3
+      flameRadiusMag: 0.2
+      circleStroke: 0.7
+      alpha: 0.616
+      particles: 24
+      particleLife: 40
+      particleRad: 4
+      particleStroke: 0.7
+      particleLen: 2.2
+    }
+    DrawDefault
+  ]
+}
+craftEffect: none
+updateEffect: none
+outputItem: azzzzbzd-mysterious-magic-material/1
+category: crafting
+requirements: [
+  azac-alice/100
+  ab-marisa/100
+]
+research: hbza-reimu-ruukoto-converter

@@ -1,0 +1,8 @@
+type: PowerDiode
+size: 1
+requirements: [
+  ae-patchouli/6
+  af-sakuya/6
+]
+research: fba-marisa-battery
+category: power

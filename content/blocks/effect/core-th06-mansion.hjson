@@ -1,0 +1,21 @@
+type: CoreBlock
+size: 5
+health: 4800
+requirements: [
+  ac-rumia/2000
+  acz-daiyousei/2000
+  ad-cirno/2000
+  adz-meiling/2000
+  adzz-koakuma/2000
+  ae-patchouli/2000
+  af-sakuya/2000
+  ag-remilia/2000
+]
+thrusterLength: 10
+destroySound: none
+unitType: u0th06a-maid-fairy-fire
+category: effect
+research: core-bf-pachuari
+researchCostMultiplier: 0.25
+itemCapacity: 20000
+unitCapModifier: 8

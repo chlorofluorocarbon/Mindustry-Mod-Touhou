@@ -1,0 +1,25 @@
+type: GenericCrafter
+size: 1
+itemCapacity: 15
+hasPower: false
+hasItems: true
+craftTime: 0.999999
+consumes: {
+  items: {
+    items: [
+      coal/2
+    ]
+  }
+}
+updateEffect: fuelburn
+outputItem: medium/3
+category: crafting
+requirements: [
+  coal/75
+]
+research: {
+  parent: lead-medium-converter
+  requirements: [
+    coal/375
+  ]
+}

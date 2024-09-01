@@ -1,0 +1,7 @@
+type: LightBlock
+squareSprite: false
+category: effect
+radius: 800000
+placeableLiquid: true
+buildVisibility: sandboxOnly
+hasPower: false

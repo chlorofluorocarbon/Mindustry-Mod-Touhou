@@ -1,0 +1,7 @@
+type: Floor
+isLiquid: true
+shallow: true
+liquidDrop: eyza-th6-enemy-juice
+variants: 0
+speedMultiplier: 0.5
+status: none

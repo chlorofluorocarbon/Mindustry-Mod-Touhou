@@ -1,0 +1,55 @@
+type: GenericCrafter
+size: 2
+health: 16777216
+outputItems: [
+  touhou-aa-reimu/1
+  touhou-ab-marisa/1
+  touhou-ac-rumia/1
+  touhou-acz-daiyousei/1
+  touhou-ad-cirno/1
+  touhou-adz-meiling/1
+  touhou-adzz-koakuma/1
+  touhou-ae-patchouli/1
+  touhou-af-sakuya/1
+  touhou-ag-remilia/1
+  touhou-ah-flandre/1
+  touhou-azaa-letty/1
+  touhou-azab-chen/1
+  touhou-azac-alice/1
+  touhou-azae-youmu/1
+  touhou-azaf-yuyuko/1
+  touhou-azag-ran/1
+  touhou-azah-yukari/1
+  touhou-azzzza-ruukoto/1
+  touhou-azzzzb-mimichan/1
+  touhou-azzzzbza-village-protector/1
+  touhou-azzzzbzb-old-friend-friendship/1
+  touhou-azzzzbzc-grimoire-about-shrine-maiden/1
+  touhou-azzzzbzd-mysterious-magic-material/1
+  touhou-azzzzbze-stolen-book/1
+  touhou-azzzzc-double-seven-doll-material/1
+  touhou-azzzzd-stablized-five-element-mixture/1
+  touhou-ya-p-point/1
+  touhou-yb-1up/1
+  touhou-yc-bomb/1
+  touhou-yza-th6-enemy/1
+  touhou-zy-mixture-fragment/1
+  touhou-zz-mixture/1
+]
+craftTime: 1
+consumes: {
+/*
+  items: {
+    items: [
+      touhou-aa-reimu/1
+    ]
+  }
+*/
+}
+research: {
+  parent: touhou-dba-reimu-drill
+}
+category: crafting
+requirements: [
+  touhou-aa-reimu/4
+]

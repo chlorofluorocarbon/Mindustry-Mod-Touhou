@@ -1,0 +1,11 @@
+type: Duct
+health: 30
+requirements: [
+  ae-patchouli/1
+]
+transparentColor: FF7FBF1F
+category: distribution
+speed: 3.3333333
+research: cb-marisa-conveyor
+bridgeReplacement: jf-patchouli-duct-bridge
+underBullets: false

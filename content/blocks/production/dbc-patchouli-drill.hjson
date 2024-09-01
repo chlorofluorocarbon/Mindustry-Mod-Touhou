@@ -1,0 +1,27 @@
+type: BurstDrill
+size: 4
+drillTime: 300
+tier: 4
+health: 960
+itemCapacity: 40
+liquidCapacity: 40
+hardnessDrillMultiplier: 0
+requirements: [
+  ae-patchouli/80
+  aa-reimu/20
+]
+baseArrowColor: BF009FFF
+arrowColor: FFDFFFFF
+glowColor: FFDFFFFF
+squareSprite: false
+consumes: {
+  liquid: {
+    liquid: ea-reimu-juice
+    amount: 0.1666666667
+    booster: false
+    optional: false
+  }
+  power: 1.8
+}
+category: production
+research: dbb-marisa-drill

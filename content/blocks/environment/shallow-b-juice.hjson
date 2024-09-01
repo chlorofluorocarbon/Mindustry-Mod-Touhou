@@ -1,0 +1,7 @@
+type: Floor
+isLiquid: true
+shallow: true
+liquidDrop: eyc-b-juice
+variants: 0
+speedMultiplier: 0.5
+status: none

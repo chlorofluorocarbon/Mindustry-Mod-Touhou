@@ -1,0 +1,17 @@
+type: CoreBlock
+size: 4
+health: 2750
+requirements: [
+  aa-reimu/2000
+  azac-alice/2000
+  ab-marisa/1500
+  ae-patchouli/1500
+]
+thrusterLength: 8.5
+destroySound: none
+unitType: u0bb-miko-alice
+category: effect
+research: core-a-reimari
+researchCostMultiplier: 0.25
+itemCapacity: 12000
+unitCapModifier: 5

@@ -1,0 +1,39 @@
+type: GenericCrafter
+size: 2
+itemCapacity: 10
+liquidCapacity: 30
+hasPower: true
+hasLiquids: true
+hasItems: true
+craftTime: 30
+consumes: {
+  power: 0.2
+  items: [
+    ab-marisa/1
+  ]
+}
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: eb-marisa-juice
+    }
+    DrawDefault
+  ]
+}
+outputLiquid: eb-marisa-juice/0.2
+category: crafting
+requirements: [
+  ab-marisa/30
+  aa-reimu/10
+]
+research: hba-reimu-juicer
+researchCost: [
+  ab-marisa/120
+  aa-reimu/40
+]

@@ -1,0 +1,16 @@
+type: BaseShield
+size: 1
+health: 640
+radius: 8
+sides: 8
+requirements: [
+  aa-reimu/6400
+  yc-bomb/20
+]
+consumes: {
+  power: 60
+}
+category: effect
+research: faa-reimu-wall
+buildCostMultiplier: 2.0
+conductivePower: true

@@ -1,0 +1,11 @@
+type: LiquidRouter
+size: 2
+health: 180
+requirements: [
+  ad-cirno/8
+  af-sakuya/16
+]
+placeableLiquid: false
+liquidCapacity: 700
+category: liquid
+research: ica-cirno-liquid-router

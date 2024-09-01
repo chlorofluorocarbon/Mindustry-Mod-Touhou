@@ -1,0 +1,8 @@
+localizedName: 红魔乡一面
+description: "这里是幻想乡。\n幻想乡中突然冒出了红色的雾，覆盖了阳光。[#FF0000]灵梦[]和[#FFFF00]魔理沙[]正要出发解决红雾异变。\n在这里，她们将会遇到宵暗的妖怪[#FFFFFF]露米娅（⑩）[]。"
+captureWave: 16
+planet: gensoukyo
+sector: 0
+research: core-a-reimari
+difficulty: 1
+alwaysUnlocked: true

@@ -1,0 +1,9 @@
+type: Wall
+size: 2
+health: 1600
+requirements: [
+  aa-reimu/24
+]
+category: defense
+research: faa-reimu-wall
+buildCostMultiplier: 3.2

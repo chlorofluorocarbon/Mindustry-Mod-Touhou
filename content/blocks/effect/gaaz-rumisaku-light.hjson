@@ -1,0 +1,13 @@
+type: LightBlock
+requirements: [
+  ac-rumia/100
+  af-sakuya/20
+]
+size: 2
+squareSprite: false
+category: effect
+research: gaa-rumia-light
+consumes: {
+  power: 0.15
+}
+radius: 128

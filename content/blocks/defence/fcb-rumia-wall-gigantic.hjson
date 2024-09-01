@@ -1,0 +1,35 @@
+type: ForceProjector
+size: 4
+health: 2880
+requirements: [
+  ac-rumia/96
+]
+hasItems: false
+itemCapacity: 0
+hasLiquids: false
+liquidCapacity: 0
+phaseUseTime: 2147483647
+shieldHealth: 1600
+category: defense
+research: fca-rumia-wall-huge
+radius: 34
+sides: 100
+shieldBreakEffect: {
+  type: WaveEffect
+  sizeFrom: 34
+  sizeTo: 34
+  colorFrom: FFD37FFF
+  colorTo: FFD37FFF
+  sides: -1
+  strokeFrom: 2
+  strokeTo: 0
+  rotWithParent: true
+}
+cooldownNormal: 0.533333
+cooldownBrokenBase: 0.533333
+hasPower: false
+phaseShieldBoost: 0
+phaseRadiusBoost: 0
+lightColor: 00000000
+consumeCoolant: false
+buildCostMultiplier: 3.2

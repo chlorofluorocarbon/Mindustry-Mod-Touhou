@@ -1,0 +1,10 @@
+type: DuctBridge
+health: 30
+requirements: [
+  ae-patchouli/20
+]
+range: 5
+category: distribution
+speed: 3.3333333
+research: jd-patchouli-overflow-duct
+underBullets: false

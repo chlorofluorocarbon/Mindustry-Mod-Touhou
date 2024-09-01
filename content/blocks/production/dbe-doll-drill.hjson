@@ -1,0 +1,25 @@
+type: Drill
+size: 1
+drillTime: 333.33333333
+tier: 3
+itemCapacity: 10
+liquidCapacity: 10
+hardnessDrillMultiplier: 50
+requirements: [
+  azac-alice/5
+  ab-marisa/3
+]
+consumes: {
+  liquid: {
+    liquid: eb-marisa-juice
+    amount: 0.02
+    booster: true
+    optional: true
+  }
+  power: 0.083333333
+}
+conductivePower: true
+liquidBoostIntensity: 1.732051
+category: production
+research: dbd-alice-drill
+placeableLiquid: true

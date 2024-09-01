@@ -1,0 +1,18 @@
+type: PointDefenseTurret
+category: turret
+size: 1
+health: 300
+requirements: [
+  aa-reimu/200
+  ab-marisa/200
+]
+consumes: {
+  power: 1
+}
+reload: 60
+range: 192
+bulletDamage: 8
+rotateSpeed: 360
+coolantMultiplier: 1
+fogRadiusMultiplier: 0.1
+research: fca-marisa-burner

@@ -1,0 +1,86 @@
+type: UnitFactory
+size: 3
+itemCapacity: 2000
+requirements: [
+  ag-remilia/240
+  af-sakuya/320
+]
+research: ja-0p-factory
+category: units
+consumes: {
+  power: 1
+}
+plans: [
+  {
+    unit: v6aa-rumia
+    time: 600
+    requirements: [
+      ac-rumia/200
+      yb-1up/1
+      yza-th6-enemy/1
+    ]
+  }
+  {
+    unit: v6ba-daiyousei
+    time: 750
+    requirements: [
+      acz-daiyousei/250
+      yb-1up/1
+      yza-th6-enemy/1
+    ]
+  }
+  {
+    unit: v6ca-cirno
+    time: 900
+    requirements: [
+      ad-cirno/300
+      yb-1up/1
+      yza-th6-enemy/1
+    ]
+  }
+  {
+    unit: v6da-meiling
+    time: 1200
+    requirements: [
+      adz-meiling/400
+      yb-1up/1
+      yza-th6-enemy/1
+    ]
+  }
+  {
+    unit: v6ea-koakuma
+    time: 1050
+    requirements: [
+      adzz-koakuma/350
+      yb-1up/1
+      yza-th6-enemy/1
+    ]
+  }
+  {
+    unit: v6fa-patchouli
+    time: 1500
+    requirements: [
+      ae-patchouli/500
+      yb-1up/1
+      yza-th6-enemy/1
+    ]
+  }
+  {
+    unit: v6ga-sakuya
+    time: 1350
+    requirements: [
+      af-sakuya/450
+      yb-1up/1
+      yza-th6-enemy/1
+    ]
+  }
+  {
+    unit: v6ha-remilia
+    time: 1500
+    requirements: [
+      ag-remilia/500
+      yb-1up/1
+      yza-th6-enemy/1
+    ]
+  }
+]

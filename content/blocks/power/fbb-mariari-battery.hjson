@@ -1,0 +1,13 @@
+type: Battery
+size: 2
+emptyLightColor: FF0000FF
+fullLightColor: 5F5FFFFF
+requirements: [
+  ab-marisa/30
+  azac-alice/18
+]
+consumes: {
+  powerBuffered: 20000
+}
+research: fba-marisa-battery
+category: power

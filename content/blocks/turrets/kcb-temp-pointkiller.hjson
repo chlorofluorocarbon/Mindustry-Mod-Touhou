@@ -1,0 +1,203 @@
+type: ItemTurret
+size: 3
+health: 1200
+hasPower: true
+requirements: [
+  ae-patchouli/2400
+  azac-alice/1200
+  ab-marisa/1200
+  aa-reimu/1200
+  yc-bomb/8
+]
+shootY: 0
+unitSort: strongest
+shootSound: mukyu
+chargeSound: neirinokinasai
+consumes: {
+  power: 8
+}
+rotateSpeed: 1
+coolantMultiplier: 1
+reload: 300
+range: 240
+ammoPerShot: 16
+shoot: {
+  type: ShootPattern
+  firstShotDelay: 120
+  shots: 1
+}
+maxAmmo: 128
+ammoTypes: {
+  adz-meiling: {
+    type: PointBulletType
+    chargeEffect: {
+      type: MultiEffect
+      rotWithParent: true
+      effects: [
+        {
+          type: WaveEffect
+          colorFrom: FF7FBFFF
+          colorTo: FF7FBFFF
+          sizeFrom: 0
+          sizeTo: 16
+          sides: 48
+          strokeFrom: 0
+          strokeTo: 1
+          lifetime: 120
+        }
+        {
+          type: WaveEffect
+          colorFrom: FF7FBF00
+          colorTo: FF7FBFFF
+          sizeFrom: 16
+          sizeTo: 16
+          sides: 48
+          strokeFrom: 1
+          strokeTo: 1
+          lifetime: 120
+        }
+        {
+          type: WaveEffect
+          colorFrom: FF7FBF00
+          colorTo: FF7FBFFF
+          sizeFrom: 12
+          sizeTo: 12
+          sides: 48
+          strokeFrom: 1
+          strokeTo: 1
+          lifetime: 120
+        }
+        {
+          type: WaveEffect
+          colorFrom: FF7FBF00
+          colorTo: FF7FBFFF
+          sizeFrom: 12
+          sizeTo: 12
+          rotation: 120
+          sides: 3
+          strokeFrom: 1
+          strokeTo: 1
+          lifetime: 120
+          followParent: true
+          rotWithParent: true
+        }
+        {
+          type: WaveEffect
+          colorFrom: FF7FBF00
+          colorTo: FF7FBFFF
+          sizeFrom: 12
+          sizeTo: 12
+          rotation: 120
+          baseRotation: 180
+          sides: 3
+          strokeFrom: 1
+          strokeTo: 1
+          lifetime: 120
+          followParent: true
+          rotWithParent: true
+        }
+      ]
+    }
+    damage: 99.61
+    speed: 120
+    trailSpacing: 12
+    collidesTiles: true
+    trailEffect: {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 60
+      sizeFrom: 12
+      sizeTo: 0
+      region: touhou-point-tail
+      colorFrom: FF7FBFFF
+      colorTo: 007F007F
+    }
+    ammoMultiplier: 1
+    absorbable: true
+    reflectable: true
+    smokeEffect: none
+    shootEffect: {
+      type: MultiEffect
+      rotWithParent: true
+      effects: [
+        {
+          type: WaveEffect
+          colorFrom: FF7FBFFF
+          colorTo: FF7FBF00
+          sizeFrom: 16
+          sizeTo: 16
+          sides: 48
+          strokeFrom: 1.5
+          strokeTo: 0
+          lifetime: 60
+        }
+        {
+          type: WaveEffect
+          colorFrom: FF7FBFFF
+          colorTo: FF7FBF00
+          sizeFrom: 12
+          sizeTo: 12
+          sides: 48
+          strokeFrom: 1.5
+          strokeTo: 0
+          lifetime: 60
+        }
+        {
+          type: WaveEffect
+          colorFrom: FF7FBFFF
+          colorTo: FF7FBF00
+          sizeFrom: 12
+          sizeTo: 12
+          rotation: 120
+          sides: 3
+          strokeFrom: 1.5
+          strokeTo: 0
+          lifetime: 60
+          followParent: true
+          rotWithParent: true
+        }
+        {
+          type: WaveEffect
+          colorFrom: FF7FBFFF
+          colorTo: FF7FBF00
+          sizeFrom: 12
+          sizeTo: 12
+          rotation: 120
+          baseRotation: 180
+          sides: 3
+          strokeFrom: 1.5
+          strokeTo: 0
+          lifetime: 60
+          followParent: true
+          rotWithParent: true
+        }
+      ]
+    }
+    despawnEffect: {
+      type: WaveEffect
+      lifetime: 60
+      sizeFrom: 8
+      sizeTo: 8
+      strokeFrom: 1.5
+      strokeTo: 1.5
+      colorFrom: FF7FBFFF
+      colorTo: 007F0000
+    }
+    hitEffect: {
+      type: WaveEffect
+      lifetime: 60
+      sizeFrom: 6
+      sizeTo: 6
+      strokeFrom: 2
+      strokeTo: 2
+      colorFrom: FF7FBFFF
+      colorTo: 007F0000
+    }
+  }
+}
+research: kca-patchouli-7-turret
+category: turret
+fogRadiusMultiplier: 0.4
+outlineColor: FFFFFF00
+outlineRadius: 0

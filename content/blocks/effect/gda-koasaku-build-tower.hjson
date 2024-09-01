@@ -1,0 +1,25 @@
+type: BuildTurret
+size: 2
+health: 200
+hasPower: true
+hasLiquids: true
+requirements: [
+  adzz-koakuma/48
+  af-sakuya/48
+]
+rotateSpeed: 360
+range: 96
+category: effect
+coolantMultiplier: 1
+research: gbb-daisaku-mender
+consumes: {
+  liquid: {
+    liquid: ed-cirno-juice
+    amount: 0.15
+    optional: false
+  }
+  power: 1.5
+}
+buildSpeed: 1
+heatColor: 007FFFDF
+squareSprite: false

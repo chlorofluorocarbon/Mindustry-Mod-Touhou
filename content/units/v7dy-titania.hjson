@@ -1,0 +1,124 @@
+type: mech
+createScorch: false
+controller: SuicideAI
+speed: 1.5
+drag: 0.03
+accel: 0.1
+rotateSpeed: 360
+baseRotateSpeed: 360
+health: 31.8
+armor: 0
+canBoost: true
+boostMultiplier: 1
+useUnitCap: false
+hovering: true
+// landshake: 0
+stepShake: 0
+// mechStepShake: 0
+mechStepParticles: false
+range: 28
+maxRange: 60
+outlines: false
+ammoType: azac-alice
+mechLegColor: FFFFFF00
+itemCapacity: 0
+hitSize: 8
+mechSideSway: 0
+mechFrontSway: 0
+deathSound: none
+weapons: [
+  {
+    name: titania-suicide-bomb
+    mirror: false
+    shootStatus: unmoving
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    layerOffset: 0
+    recoil: 0
+    shootSound: explosion
+    noAmmoSound: none
+    reload: 60
+    top: false
+    predictTarget: false
+    rotateSpeed: 360
+    shootCone: 180
+    shoot: {
+      type: ShootPattern
+      shots: 1
+      // spread: 0
+      shotDelay: 0
+      firstShotDelay: 60
+    }
+    bullet: {
+      type: BasicBulletType
+      chargeEffect: {
+        type: MultiEffect
+        effects: [
+          {
+             type: WaveEffect
+             lifetime: 60
+             sizeFrom: 28
+             sizeTo: 28
+             strokeFrom: 2
+             strokeTo: 0
+             colorFrom: 7F00FFFF
+             colorTo: 7F00FFFF
+          }
+          {
+             type: WaveEffect
+             lifetime: 60
+             sizeFrom: 28
+             sizeTo: 1
+             strokeFrom: 0
+             strokeTo: 2
+             colorFrom: BF3FFFFF
+             colorTo: BF3FFFFF
+          }
+        ]
+      }          
+      collidesTeam: false
+      killShooter: true
+      damage: 0
+      splashDamage: 8
+      splashDamageRadius: 28
+      hitSize: 6
+      pierce: true
+      pierceCap: -1
+      pierceBuilding: true
+      rangeOverride: 28
+      lifetime: 0
+      speed: 0
+      setDefaults: true
+      despawnEffect: none
+      width: 0
+      height: 0
+      makeFire: false
+      status: none
+      hitEffect: none
+      smokeEffect: none
+      reflectable: false
+      absorbable: false
+      hittable: false
+      shootEffect: none
+      collidesAir: true
+      collidesGround: true
+      collidesTiles: false
+      collides: false
+      lightRadius: 0
+      backColor: FFFFFFFF
+      frontColor: FFFFFFFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-normal-bullet"
+    }
+  }
+]
+immunities: [
+  burning
+  maid-fairy-lifetime
+]

@@ -1,0 +1,32 @@
+type: GenericCrafter
+size: 2
+itemCapacity: 24
+hasPower: true
+hasItems: true
+craftTime: 60
+consumes: {
+  power: 1.5
+  items: [
+    ab-marisa/6
+    azac-alice/2
+  ]
+}
+craftEffect: mine
+updateEffect: none
+outputItem: ae-patchouli/3
+category: crafting
+requirements: [
+  ab-marisa/120
+  azac-alice/30
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    DrawDefault
+    {
+      type: DrawFlame
+      flameColor: FF7FBFFF
+    }
+  ]
+}
+research: hce-pachumari-alice-converter

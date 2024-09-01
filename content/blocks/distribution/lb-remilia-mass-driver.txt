@@ -1,0 +1,55 @@
+// Abandoned. 
+type: MassDriver
+health: 540
+itemCapacity: 120
+requirements: [
+  ag-remilia/120
+  adzz-koakuma/160
+  acz-daiyousei/60
+  af-sakuya/32
+  ae-patchouli/48
+]
+consumes: {
+  power: 2
+}
+minDistribute: 20
+translation: 20
+size: 3
+range: 466
+rotateSpeed: 2
+reload: 180
+/*
+shootEffect: {
+  type: 
+}
+smokeEffect: {
+  type: 
+}
+*/
+shake: 3
+knockback: 4
+bulletSpeed: 4
+
+// Broken: field "bullet" can never exist in mod. 
+// The building always shoots a bullet that deals 75 damage. 
+bullet: {
+  // type: BasicBulletType
+  // MassDriverBolt
+  sprite: "touhou-remilia-gungnir"
+  backColor: BF0000FF
+  frontColor: FF3F3FFF
+  damage: 8
+  pierce: true
+  pierceCap: 3
+  pierceBuilding: false
+  buildingDamageMultiplier: 0.4
+  collidesAir: true
+  collidesGround: true
+  hittable: false
+  absorbable: false
+  reflectable: false
+}
+
+category: distribution
+research: jb-patchouli-duct
+underBullets: false

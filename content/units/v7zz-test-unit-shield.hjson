@@ -1,0 +1,90 @@
+type: mech
+createScorch: false
+speed: 0.3
+drag: 1
+accel: 1
+rotateSpeed: 360
+baseRotateSpeed: 360
+health: 0.8
+armor: 0
+canBoost: false
+// landshake: 0
+stepShake: 0
+// mechStepShake: 0
+mechStepParticles: false
+range: 240
+maxRange: 240
+outlines: false
+ammoType: ac-rumia
+mechLegColor: FFFFFF00
+itemCapacity: 0
+hitSize: 8
+mechSideSway: 0
+mechFrontSway: 0
+deathSound: soonanokaa
+weapons: [
+  {
+    name: rumia-darkness
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 2
+    shootSound: none
+    noAmmoSound: none
+    reload: 120
+    predictTarget: false
+    shoot: {
+      type: ShootPattern
+      shots: 1
+      // spread: 0
+      shotDelay: 0
+    }
+    rotateSpeed: 360
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 8
+      pierce: false
+      pierceBuilding: false
+      lifetime: 1800
+      rangeOverride: 240
+      speed: 0.45
+      setDefaults: false
+      despawnEffect: none
+      width: 12
+      height: 12
+      makeFire: false
+      status: none
+      hitEffect: none
+      smokeEffect: none
+      reflectable: false
+      shootEffect: none
+      
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 24
+      backColor: FFFFFFFF
+      frontColor: FFFFFFFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-rumia-dark-ball"
+    }
+  }
+]
+immunities: [
+  burning
+  maid-fairy-lifetime
+]
+abilities: [
+  {
+    type: ShieldRegenFieldAbility
+    amount: 1
+    max: 1
+    reload: 240
+  }
+]
+research: jzaa-th6-1-factory

@@ -1,0 +1,6 @@
+type: StaticWall
+attributes: {
+  wall-cirno: 1.0
+  wall-letty: 0.2
+}
+variants: 2

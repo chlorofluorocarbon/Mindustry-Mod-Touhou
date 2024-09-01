@@ -1,0 +1,9 @@
+type: Sorter
+health: 80
+requirements: [
+  aa-reimu/4
+]
+invert: true
+category: distribution
+research: bg-reimu-sorter
+underBullets: true

@@ -1,0 +1,13 @@
+type: Pump
+size: 1
+pumpAmount: 0.12
+liquidCapacity: 10
+requirements: [
+  aa-reimu/5
+  ab-marisa/5
+  ad-cirno/20
+]
+placeableLiquid: true
+squareSprite: false
+category: liquid
+research: dba-reimu-drill

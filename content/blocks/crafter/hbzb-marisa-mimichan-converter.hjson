@@ -1,0 +1,38 @@
+type: GenericCrafter
+size: 2
+itemCapacity: 12
+hasPower: true
+hasLiquids: false
+hasItems: true
+craftTime: 60
+consumes: {
+  power: 0.3
+  items: [
+    ab-marisa/3
+  ]
+}
+drawer: {
+  type: DrawMulti
+  drawers: [
+    DrawDefault
+    {
+      type: DrawFlame
+      flameColor: FF3F3FFF
+      lightRadius: 40
+      lightAlpha: 0.4
+    }
+  ]
+}
+craftEffect: mine
+updateEffect: none
+outputItem: azzzzb-mimichan/2
+category: crafting
+requirements: [
+  ab-marisa/80
+  aa-reimu/40
+]
+research: hbza-reimu-ruukoto-converter
+researchCost: [
+  aa-reimu/60
+  ab-marisa/120
+]

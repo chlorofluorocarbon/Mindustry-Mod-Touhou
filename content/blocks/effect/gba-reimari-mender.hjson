@@ -1,0 +1,28 @@
+type: MendProjector
+size: 1
+health: 80
+requirements: [
+  aa-reimu/30
+  ab-marisa/30
+]
+category: effect
+research: faa-marisa-node
+reload: 60
+range: 40
+healPercent: 1.6666667
+hasPower: true
+consumes: {
+  power: 0.3
+  items: {
+    items: [
+      acz-daiyousei/1
+    ]
+    booster: true
+    optional: true
+  }
+}
+phaseBoost: 1.264911
+phaseRangeBoost: 24
+useTime: 300
+baseColor: 00BF00FF
+phaseColor: 00FF00FF

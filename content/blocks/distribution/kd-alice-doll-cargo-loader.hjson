@@ -1,0 +1,33 @@
+type: UnitCargoLoader
+health: 240
+itemCapacity: 160
+liquidCapacity: 30
+requirements: [
+  azac-alice/80
+  ab-marisa/40
+]
+size: 2
+squareSprite: false
+category: distribution
+research: kb-alice-stack-conveyor
+underBullets: false
+unitType: u00za-alice-doll-cargo-doll
+consumes: {
+  power: 1.8
+  /*
+  items: [
+    ab-marisa/8
+    azac-alice/12
+  ]
+  */
+  liquids: [
+    eb-marisa-juice/0.15
+  ]
+}
+buildTime: 600
+polyStroke: 1.6
+polyRadius: 6
+polySides: 6
+polyColor: FFFF00DF
+polyRotateSpeed: 1
+hasPower: true

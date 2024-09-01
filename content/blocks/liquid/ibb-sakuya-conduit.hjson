@@ -1,0 +1,13 @@
+type: Conduit
+requirements: [
+  ad-cirno/1
+  af-sakuya/1
+]
+liquidCapacity: 20
+placeableLiquid: false
+category: liquid
+research: iba-cirno-conduit
+bridgeReplacement: ie-cirno-bridge-conduit
+junctionReplacement: id-cirno-liquid-junction
+liquidPressure: 1.1
+underBullets: false

@@ -1,0 +1,12 @@
+type: RepairTower
+range: 32
+size: 2
+requirements: [
+  af-sakuya/24
+]
+research: j0a-0-constructor
+category: units
+healAmount: -0.1
+squareSprite: false
+circleColor: FF0000FF
+glowColor: FF00007F

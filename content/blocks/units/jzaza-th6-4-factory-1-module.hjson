@@ -1,0 +1,8 @@
+type: UnitAssemblerModule
+size: 3
+requirements: [
+  ah-flandre/160
+]
+research: jzada-rumia-factory
+category: units
+tier: 1

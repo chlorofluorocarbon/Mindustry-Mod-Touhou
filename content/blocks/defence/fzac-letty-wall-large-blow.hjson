@@ -1,0 +1,89 @@
+type: ItemTurret
+consumes: {
+  power: 0.1
+}
+hasPower: true
+maxAmmo: 180
+ammoTypes: {
+  azaa-letty: {
+    type: BasicBulletType
+    sprite: touhou-letty-wind
+    shrinkX: 0.8
+    shrinkY: 0.8
+    shrinkInterp: pow3Out
+    backColor: FFFFFF3F
+    frontColor: FFFFFF7F
+    mixColorFrom: 00000000
+    mixColorTo: 00000000
+    lightColor: 00000000
+    lightRadius: 0
+    width: 16
+    height: 16
+    lifetime: 60
+    speed: 1
+    damage: 0.005
+    knockback: 3
+    incendChance: 0
+    shootEffect: none
+    smokeEffect: none
+    chargeEffect: none
+    hitEffect: {
+      type: WaveEffect
+      colorFrom: 00BFFF7F
+      colorTo: BFBFFF00
+      lifetime: 15
+      sizeFrom: 7
+      sizeTo: 7
+      strokeFrom: 2
+      strokeTo: 2
+    }
+    despawnEffect: none
+    hitSound: none
+    despawnSound: none
+    ammoMultiplier: 18
+    recoil: 0
+    status: letty-freezing
+    statusDuration: 10
+    pierce: true
+    pierceBuilding: true
+    pierceCap: 6
+    hitSize: 8
+    hittable: false
+    reflectable: true
+    absorbable: false
+    setDefaults: true
+    hitColor: 00000000
+    healColor: 00000000
+    healEffect: none
+  }
+}
+size: 2
+inaccuracy: 24
+health: 1080
+reload: 3
+range: 57
+rotateSpeed: 360
+fogRadiusMultiplier: 0
+coolEffect: none
+coolantMultiplier: 1
+hasLiquids: false
+hasItems: false
+shootCone: 180
+shootX: 0
+shootY: 0
+targetAir: true
+targetGround: true
+shootSound: none
+smokeEffect: none
+ammoUseEffect: none
+heatColor: 00000000
+requirements: [
+  azaa-letty/36
+  ad-cirno/12
+]
+conductivePower: true
+category: defense
+research: fzab-letty-wall-large
+buildCostMultiplier: 3.2
+outlineRadius: 1.5
+outlineColor: FFFFFF00

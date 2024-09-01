@@ -1,0 +1,11 @@
+type: LiquidBridge
+hasPower: false
+range: 5
+requirements: [
+  ad-cirno/12
+]
+placeableLiquid: true
+liquidCapacity: 10
+category: liquid
+research: ica-cirno-liquid-router
+underBullets: false

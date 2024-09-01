@@ -1,0 +1,8 @@
+type: LiquidJunction
+requirements: [
+  ad-cirno/4
+]
+placeableLiquid: true
+category: liquid
+research: iba-cirno-conduit
+underBullets: false

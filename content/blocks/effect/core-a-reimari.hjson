@@ -1,0 +1,20 @@
+type: CoreBlock
+size: 3
+isFirstTier: true
+health: 1100
+requirements: [
+  aa-reimu/1000
+  ab-marisa/1000
+]
+destroySound: none
+unitType: u0a-ruukoto
+category: effect
+research: {
+  planet: gensoukyo
+  root: true
+  name: Gensoukyo
+  requiresUnlock: false
+}
+alwaysUnlocked: true
+itemCapacity: 5000
+unitCapModifier: 4

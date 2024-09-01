@@ -1,0 +1,12 @@
+type: LightBlock
+requirements: [
+  ac-rumia/25
+  ab-marisa/5
+]
+squareSprite: false
+category: effect
+research: fca-marisa-burner
+consumes: {
+  power: 0.05
+}
+radius: 40

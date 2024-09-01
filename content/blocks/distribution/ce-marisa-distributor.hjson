@@ -1,0 +1,9 @@
+type: Router
+health: 160
+requirements: [
+  ab-marisa/12
+]
+size: 2
+category: distribution
+research: cd-marisa-router
+underBullets: false

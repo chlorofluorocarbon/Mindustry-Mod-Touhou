@@ -1,0 +1,145 @@
+type: PowerTurret
+targetAir: true
+size: 2
+solid: false
+squareSprite: false
+placeableLiquid: true
+maxAmmo: 2
+health: 18
+category: turret
+research: uth06aa-0p-reimu
+// reloadTime: 0.000001
+coolantMultiplier: 25
+rotateSpeed: 10000
+// acceptCoolant: false
+destroySound: none
+destroyEffect: none
+shootSound: spellcard
+range: 240
+shootY: 0
+playerControllable: false
+buildCostMultiplier: 0.001
+requirements: [
+  yc-bomb/1
+  aa-reimu/5
+]
+shootType: {
+  type: BasicBulletType
+  ammoMultiplier: 1
+  speed: 0
+  lifetime: 0
+  damage: 0
+  splashDamage: 0
+  status: none
+  reflectable: false
+  absorbable: false
+  hittable: false
+  killShooter: true
+  hitEffect: none
+  despawnEffect: none
+  smokeEffect: none
+  shootEffect: none
+  fragBullets: 8
+  fragRandomSpread: 0
+  fragSpread: 18
+  fragVelocityMin: 1
+  fragVelocityMax: 1
+  fragBullet: {
+    type: BasicBulletType
+    collidesTeam: false
+    keepVelocity: false
+    damage: 24
+    hitSize: 22
+    spin: 4.5
+    pierce: true
+    pierceBuilding: false
+    pierceCap: 3
+    lifetime: 600
+    rangeOverride: 240
+    speed: 2.7
+    setDefaults: false
+    despawnEffect: none
+    width: 24
+    height: 24
+    makeFire: false
+    status: none
+    hitEffect: none
+    smokeEffect: none
+    reflectable: false
+    absorbable: true
+    hittable: false
+    shootEffect: none
+    collideTerrain: false
+    collidesAir: true
+    collidesGround: true
+    backColor: 00000000
+    frontColor: FFFFFFFF
+    lightRadius: 48
+    shrinkX: 0
+    shrinkY: 0
+    sprite: "touhou-reimu-lightorb"
+    homingPower: 0.05
+    homingRange: 120
+  }
+}
+destroyBulletSameTeam: true
+destroyBullet: {
+  type: BasicBulletType
+  shrinkX: 0
+  shrinkY: 0
+  backColor: 00000000
+  frontColor: 00000000
+  mixColorFrom: 00000000
+  mixColorTo: 00000000
+  lightColor: 00000000
+  lightRadius: 0
+  width: 0
+  height: 0
+  lifetime: 0
+  speed: 0
+  damage: 0
+  splashDamage: 0
+  splashDamageRadius: 0
+  incendChance: 0
+  shootEffect: none
+  smokeEffect: none
+  chargeEffect: none
+  hitEffect: none
+  knockback: 0
+  despawnEffect: none
+  hitSound: none
+  despawnSound: none
+  ammoMultiplier: 1
+  recoil: 0
+  pierce: true
+  pierceBuilding: true
+  pierceCap: -1
+  drawSize: 0.01
+  hitSize: 0.01
+  status: none
+  hittable: false
+  reflectable: false
+  absorbable: false
+  setDefaults: true
+  hitColor: 00000000
+  healColor: 00000000
+  healEffect: none
+  fragBullets: 1
+  fragRandomSpread: 0
+  fragOffsetMax: 0
+  fragOffsetMin: 0
+  fragVelocityMin: 0
+  fragVelocityMax: 0
+  fragBullet: {
+    type: BasicBulletType
+    spawnUnit: u00-bomb-bullet-cleaner
+  }
+}
+researchCost: [
+  aa-reimu/1000
+  yc-bomb/1
+]
+rebuildable: false
+// powerUse: 0
+outlineRadius: 1.5
+outlineColor: FFFFFF00

@@ -1,0 +1,34 @@
+type: GenericCrafter
+size: 2
+itemCapacity: 28
+hasPower: true
+hasLiquids: false
+hasItems: true
+craftTime: 210
+consumes: {
+  power: 0.816666666
+  items: [
+    azac-alice/7
+    ae-patchouli/7
+  ]
+}
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    DrawWeave
+    DrawDefault
+  ]
+}
+craftEffect: mine
+updateEffect: none
+outputItem: azzzzc-double-seven-doll-material/7
+category: crafting
+requirements: [
+  azac-alice/98
+  ae-patchouli/98
+]
+research: hbza-reimu-ruukoto-converter

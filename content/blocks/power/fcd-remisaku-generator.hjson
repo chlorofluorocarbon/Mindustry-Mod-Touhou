@@ -1,0 +1,68 @@
+type: ConsumeGenerator
+size: 3
+squareSprite: false
+itemDuration: 120
+requirements: [
+  ag-remilia/70
+  af-sakuya/120
+  ae-patchouli/30
+  ab-marisa/40
+]
+hasLiquids: true
+hasItems: true
+hasPower: true
+liquidCapacity: 300
+itemCapacity: 15
+consumes: {
+  liquid: {
+    liquid: ed-cirno-juice
+    amount: 0.5
+  }
+  items: [
+    af-sakuya/2
+    ag-remilia/3
+  ]
+}
+drawer: {
+  type: DrawMulti
+  drawers:[
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawPistons
+      sinMag: 2.75
+      sinScl: 5
+      sides: 8
+    }
+    {
+      type: DrawRegion
+      suffix: -mid
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: ed-cirno-juice
+      padding: 2.75
+      alpha: 0.75
+    }
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -glow
+      color: FF0000FF
+    }
+  ]
+}
+consumeEffect: none
+powerProduction: 45
+outputLiquid: {
+  liquid: ez-mixture-slag
+  amount: 0.2
+}
+explodeOnFull: true
+research: fcc-pachuchiru-generator
+category: power
+lightColor: BF0000BF

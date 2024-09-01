@@ -1,0 +1,42 @@
+type: Separator
+size: 2
+itemCapacity: 20
+hasPower: true
+hasItems: true
+hasLiquids: true
+craftTime: 30
+consumes: {
+  power: 0.5
+  liquid: {
+    liquid: ez-mixture-slag
+    amount: 0.066666667
+  }
+}
+results: [
+  aa-reimu/1
+  ab-marisa/1
+]
+category: crafting
+requirements: [
+  aa-reimu/100
+  ab-marisa/80
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: "-bottom"
+    }
+    DrawDefault
+    {
+      type: DrawLiquidRegion
+      drawLiquid: ez-mixture-slag
+    }
+    {
+      type: DrawBlurSpin
+      suffix: "-rotator"
+    }
+  ]
+}
+research: had-mixture-melter

@@ -1,0 +1,39 @@
+type: GenericCrafter
+size: 2
+itemCapacity: 10
+liquidCapacity: 30
+hasPower: true
+hasLiquids: true
+hasItems: true
+craftTime: 30
+consumes: {
+  power: 0.2
+  items: [
+    aa-reimu/1
+  ]
+}
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: ea-reimu-juice
+    }
+    DrawDefault
+  ]
+}
+outputLiquid: ea-reimu-juice/0.2
+category: crafting
+requirements: [
+  aa-reimu/30
+  ab-marisa/10
+]
+research: core-a-reimari
+researchCost: [
+  aa-reimu/120
+  ab-marisa/40
+]

@@ -1,0 +1,38 @@
+type: Reconstructor
+size: 3
+itemCapacity: 20
+requirements: [
+  aa-reimu/400
+  ab-marisa/400
+]
+constructTime: 600
+research: ja-0p-factory
+researchCost: [
+  aa-reimu/1000
+  ab-marisa/1000
+]
+category: units
+consumes: {
+  power: 1.5
+  items: [
+    ya-p-point/10    
+  ]
+}
+upgrades: [
+  [
+    uth06aa-0p-reimu
+    uth06aa-1p-reimu
+  ]
+  [
+    uth06ab-0p-reimu
+    uth06ab-1p-reimu
+  ]
+  [
+    uth06ba-0p-marisa
+    uth06ba-1p-marisa
+  ]
+  [
+    uth06bb-0p-marisa
+    uth06bb-1p-marisa
+  ]
+]

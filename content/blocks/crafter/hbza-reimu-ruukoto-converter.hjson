@@ -1,0 +1,38 @@
+type: GenericCrafter
+size: 2
+itemCapacity: 12
+hasPower: true
+hasLiquids: false
+hasItems: true
+craftTime: 60
+consumes: {
+  power: 0.3
+  items: [
+    aa-reimu/3
+  ]
+}
+drawer: {
+  type: DrawMulti
+  drawers: [
+    DrawDefault
+    {
+      type: DrawFlame
+      flameColor: 00BF5FFF
+      lightRadius: 40
+      lightAlpha: 0.4
+    }
+  ]
+}
+craftEffect: mine
+updateEffect: none
+outputItem: azzzza-ruukoto/2
+category: crafting
+requirements: [
+  aa-reimu/80
+  ab-marisa/40
+]
+research: core-a-reimari
+researchCost: [
+  aa-reimu/120
+  ab-marisa/60
+]

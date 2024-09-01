@@ -1,0 +1,58 @@
+type: UnitAssembler
+size: 5
+itemCapacity: 20
+requirements: [
+  af-sakuya/1600
+  ag-remilia/1200
+  ae-patchouli/800
+  adzz-koakuma/2600
+  ae-patchouli/2000
+]
+areaSize: 5
+consumes: {
+  power: 3
+  liquids: [
+    eb-marisa-juice/0.4
+    eya-p-juice/0.5
+  ]
+}
+plans: [
+  {
+    unit: v6fza-patchouli
+    requirements: [
+      touhou-feb-patchouli-wall-large/4
+      touhou-v6fc-patchouli/1
+      touhou-th6-enemy-block/1
+    ]
+    time: 1200
+  }
+  {
+    unit: v6ez-koakuma
+    requirements: [
+      touhou-fdzzb-koakuma-wall-large/5
+      touhou-v6eb-koakuma/1
+      touhou-th6-enemy-block/1
+    ]
+    time: 1200
+  }
+  {
+    unit: v6fzb-patchouli
+    requirements: [
+      touhou-feb-patchouli-wall-large/6
+      touhou-v6fc-patchouli/1
+      touhou-th6-enemy-block/1
+    ]
+    time: 1200
+  }
+  {
+    unit: v6fzc-patchouli
+    requirements: [
+      touhou-feb-patchouli-wall-large/8
+      touhou-v6fc-patchouli/1
+      touhou-th6-enemy-block/1
+    ]
+    time: 1200
+  }
+]
+research: jzadd-meiling-factory
+category: units

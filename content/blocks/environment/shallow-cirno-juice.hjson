@@ -1,0 +1,7 @@
+type: Floor
+isLiquid: true
+shallow: true
+liquidDrop: ed-cirno-juice
+variants: 0
+speedMultiplier: 0.5
+status: none

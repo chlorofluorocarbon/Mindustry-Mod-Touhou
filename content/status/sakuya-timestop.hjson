@@ -1,0 +1,27 @@
+// I'm ... not very sure why there is a warning saying "type" is an unknown field.
+// Seems like the game doesn't need it. 
+// type: StatusEffect
+speedMultiplier: 0
+reloadMultiplier: 0
+buildSpeedMultiplier: 0
+effect: {
+  type: ParticleEffect
+  colorFrom: 7F7F7FFF
+  colorTo: 7F7F7F00
+  lifetime: 60
+  particles: 2
+  length: 0
+  sizeFrom: 1.8
+  sizeTo: 1.8
+  followParent: true
+}
+applyEffect: {
+  type: WaveEffect
+  colorFrom: 7F7F7FAF
+  colorTo: 7F7F7F00
+  lifetime: 30
+  sizeFrom: 8
+  sizeTo: 8
+  strokeFrom: 2
+  strokeTo: 2
+}

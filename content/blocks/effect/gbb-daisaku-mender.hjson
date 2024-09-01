@@ -1,0 +1,30 @@
+type: MendProjector
+size: 2
+health: 320
+requirements: [
+  acz-daiyousei/60
+  af-sakuya/40
+  aa-reimu/40
+  ae-patchouli/20
+]
+category: effect
+research: gba-reimari-mender
+reload: 60
+range: 84
+healPercent: 2.5
+hasPower: true
+consumes: {
+  power: 1.5
+  items: {
+    items: [
+      af-sakuya/1
+    ]
+    booster: true
+    optional: true
+  }
+}
+phaseBoost: 1.264911
+phaseRangeBoost: 52
+useTime: 300
+baseColor: 00BF00FF
+phaseColor: 00FF00FF

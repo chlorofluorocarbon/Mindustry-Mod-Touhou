@@ -1,0 +1,5 @@
+type: TreeBlock
+variants: 4
+emitLight: true
+lightColor: 7F00FF9F
+lightRadius: 12

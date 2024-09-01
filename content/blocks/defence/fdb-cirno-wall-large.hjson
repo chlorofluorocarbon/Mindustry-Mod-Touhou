@@ -1,0 +1,12 @@
+type: Wall
+size: 2
+health: 960
+requirements: [
+  ad-cirno/24
+]
+category: defense
+research: fda-cirno-wall
+buildCostMultiplier: 3.2
+absorbLasers: true
+insulated: true
+placeableLiquid: true

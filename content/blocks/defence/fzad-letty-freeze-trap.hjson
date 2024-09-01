@@ -1,0 +1,70 @@
+type: ShockMine
+cooldown: 240
+tileDamage: 4
+health: 40
+damage: 0
+length: 0
+tendrils: 0
+lightningColor: BFBFFFFF
+shots: 1
+inaccuracy: 360
+bullet: {
+  type: BasicBulletType
+  shrinkX: 0
+  shrinkY: 0
+  backColor: 00000000
+  frontColor: 00000000
+  mixColorFrom: 00000000
+  mixColorTo: 00000000
+  lightColor: 00000000
+  lightRadius: 0
+  width: 0
+  height: 0
+  lifetime: 0
+  speed: 0
+  damage: 0
+  splashDamage: 0
+  splashDamageRadius: 16
+  splashDamagePierce: true
+  incendChance: 0
+  shootEffect: none
+  smokeEffect: none
+  chargeEffect: none
+  hitEffect: {
+    type: WaveEffect
+    colorFrom: 00BFFF7F
+    colorTo: BFBFFF00
+    lifetime: 60
+    sizeFrom: 8
+    sizeTo: 8
+    strokeFrom: 15.6
+    strokeTo: 15.6
+  }
+  despawnEffect: none
+  hitSound: none
+  despawnSound: none
+  ammoMultiplier: 1
+  recoil: 0
+  pierce: true
+  pierceBuilding: true
+  pierceCap: -1
+  drawSize: 0.01
+  hitSize: 0.01
+  status: letty-freezing
+  statusDuration: 270
+  hittable: false
+  reflectable: false
+  absorbable: false
+  setDefaults: true
+  hitColor: 00000000
+  healColor: 00000000
+  healEffect: none
+}
+size: 1
+requirements: [
+  azaa-letty/36
+  ad-cirno/12
+]
+underBullets: true
+category: defense
+research: fzaa-letty-wall

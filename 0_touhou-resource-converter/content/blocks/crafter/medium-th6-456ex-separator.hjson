@@ -1,0 +1,29 @@
+type: Separator
+size: 1
+itemCapacity: 30
+hasPower: false
+hasItems: true
+craftTime: 12
+consumes: {
+  items: [
+    medium/2
+  ]
+}
+hasLiquids: false
+results: [
+  touhou-adzz-koakuma/5
+  touhou-ae-patchouli/3
+  touhou-af-sakuya/3
+  touhou-ag-remilia/2
+  touhou-ah-flandre/1
+]
+category: crafting
+requirements: [
+  medium/100
+]
+research: {
+  parent: medium-th6-123-separator
+  requirements: [
+    medium/500
+  ]
+}

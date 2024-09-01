@@ -1,0 +1,14 @@
+localizedName: 红魔乡三面
+description: "打倒两个妖精后，两人发现雾之湖岸边矗立着一座红色的洋馆，红色的雾正从其中冒出来。\n[#FF0000]灵梦[]和[#FFFF00]魔理沙[]来到洋馆大门口。在这里，她们会遭到门卫华人小姑娘[#007F00]红 美铃（美）[]的阻挠。"
+planet: gensoukyo
+sector: 478
+research: {
+  parent: touhou-th6-2
+  objectives: [
+    {
+      type: SectorComplete
+      preset: touhou-th6-2
+    }
+  ]
+}
+difficulty: 3

@@ -1,0 +1,20 @@
+type: GenericCrafter
+size: 2
+itemCapacity: 20
+hasPower: true
+hasItems: true
+craftTime: 10
+consumes: {
+  items: [
+    zy-mixture-fragment/2
+  ]
+  power: 0.5
+}
+craftEffect: none
+updateEffect: none
+outputItem: zz-mixture/1
+category: crafting
+requirements: [
+  zy-mixture-fragment/40
+]
+research: hba-reimu-juicer

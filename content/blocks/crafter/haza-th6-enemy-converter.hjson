@@ -1,0 +1,33 @@
+type: GenericCrafter
+size: 1
+itemCapacity: 10
+liquidCapacity: 240
+hasPower: false
+hasLiquids: true
+hasItems: true
+craftTime: 300
+consumes: {
+  liquid: {
+    liquid: eyza-th6-enemy-juice
+    amount: 12
+  }
+}
+craftEffect: none
+updateEffect: fuelburn
+outputItem: yza-th6-enemy/1
+category: crafting
+requirements: [
+  af-sakuya/5
+  ag-remilia/5
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    DrawDefault
+    {
+      type: DrawLiquidRegion
+      drawLiquid: eyza-th6-enemy-juice
+    }
+  ]
+}
+research: hba-reimu-juicer

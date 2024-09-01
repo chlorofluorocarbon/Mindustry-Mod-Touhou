@@ -1,0 +1,19 @@
+type: PointDefenseTurret
+category: turret
+size: 2
+health: 1200
+requirements: [
+  ab-marisa/300
+  azac-alice/300
+  ae-patchouli/300
+]
+consumes: {
+  power: 5
+}
+reload: 10
+range: 288
+bulletDamage: 16
+rotateSpeed: 360
+coolantMultiplier: 1
+fogRadiusMultiplier: 0.1
+research: kaa-reimari-defender

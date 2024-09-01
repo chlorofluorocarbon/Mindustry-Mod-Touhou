@@ -1,0 +1,172 @@
+type: mech
+createScorch: false
+speed: 0.4
+drag: 1
+accel: 1
+rotateSpeed: 360
+baseRotateSpeed: 360
+health: 0.8
+armor: 0
+canBoost: false
+// landshake: 0
+stepShake: 0
+// mechStepShake: 0
+mechStepParticles: false
+range: 240
+maxRange: 240
+outlines: false
+ammoType: ah-flandre
+mechLegColor: FFFFFF00
+itemCapacity: 0
+hitSize: 8
+mechSideSway: 0
+mechFrontSway: 0
+// deathSound: omoshirokatta
+deathSound: soonanokaa
+weapons: [
+  {
+    name: flandre-aim
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    layerOffset: -2
+    recoil: -7
+    recoilPow: 2.4
+    recoilTime: 45
+    shootSound: none
+    noAmmoSound: none
+    reload: 60
+    top: false
+    predictTarget: false
+    rotate: false
+    rotateSpeed: 0
+    shoot: {
+      type: ShootPattern
+      shots: 1
+      // spread: 0
+      shotDelay: 0
+    }
+    bullet: {
+      type: PointBulletType
+      damage: 0
+      speed: 120
+      trailSpacing: 2
+      collidesTiles: true
+      trailEffect: {
+        type: ParticleEffect
+        particles: 1
+        length: 0
+        lifetime: 60
+        sizeFrom: 2
+        sizeTo: 2
+        region: touhou-point-line
+        colorFrom: BF3F007F
+        colorTo: BF3F0000
+      }
+      ammoMultiplier: 1
+      absorbable: true
+      reflectable: false
+      smokeEffect: none
+      shootEffect: {
+        type: WaveEffect
+        lifetime: 60
+        sizeFrom: 6
+        sizeTo: 6
+        strokeFrom: 2
+        strokeTo: 2
+        colorFrom: BF3F007F
+        colorTo: BF3F0000
+      }
+      despawnEffect: {
+        type: WaveEffect
+        lifetime: 60
+        sizeFrom: 6
+        sizeTo: 6
+        strokeFrom: 2
+        strokeTo: 2
+        colorFrom: BF3F007F
+        colorTo: BF3F0000
+      }
+      hitEffect: {
+        type: WaveEffect
+        lifetime: 60
+        sizeFrom: 6
+        sizeTo: 6
+        strokeFrom: 2
+        strokeTo: 2
+        colorFrom: BF3F007F
+        colorTo: BF3F0000
+      }
+    }
+  }
+  {
+    name: flandre-destruction
+    alwaysShooting: true
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 2
+    shootSound: none
+    noAmmoSound: none
+    reload: 360
+    predictTarget: false
+    rotateSpeed: 0
+    rotate: false
+    shoot: {
+      type: ShootPattern
+      shots: 1
+      // spread: 0
+      shotDelay: 0
+      firstShotDelay: 360
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 0
+      inaccuracy: 0
+      hitSize: 0
+      pierce: false
+      pierceBuilding: false
+      lifetime: 0
+      speed: 0
+      keepVelocity: false
+      setDefaults: false
+      despawnHit: true
+      despawnUnit: v6iaz-flandre-bullet
+      despawnUnitRadius: 0
+      despawnEffect: none
+      width: 0
+      height: 0
+      makeFire: false
+      status: none
+      hitEffect: none
+      smokeEffect: none
+      hittable: false
+      reflectable: false
+      absorbable: false
+      shootEffect: none
+      collidesAir: false
+      collidesGround: false
+      lightRadius: 0
+      backColor: 00000000
+      frontColor: 00000000
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-shanghai-spawn"
+    }
+  }
+]
+immunities: [
+  burning
+  maid-fairy-lifetime
+]
+research: v6ha-remilia

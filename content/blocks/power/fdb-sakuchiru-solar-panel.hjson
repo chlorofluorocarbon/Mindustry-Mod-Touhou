@@ -1,0 +1,9 @@
+type: SolarGenerator
+size: 2
+requirements: [
+  af-sakuya/20
+  ad-cirno/75
+]
+powerProduction: 0.6
+research: fda-cirno-solar-panel
+category: power

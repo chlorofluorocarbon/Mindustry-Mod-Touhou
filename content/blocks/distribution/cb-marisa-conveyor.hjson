@@ -1,0 +1,15 @@
+type: Conveyor
+health: 40
+requirements: [
+  ab-marisa/1
+]
+category: distribution
+speed: 0.096
+displayedSpeed: 12
+junctionReplacement: cc-marisa-junction
+research: bb-reimu-conveyor
+bridgeReplacement: cf-marisa-bridge-conveyor
+underBullets: false
+researchCost: [
+  ab-marisa/4
+]

@@ -1,0 +1,23 @@
+type: Drill
+size: 2
+drillTime: 300
+tier: 3
+itemCapacity: 20
+liquidCapacity: 30
+hardnessDrillMultiplier: 25
+requirements: [
+  azac-alice/18
+  ab-marisa/10
+]
+consumes: {
+  liquid: {
+    liquid: eb-marisa-juice
+    amount: 0.08
+    booster: true
+    optional: true
+  }
+  power: 0.4
+}
+liquidBoostIntensity: 1.732051
+category: production
+research: dbc-patchouli-drill

@@ -1,0 +1,14 @@
+localizedName: 红魔乡四面
+description: "突破了[#007F00]美铃[]的防线后，[#FF0000]灵梦[]和[#FFFF00]魔理沙[]进入了被称为红魔馆的洋馆。\n她们来到了洋馆地下的图书馆。在这里，她们会与（没有称号的）[#9F1F00]小恶魔（小）[]和知识与避世的少女[#FF7FBF]帕秋莉·诺蕾姬（帕）[]对峙。"
+planet: gensoukyo
+sector: 477
+research: {
+  parent: touhou-th6-3
+  objectives: [
+    {
+      type: SectorComplete
+      preset: touhou-th6-3
+    }
+  ]
+}
+difficulty: 4

@@ -1,0 +1,12 @@
+type: Weather
+duration: 216000
+sound: none
+soundVol: 0
+soundVolMin: 0
+soundVolOscMag: 0
+soundVolOscScl: 0
+hidden: false
+status: touhou-damage-flying
+statusDuration: 1
+statusAir: true
+statusGround: false

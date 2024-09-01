@@ -1,0 +1,10 @@
+type: OverflowDuct
+health: 30
+requirements: [
+  ae-patchouli/12
+]
+squareSprite: false
+category: distribution
+speed: 3.3333333
+research: jc-patchouli-duct-router
+underBullets: false

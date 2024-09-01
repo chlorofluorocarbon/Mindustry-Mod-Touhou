@@ -1,0 +1,323 @@
+type: mech
+createScorch: false
+speed: 0.12
+drag: 1
+accel: 1
+rotateSpeed: 360
+baseRotateSpeed: 360
+health: 539.8
+armor: 0
+canBoost: false
+// landshake: 0
+stepShake: 0
+// mechStepShake: 0
+mechStepParticles: false
+range: 240
+maxRange: 240
+outlines: false
+ammoType: af-sakuya
+mechLegColor: FFFFFF00
+itemCapacity: 0
+hitSize: 48
+mechSideSway: 0
+mechFrontSway: 0
+deathSound: bujikasakuyasann
+weapons: [
+  {
+    name: sakuya-knife-a
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    rotate: true
+    rotateSpeed: 0
+    shootCone: 180
+    alwaysShooting: true
+    ignoreRotation: true
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 90
+    predictTarget: false
+    shoot: {
+      type: ShootSpread
+      shots: 24
+      spread: 7.5
+      shotDelay: 3.75
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      inaccuracy: 3
+      damage: 14
+      hitSize: 3
+      pierce: true
+      pierceBuilding: true
+      pierceCap: 2
+      keepVelocity: false
+      lifetime: 1800
+      speed: 0.72
+      setDefaults: false
+      despawnEffect: none
+      width: 16
+      height: 16
+      makeFire: false
+      hitEffect: none
+      smokeEffect: none
+      reflectable: true
+      shootEffect: none
+      status: sakuya-timestop
+      statusDuration: 30
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 24
+      backColor: FFFFFFFF
+      frontColor: FF0000FF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-knife"
+    }
+  }
+  {
+    name: sakuya-knife-b
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 72
+    predictTarget: false
+    rotateSpeed: 360
+    shoot: {
+      type: ShootSpread
+      shots: 15
+      spread: 6
+      shotDelay: 0
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 15
+      hitSize: 3
+      pierce: true
+      pierceBuilding: true
+      pierceCap: 3
+      keepVelocity: false
+      lifetime: 1800
+      speed: 0.54
+      setDefaults: false
+      despawnEffect: none
+      width: 16
+      height: 16
+      makeFire: false
+      hitEffect: none
+      smokeEffect: none
+      reflectable: true
+      shootEffect: none
+      status: sakuya-timestop
+      statusDuration: 30
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 24
+      backColor: FFFFFFFF
+      frontColor: 0000FFFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-knife"
+    }
+  }
+  {
+    name: sakuya-knife-c
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    alwaysShooting: true
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 84
+    predictTarget: false
+    rotateSpeed: 360
+    shoot: {
+      type: ShootSpread
+      shots: 3
+      spread: 12
+      shotDelay: 0
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 18
+      hitSize: 3
+      pierce: true
+      pierceBuilding: true
+      pierceCap: 4
+      keepVelocity: false
+      lifetime: 120
+      speed: 0.68
+      setDefaults: false
+      despawnEffect: none
+      width: 16
+      height: 16
+      makeFire: false
+      hitEffect: none
+      smokeEffect: none
+      reflectable: true
+      shootEffect: none
+      status: sakuya-timestop
+      statusDuration: 30
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 24
+      backColor: FFFFFFFF
+      frontColor: 00FF00FF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-knife"
+      despawnHit: true
+      fragBullets: 3
+      fragRandomSpread: 0
+      fragSpread: 24
+      fragAngle: 0
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragBullet: {
+        type: BasicBulletType
+        collidesTeam: false
+        keepVelocity: false
+        damage: 6
+        hitSize: 3
+        pierce: true
+        pierceBuilding: true
+        pierceCap: 2
+        lifetime: 1800
+        speed: 0.68
+        setDefaults: false
+        despawnEffect: none
+        width: 16
+        height: 16
+        makeFire: false
+        status: sakuya-timestop
+        statusDuration: 30
+        hitEffect: none
+        smokeEffect: none
+        reflectable: true
+        shootEffect: none
+        
+        collidesAir: true
+        collidesGround: true
+        lightRadius: 24
+        backColor: FFFFFFFF
+        frontColor: FFFF00FF
+        shrinkX: 0
+        shrinkY: 0
+        sprite: "touhou-knife"
+      }
+    }
+  }
+  {
+    name: sakuya-knife-d
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    alwaysShooting: true
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 144
+    predictTarget: false
+    rotateSpeed: 360
+    shoot: {
+      type: ShootSpread
+      shots: 2
+      spread: 12
+      shotDelay: 0
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 0
+      hitSize: 3
+      pierce: true
+      pierceBuilding: true
+      pierceCap: -1
+      lifetime: 85
+      speed: 0.1
+      inaccuracy: 0
+      setDefaults: false
+      despawnEffect: none
+      keepVelocity: false
+      width: 0
+      height: 0
+      makeFire: false
+      hitEffect: none
+      smokeEffect: none
+      reflectable: false
+      absorbable: false
+      hittable: false
+      shootEffect: none
+      status: none
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 0
+      backColor: FFFFFFFF
+      frontColor: FFFFFFFF
+      shrinkX: 0
+      shrinkY: 0
+      intervalBullets: 1
+      bulletInterval: 15
+      intervalRandomSpread: 0
+      intervalBullet: {
+        type: BasicBulletType
+        collidesTeam: false
+        damage: 8
+        hitSize: 3
+        pierce: true
+        pierceBuilding: true
+        pierceCap: 2
+        lifetime: 1800
+        speed: 0.75
+        setDefaults: false
+        despawnEffect: none
+        width: 16
+        height: 16
+        makeFire: false
+        hitEffect: none
+        smokeEffect: none
+        reflectable: true
+        shootEffect: none
+        status: sakuya-timestop
+        statusDuration: 30
+        collidesAir: true
+        collidesGround: true
+        lightRadius: 24
+        backColor: FFFFFFFF
+        frontColor: 00FFFFFF
+        shrinkX: 0
+        shrinkY: 0
+        sprite: "touhou-knife"
+      }
+    }
+  }
+]
+immunities: [
+  burning
+  maid-fairy-lifetime
+]
+research: v6gzb-sakuya

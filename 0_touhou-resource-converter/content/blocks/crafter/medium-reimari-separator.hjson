@@ -1,0 +1,27 @@
+type: Separator
+size: 1
+itemCapacity: 20
+hasPower: false
+hasItems: true
+craftTime: 5
+consumes: {
+  items: [
+    medium/1
+  ]
+}
+hasLiquids: false
+// updateEffect: fuelburn
+results: [
+  touhou-aa-reimu/1
+  touhou-ab-marisa/1
+]
+category: crafting
+requirements: [
+  medium/100
+]
+research: {
+  parent: copper-medium-converter
+  requirements: [
+    medium/500
+  ]
+}

@@ -1,0 +1,11 @@
+research: core-a-reimari
+color: 00DF00FF
+barColor: 00DF00FF
+lightColor: 00DF005F
+flammability: 0
+temperature: 0.5
+heatCapacity: 0.5
+viscosity: 0.5
+explosiveness: 2
+effect: none
+coolant: false

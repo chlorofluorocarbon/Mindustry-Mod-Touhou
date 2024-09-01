@@ -1,0 +1,168 @@
+type: ItemTurret
+size: 3
+health: 1200
+hasPower: true
+requirements: [
+  ae-patchouli/2400
+  azac-alice/1200
+  ab-marisa/1200
+  yc-bomb/8
+]
+shootCone: 0.5
+shootY: 0
+shootSound: none
+consumes: {
+  power: 8
+}
+coolantMultiplier: 1
+reload: 300
+range: 360
+ammoPerShot: 480
+maxAmmo: 960
+ammoTypes: {
+  ah-flandre: {
+    type: BasicBulletType
+    damage: 0
+    height: 0
+    width: 0
+    ammoMultiplier: 5
+    speed: 0
+    smokeEffect: none
+    shootEffect: none
+    lifetime: 8
+    intervalBullets: 1
+    bulletInterval: 10
+    intervalBullet: {
+      type: BasicBulletType
+      lifetime: 1
+      spawnUnit: xa-la-patchouli-7-turret-fire-missile
+    }
+    despawnEffect: none
+    hitEffect: none
+    intervalSpread: 0
+    intervalRandomSpread: 0
+  }
+  ad-cirno: {
+    type: BasicBulletType
+    damage: 0
+    height: 0
+    width: 0
+    ammoMultiplier: 5
+    speed: 0
+    smokeEffect: none
+    shootEffect: none
+    lifetime: 38
+    intervalBullets: 1
+    bulletInterval: 2.5
+    intervalBullet: {
+      type: BasicBulletType
+      lifetime: 1
+      spawnUnit: xb-la-patchouli-7-turret-water-missile
+    }
+    despawnEffect: none
+    hitEffect: none
+    intervalSpread: 0
+    intervalRandomSpread: 5
+  }
+  acz-daiyousei: {
+    type: BasicBulletType
+    damage: 0
+    height: 0
+    width: 0
+    ammoMultiplier: 5
+    speed: 0
+    smokeEffect: none
+    shootEffect: none
+    lifetime: 8
+    intervalBullets: 1
+    bulletInterval: 10
+    intervalBullet: {
+      type: BasicBulletType
+      lifetime: 1
+      spawnUnit: xc-la-patchouli-7-turret-wood-missile
+    }
+    despawnEffect: none
+    hitEffect: none
+    intervalSpread: 0
+    intervalRandomSpread: 0
+  }
+  af-sakuya: {
+    type: BasicBulletType
+    damage: 0
+    height: 0
+    width: 0
+    ammoMultiplier: 5
+    speed: 0
+    smokeEffect: none
+    shootEffect: none
+    lifetime: 20
+    intervalBullets: 3
+    bulletInterval: 10
+    intervalBullet: {
+      type: BasicBulletType
+      lifetime: 1
+      spawnUnit: xd-la-patchouli-7-turret-metal-missile
+    }
+    despawnEffect: none
+    hitEffect: none
+    intervalSpread: 15
+    intervalRandomSpread: 0
+  }
+  adz-meiling: {
+    type: BasicBulletType
+    damage: 0
+    height: 0
+    width: 0
+    ammoMultiplier: 5
+    speed: 0
+    smokeEffect: none
+    shootEffect: none
+    lifetime: 8
+    intervalBullets: 1
+    bulletInterval: 10
+    intervalBullet: {
+      type: BasicBulletType
+      lifetime: 1
+      spawnUnit: xe-la-patchouli-7-turret-earth-missile
+    }
+    despawnEffect: none
+    hitEffect: none
+    intervalSpread: 0
+    intervalRandomSpread: 0
+  }
+  aa-reimu: {
+    type: BasicBulletType
+    ammoMultiplier: 1
+    lifetime: 1
+    smokeEffect: none
+    shootEffect: none
+    spawnUnit: xf-la-patchouli-7-turret-sun-missile
+  }
+  ae-patchouli: {
+    type: BasicBulletType
+    damage: 0
+    height: 0
+    width: 0
+    ammoMultiplier: 1
+    speed: 0
+    smokeEffect: none
+    shootEffect: none
+    lifetime: 150
+    intervalBullets: 1
+    bulletInterval: 6.25
+    intervalBullet: {
+      type: BasicBulletType
+      lifetime: 1
+      spawnUnit: xg-la-patchouli-7-turret-moon-missile
+    }
+    despawnEffect: none
+    hitEffect: none
+    intervalSpread: 0
+    intervalRandomSpread: 36
+  }
+}
+research: kab-mariaripache-defender
+category: turret
+fogRadiusMultiplier: 0.4
+outlineColor: FFFFFF00
+outlineRadius: 0

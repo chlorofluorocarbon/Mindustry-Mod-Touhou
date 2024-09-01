@@ -1,0 +1,9 @@
+type: Router
+health: 320
+requirements: [
+  aa-reimu/12
+]
+size: 2
+category: distribution
+research: bd-reimu-router
+underBullets: true

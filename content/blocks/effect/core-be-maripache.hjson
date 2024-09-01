@@ -1,0 +1,17 @@
+type: CoreBlock
+size: 4
+health: 2750
+requirements: [
+  ab-marisa/2000
+  ae-patchouli/2000
+  aa-reimu/1500
+  azac-alice/1500
+]
+thrusterLength: 8.5
+destroySound: none
+unitType: u0be-librarian-marisa
+category: effect
+research: core-a-reimari
+researchCostMultiplier: 0.25
+itemCapacity: 12000
+unitCapModifier: 5

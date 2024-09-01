@@ -1,0 +1,33 @@
+type: GenericCrafter
+size: 1
+itemCapacity: 10
+liquidCapacity: 240
+hasPower: false
+hasLiquids: true
+hasItems: true
+craftTime: 300
+consumes: {
+  liquid: {
+    liquid: eyb-1up-juice
+    amount: 12
+  }
+}
+craftEffect: none
+updateEffect: fuelburn
+outputItem: yb-1up/1
+category: crafting
+requirements: [
+  ab-marisa/5
+  aa-reimu/5
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    DrawDefault
+    {
+      type: DrawLiquidRegion
+      drawLiquid: eyb-1up-juice
+    }
+  ]
+}
+research: dab-1up-juice-generator

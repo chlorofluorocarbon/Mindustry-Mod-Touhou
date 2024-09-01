@@ -1,0 +1,6 @@
+type: StaticWall
+attributes: {
+  wall-sakuya: 0.3
+  wall-remilia: 0.1
+}
+variants: 2

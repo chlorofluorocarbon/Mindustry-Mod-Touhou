@@ -1,0 +1,33 @@
+type: GenericCrafter
+size: 1
+itemCapacity: 10
+liquidCapacity: 240
+hasPower: false
+hasLiquids: true
+hasItems: true
+craftTime: 300
+consumes: {
+  liquid: {
+    liquid: eyc-b-juice
+    amount: 3
+  }
+}
+craftEffect: none
+updateEffect: fuelburn
+outputItem: yc-bomb/1
+category: crafting
+requirements: [
+  aa-reimu/5
+  ab-marisa/5
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    DrawDefault
+    {
+      type: DrawLiquidRegion
+      drawLiquid: eyc-b-juice
+    }
+  ]
+}
+research: dac-b-juice-generator

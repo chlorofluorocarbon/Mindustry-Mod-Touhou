@@ -1,0 +1,202 @@
+type: legs
+createScorch: false
+coreUnitDock: true
+controller: BuilderAI
+isEnemy: false
+envDisabled: 0
+range: 48
+aimDst: 0
+hovering: false
+allowLegStep: true
+legLength: 0
+legSpeed: 0
+legForwardScl: 0
+legLengthScl: 0
+legStraightLength: 0
+legMaxLength: 0
+legMinLength: 0
+faceTarget: true
+targetPriority: -2
+lowAltitude: true
+mineWalls: true
+mineFloor: true
+mineRange: 48
+mineHardnessScaling: true
+itemOffsetY: 0
+flying: false
+mineSpeed: 4
+mineTier: 2
+buildSpeed: 1.2
+buildBeamOffset: 4
+buildRange: 48
+drag: 0.12
+speed: 0.66666666
+rotateSpeed: 7
+accel: 0.1
+itemCapacity: 50
+health: 1
+armor: 0
+hitSize: 8
+/*
+engineOffset: 0
+engineLayer: -10
+engineSize: 9
+engineColor: 3F3FFF7F
+engineColorInner: FFFFFF00
+*/
+allowedInPayloads: true
+payloadCapacity: 0
+fogRadius: 0
+targetable: false
+hittable: false
+weapons: [
+  {
+    type: RepairBeamWeapon
+    layerOffset: 10
+    reload: 20
+    x: 0
+    y: 4
+    rotate: false
+    shootY: 0
+    beamWidth: 0.7
+    repairSpeed: 2.5
+    fractionRepairSpeed: 0.12
+    shootCone: 15
+    mirror: false
+    targetUnits: false
+    targetBuildings: true
+    autoTarget: false
+    controllable: true
+    laserColor: 9FCFCF9F
+    healColor: 9FCFCFFF
+    bullet: 
+    {
+      type: BulletType
+      maxRange: 48
+    }
+  }
+  {
+    name: rinnosuke-tokiko-producer
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 3600
+    alwaysShooting: true
+    predictTarget: false
+    rotateSpeed: 360
+    shoot: {
+      type: ShootPattern
+      shots: 1
+      // spread: 0
+      shotDelay: 0
+      firstShotDelay: 1800
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 0
+      inaccuracy: 180
+      hitSize: 3
+      pierce: false
+      pierceBuilding: false
+      lifetime: 60
+      speed: 0.5
+      setDefaults: false
+      despawnHit: true
+      despawnUnit: u0baz-tokiko
+      despawnUnitRadius: 0
+      despawnEffect: none
+      width: 8
+      height: 8
+      makeFire: false
+      status: none
+      hitEffect: {
+        type: WaveEffect
+        colorFrom: 7FBFBFFF
+        colorTo: 7FBFBFFF
+        sizeFrom: 1
+        strokeFrom: 2
+        sizeTo: 12
+        strokeTo: 2
+        lifetime: 15
+      }
+      smokeEffect: none
+      hittable: false
+      reflectable: false
+      absorbable: false
+      shootEffect: none
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 24
+      backColor: 9FCFCFFF
+      frontColor: 9FCFCFFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-shanghai-spawn"
+    }
+  }
+]
+outlineColor: 00000000
+mechSideSway: 0
+mechFrontSway: 0
+// Change deathSound to Reimu's "Rinnosuke" and Marisa's "Kourinn" later
+deathSound: thbiu
+deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 120
+      particles: 8
+      length: 40
+      spin: 2
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-ya-p-point
+    }
+  ]
+}
+outlines: false
+mineItems: [
+  aa-reimu
+  ab-marisa
+  ac-rumia
+  acz-daiyousei
+  ad-cirno
+  adz-meiling
+  adzz-koakuma
+  ae-patchouli
+  af-sakuya
+  ag-remilia
+  ah-flandre
+  azaa-letty
+  azab-chen
+  azac-alice
+  azae-youmu
+  azaf-yuyuko
+  azag-ran
+  azah-yukari
+]
+immunities: [
+  damage-flying
+  burning
+  maid-fairy-lifetime
+]
+research: {
+  parent: u0a-ruukoto
+  requirements: [
+    azzzzbza-village-protector/200
+  ]
+}

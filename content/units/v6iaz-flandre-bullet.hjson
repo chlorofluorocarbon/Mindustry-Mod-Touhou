@@ -1,0 +1,185 @@
+type: missile
+wobble: false
+createScorch: false
+lowAltitude: true
+accel: 1
+drag: 0.2
+hitSize: 6
+missileAccelTime: 0
+speed: 1
+lifetime: 240
+physics: false
+allowedInPayloads: false
+homingDelay: 0
+health: 2
+createWreck: false
+createScorch: false
+deathSound: none
+deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: WaveEffect
+      lifetime: 180
+      sizeFrom: 16
+      sizeTo: 16
+      strokeFrom: 2
+      strokeTo: 2
+      colorFrom: BF3F00FF
+      colorTo: BF3F00FF
+    }
+    {
+      type: WaveEffect
+      lifetime: 180
+      sizeFrom: 0
+      sizeTo: 16
+      strokeFrom: 0
+      strokeTo: 2
+      colorFrom: BF3F00FF
+      colorTo: BF3F00FF
+    }
+  ]
+}
+useUnitCap: false
+isEnemy: false
+controller: MissileAI
+playerControllable: false
+rotateSpeed: 0
+range: 3
+engineSize: 0
+engineOffset: 0
+maxRange: 3
+flying: true
+weapons: [
+  {
+    name: weapon
+    x: 0
+    mirror: false
+    shootCone: 360
+    reload: 60
+    shootOnDeath: true
+    shootSound: none
+    shootX: 0
+    shootY: 0
+    inaccuracy: 0
+    bullet: {
+      type: BasicBulletType
+      killShooter: true
+      collidesTeam: false
+      damage: 0
+      splashDamage: 0
+      splashDamageRadius: 0
+      hitSize: 3
+      pierce: false
+      pierceBuilding: false
+      lifetime: 180
+      rangeOverride: 5
+      speed: 0
+      setDefaults: false
+      despawnHit: true
+      hitEffect: none
+      width: 8
+      height: 8
+      makeFire: false
+      status: none
+      keepVelocity: false
+      despawnEffect: none
+      smokeEffect: none
+      reflectable: false
+      hittable: false
+      absorbable: false
+      shootEffect: none
+      collidesAir: false
+      collidesGround: false
+      collides: false
+      lightRadius: 0
+      backColor: FFFFFFFF
+      frontColor: FFFFFFFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-normal-bullet"
+      fragBullets: 1
+      fragRandomSpread: 0
+      fragSpread: 0
+      fragAngle: 0
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      // fragOff.Max/min are fields that SHOULD exist. 
+      fragOffsetMax: 0
+      fragOffsetMin: 0
+      fragBullet: {
+        type: BasicBulletType
+        collidesTeam: false
+        keepVelocity: false
+        damage: 49.5
+        splashDamage: 12
+        splashDamageRadius: 16
+        splashDamagePierce: true
+        hitSize: 3
+        pierce: false
+        pierceBuilding: false
+        lifetime: 2
+        speed: 1
+        setDefaults: false
+        despawnHit: true
+        hitEffect: 
+        {
+          type: MultiEffect
+          effects: [
+            {
+              type: ParticleEffect
+              particles: 1
+              randLength: false
+              lifetime: 90
+              sizeFrom: 16
+              sizeTo: 16
+              length: 0
+              baseLength: 0
+              colorFrom: BF3F00FF
+              colorTo: BF3F0000
+            }
+            {
+              type: ParticleEffect
+              particles: 8
+              randLength: true
+              lifetime: 90
+              sizeFrom: 4
+              sizeTo: 0
+              length: 16
+              baseLength: 0
+              interp: pow2Out
+              sizeInterp: pow2In
+              colorFrom: FFFFFF7F
+              colorTo: FFFFFF7F
+            }
+          ]
+        }
+        width: 8
+        height: 8
+        makeFire: false
+        status: none
+        despawnEffect: none
+        smokeEffect: none
+        reflectable: false
+        hittable: false
+        absorbable: true
+        shootEffect: none
+        hitSound: explosion
+        collidesAir: true
+        collidesGround: true
+        lightRadius: 0
+        backColor: FFFFFFFF
+        frontColor: BF3F00FF
+        shrinkX: 0
+        shrinkY: 0
+        sprite: "touhou-normal-bullet"
+      }
+    }
+  }
+]
+outlineColor: 00000000
+outlineRadius: 0
+outlines: false
+immunities: [
+  damage-flying
+]

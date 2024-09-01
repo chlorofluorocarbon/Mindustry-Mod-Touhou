@@ -1,0 +1,25 @@
+type: GenericCrafter
+size: 1
+itemCapacity: 25
+hasPower: false
+hasItems: true
+craftTime: 0.999999
+consumes: {
+  items: {
+    items: [
+      graphite/2
+    ]
+  }
+}
+updateEffect: fuelburn
+outputItem: medium/5
+category: crafting
+requirements: [
+  graphite/75
+]
+research: {
+  parent: coal-medium-converter
+  requirements: [
+    graphite/375
+  ]
+}

@@ -1,0 +1,11 @@
+type: Conduit
+requirements: [
+  ad-cirno/1
+]
+liquidCapacity: 10
+placeableLiquid: true
+category: liquid
+research: iaa-cirno-pump
+bridgeReplacement: ie-cirno-bridge-conduit
+junctionReplacement: id-cirno-liquid-junction
+underBullets: false

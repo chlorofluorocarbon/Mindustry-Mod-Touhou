@@ -1,0 +1,63 @@
+type: missile
+// A field that SHOULD exist. I will keep it. 
+wobble: false
+createScorch: false
+lowAltitude: true
+accel: 0.2
+drag: 0.2
+hitSize: 12
+missileAccelTime: 60
+speed: 2
+lifetime: 227
+physics: false
+allowedInPayloads: false
+homingDelay: 15
+health: 64
+createWreck: false
+createScorch: false
+deathExplosionEffect: none
+useUnitCap: false
+isEnemy: false
+controller: MissileAI
+playerControllable: false
+rotateSpeed: 0
+range: 8
+engineOffset: 0
+maxRange: 8
+flying: true
+weapons: [
+  {
+    name: weapon
+    mirror: false
+    x: 0
+    y: 0
+    shootCone: 360
+    reload: 10
+    shootOnDeath: true
+    shootSound: none
+    shootX: 0
+    shootY: 0
+    bullet: {
+      type: ExplosionBulletType
+      killShooter: true
+      ammoMultiplier: 1
+      splashDamage: 80
+      splashDamageRadius: 72
+      instantDisappear: true
+      // Fields that don't exist. 
+      // width: 0
+      // height: 0
+      keepVelocity: false
+    }
+  }
+]
+outlineColor: 00000000
+outlineRadius: 0
+outlines: false
+/*
+    splashDamage: 60
+    splashDamageRadius: 64
+*/
+immunities: [
+  damage-flying
+]

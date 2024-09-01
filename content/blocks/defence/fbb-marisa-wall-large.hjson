@@ -1,0 +1,13 @@
+type: Wall
+size: 2
+health: 1280
+requirements: [
+  ab-marisa/24
+]
+category: defense
+research: fba-marisa-wall
+buildCostMultiplier: 3.2
+lightningChance: 0.03
+lightningDamage: 20
+lightningLength: 17
+lightningColor: FFFF00FF

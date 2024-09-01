@@ -1,0 +1,23 @@
+type: ShieldWall
+size: 1
+health: 160
+shieldHealth: 200
+requirements: [
+  ae-patchouli/6
+]
+consumes: {
+  power: 0.0166666667
+}
+conductivePower: true
+hasPower: true
+breakCooldown: 750
+category: defense
+research: fdzza-koakuma-wall
+regenSpeed: 0.266667
+buildCostMultiplier: 3.2
+chanceDeflect: 8
+absorbLasers: true
+insulated: false
+flashHit: true
+flashColor: FF7FBFBF
+glowColor: FF7FBF7F

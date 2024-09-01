@@ -1,0 +1,225 @@
+type: mech
+createScorch: false
+speed: 0.1
+drag: 1
+accel: 1
+rotateSpeed: 360
+baseRotateSpeed: 360
+health: 559.8
+armor: 0
+canBoost: false
+// landshake: 0
+stepShake: 0
+// mechStepShake: 0
+mechStepParticles: false
+range: 240
+maxRange: 240
+outlines: false
+ammoType: ac-rumia
+mechLegColor: FFFFFF00
+itemCapacity: 0
+hitSize: 48
+mechSideSway: 0
+mechFrontSway: 0
+deathSound: soonanokaa
+deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 120
+      particles: 12
+      length: 48
+      spin: 2
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-ya-p-point
+    }
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 120
+      particles: 12
+      spin: -1.5
+      length: 48
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-yd-point-item
+    }
+  ]
+}
+weapons: [
+  {
+    name: rumia-darkness-a
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 90
+    predictTarget: false
+    rotateSpeed: 360
+    shoot: {
+      type: ShootSpread
+      shots: 12
+      spread: 15
+      shotDelay: 0
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      keepVelocity: false
+      damage: 6
+      hitSize: 4
+      pierce: false
+      pierceBuilding: false
+      lifetime: 1800
+      rangeOverride: 240
+      speed: 0.6
+      setDefaults: false
+      despawnEffect: none
+      width: 12
+      height: 12
+      makeFire: false
+      status: none
+      hitEffect: none
+      smokeEffect: none
+      reflectable: false
+      shootEffect: none
+      
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 32
+      backColor: FFFFFFFF
+      frontColor: FFFFFFFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-rumia-dark-ball"
+    }
+  }
+  {
+    name: rumia-darkness-b
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 120
+    predictTarget: false
+    rotateSpeed: 360
+    shoot: {
+      type: ShootSpread
+      shots: 12
+      spread: 15
+      shotDelay: 0
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      keepVelocity: false
+      damage: 6
+      hitSize: 4
+      pierce: false
+      pierceBuilding: false
+      lifetime: 1800
+      rangeOverride: 240
+      speed: 0.48
+      setDefaults: false
+      despawnEffect: none
+      width: 12
+      height: 12
+      makeFire: false
+      status: none
+      hitEffect: none
+      smokeEffect: none
+      reflectable: false
+      shootEffect: none
+      
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 32
+      backColor: FFFFFFFF
+      frontColor: FFFFFFFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-rumia-dark-ball"
+    }
+  }
+  {
+    name: rumia-darkness-c
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 16
+    shootSound: none
+    noAmmoSound: none
+    reload: 40
+    predictTarget: false
+    rotateSpeed: 360
+    shoot: {
+      type: ShootSpread
+      shots: 3
+      spread: 5
+      shotDelay: 0
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 6
+      hitSize: 4
+      pierce: false
+      pierceBuilding: false
+      lifetime: 1800
+      rangeOverride: 240
+      speed: 0.44
+      setDefaults: false
+      despawnEffect: none
+      width: 16
+      height: 16
+      inaccuracy: 5
+      makeFire: false
+      status: none
+      hitEffect: none
+      smokeEffect: none
+      reflectable: false
+      shootEffect: none
+      
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 32
+      backColor: FFFFFFFF
+      frontColor: FFFFFFFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-rumia-dark-ball"
+    }
+  }
+]
+immunities: [
+  burning
+  maid-fairy-lifetime
+]
+research: v6ac-rumia

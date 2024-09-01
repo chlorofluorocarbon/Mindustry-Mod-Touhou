@@ -1,0 +1,25 @@
+type: GenericCrafter
+size: 1
+itemCapacity: 15
+hasPower: false
+hasItems: true
+craftTime: 0.999999
+consumes: {
+  items: {
+    items: [
+      silicon/1
+    ]
+  }
+}
+updateEffect: fuelburn
+outputItem: medium/3
+category: crafting
+requirements: [
+  silicon/50
+]
+research: {
+  parent: graphite-medium-converter
+  requirements: [
+    silicon/250
+  ]
+}

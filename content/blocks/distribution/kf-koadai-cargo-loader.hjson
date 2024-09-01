@@ -1,0 +1,28 @@
+type: UnitCargoLoader
+health: 240
+itemCapacity: 240
+liquidCapacity: 30
+requirements: [
+  ae-patchouli/40
+  adzz-koakuma/90
+  acz-daiyousei/90
+]
+size: 2
+squareSprite: false
+category: distribution
+research: kd-alice-doll-cargo-loader
+underBullets: false
+unitType: u00zb-maid-daiyousei
+consumes: {
+  power: 50
+  liquids: [
+    ed-cirno-juice/0.3
+  ]
+}
+buildTime: 1800
+polyStroke: 1.6
+polyRadius: 6
+polySides: 6
+polyColor: FF7FBFDF
+polyRotateSpeed: -1
+hasPower: true

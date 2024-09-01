@@ -1,0 +1,186 @@
+localizedName: 幻想乡
+description: （这本不应是一个星球；摘自thwiki.cc）\n这里在过去是被称为「东之国远离人类村落的边境之地」的场所，深藏于日本境内的某片群山之中。\n在这里，人类仍然敬畏神明，仍然谈论着魍魉魑魅……
+alwaysUnlocked: true
+mesh: [
+ {
+    // water
+    type: NoiseMesh
+    planet: gensoukyo
+    divisions: 5
+    seed: 7
+    radius: 1.21
+    color1: 4F5F87
+    color2: 4F6F8F
+    octaves: 3.7
+    persistence: 0.1
+    scale: 1.0
+    mag: 0
+  }
+ {
+    // forest
+    type: NoiseMesh
+    planet: gensoukyo
+    divisions: 6
+    seed: 14
+    radius: 1.05
+    color1: 1F5F1F
+    color2: 1F7F1F
+    octaves: 4
+    persistence: 0.8
+    scale: 1.0
+    mag: 1.4
+  }
+ {
+    // grass
+    type: NoiseMesh
+    planet: gensoukyo
+    divisions: 5
+    seed: 16
+    radius: 1.14
+    color1: 1F8F1F
+    color2: 2FAF2F
+    octaves: 4
+    persistence: 0.4
+    scale: 1.0
+    mag: 0.6
+  }
+ {
+    // mountain
+    type: NoiseMesh
+    planet: gensoukyo
+    divisions: 6
+    seed: 22
+    radius: 0.8
+    color1: 5F5F5F
+    color2: 777777
+    octaves: 4
+    persistence: 0.8
+    scale: 1.0
+    mag: 4.35
+  }
+]
+cloudMesh: [
+ {
+   type: HexSkyMesh
+   planet: gensoukyo
+   seed: 21
+   speed: 0.6
+   radius: 0.15
+   divisions: 5
+   color: EFFFFF5F
+   octaves: 3
+   persistence: 0.45
+   scl: 0.92
+   thresh: 0.3
+  }
+ {
+   type: HexSkyMesh
+   planet: gensoukyo
+   seed: 16
+   speed: 1.41
+   radius: 0.14
+   divisions: 5
+   color: EFFFFF5F
+   octaves: 2
+   persistence: 0.45
+   scl: 0.94
+   thresh: 0.4
+  }
+ {
+   type: HexSkyMesh
+   planet: gensoukyo
+   seed: 13
+   speed: 2.16
+   radius: 0.13
+   divisions: 5
+   color: BFDFDF67
+   octaves: 2
+   persistence: 0.45
+   scl: 0.4
+   thresh: 0.3
+  }
+]
+
+generator: {
+  octaves: 3
+  persistence: 0.52
+  scale: 22
+  mag: 0.721
+  thresh: 1.152
+  min: 100
+  max: 100
+  radMin: 220
+  radMax: 600
+/*
+  iceChance: 0.51
+  carbonChance: 0.32
+  berylChance: 0
+  ferricChance: 0.26
+*/
+}
+
+// This is NOT an unknown field. It's essential. 
+sectorSize: 4
+allowLaunchSchematics: false
+allowLaunchToNumbered: true
+allowLaunchLoadout: false
+allowSectorInvasion: false
+startSector: 0
+orbitSpacing: 1
+radius: 1.2
+minZoom: 0.5
+drawOrbit: true
+atmosphereRadIn: 0
+atmosphereRadOut: 0.28
+accessible: true
+updateLighting: false
+sectorSeed: 18519
+// previous sectorSeed: 14513
+bloom: false
+visible: true
+atmosphereColor: 1F3F7F
+iconColor: 1F3F7F
+hasAtmosphere: true
+allowWaveSimulation: false
+clearSectorOnLose: true
+// allowWaves: true
+prebuildBase: true
+defaultCore: touhou-core-a-reimari
+parent: sun
+solarSystem: sun
+launchCandidates: []
+// "Deprecated" on Github
+itemWhitelist: [
+  aa-reimu
+  ab-marisa
+  ac-rumia
+  acz-daiyousei
+  ad-cirno
+  adz-meiling
+  adzz-koakuma
+  ae-patchouli
+  af-sakuya
+  ag-remilia
+  ah-flandre
+  azaa-letty
+  azab-chen
+  azac-alice
+  azae-youmu
+  azaf-yuyuko
+  azag-ran
+  azah-yukari
+  azzzza-ruukoto
+  azzzzb-mimichan
+  azzzzbza-village-protector
+  azzzzbzb-old-friend-friendship
+  azzzzbzc-grimoire-about-shrine-maiden
+  azzzzbzd-mysterious-magic-material
+  azzzzbze-stolen-book
+  azzzzc-double-seven-doll-material
+  ya-p-point
+  yb-1up
+  yc-bomb
+  yza-th6-enemy
+  zy-mixture-fragment
+  zz-mixture
+]

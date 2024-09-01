@@ -1,0 +1,165 @@
+type: mech
+createScorch: false
+isEnemy: false
+envDisabled: 0
+range: 240
+faceTarget: true
+targetPriority: -2
+lowAltitude: false
+mineWalls: false
+mineFloor: false
+mineRange: 0
+buildRange: 0
+itemOffsetY: 0
+flying: false
+mineSpeed: 0
+mineTier: 0
+buildSpeed: 0
+buildBeamOffset: 0
+drag: 1
+speed: 0
+rotateSpeed: 360
+accel: 0
+itemCapacity: 20
+health: 65536
+armor: 0
+hitSize: 4
+allowedInPayloads: true
+payloadCapacity: 0
+pickupUnits: false
+fogRadius: 0
+targetable: false
+hittable: false
+playerControllable: false
+weapons: [
+  {
+    type: PointDefenseWeapon
+    name: bomb-defense
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 1
+    rotateSpeed: 360
+    targetInterval: 1
+    targetSwitchInterval: 1
+    bullet: {
+      shootEffect: none
+      maxRange: 240
+      damage: 64
+    }
+  }
+  {
+    name: bomb-timer
+    alwaysShooting: true
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    layerOffset: 0
+    recoil: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 90
+    top: false
+    predictTarget: false
+    rotateSpeed: 360
+    shoot: {
+      type: ShootPattern
+      shots: 1
+      shotDelay: 0
+      firstShotDelay: 90
+    }
+    bullet: {
+      type: BasicBulletType
+      chargeEffect: {
+        type: MultiEffect
+        effects: [
+          {
+             type: WaveEffect
+             lifetime: 90
+             sizeFrom: 16
+             sizeTo: 16
+             strokeFrom: 2
+             strokeTo: 2
+             colorFrom: 00DF009F
+             colorTo: 00DF009F
+          }
+          {
+             type: WaveEffect
+             lifetime: 90
+             sizeFrom: 0
+             sizeTo: 16
+             strokeFrom: 0
+             strokeTo: 2
+             colorFrom: 00DF009F
+             colorTo: 00DF009F
+          }
+        ]
+      }          
+      collidesTeam: false
+      killShooter: true
+      damage: 0
+      splashDamage: 0
+      splashDamageRadius: 0
+      hitSize: 0
+      pierce: true
+      pierceCap: -1
+      pierceBuilding: false
+      rangeOverride: 16
+      lifetime: 0
+      speed: 0
+      setDefaults: true
+      despawnEffect: none
+      width: 0
+      height: 0
+      makeFire: false
+      status: none
+      hitEffect: none
+      smokeEffect: none
+      reflectable: false
+      absorbable: false
+      hittable: false
+      shootEffect: none
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 0
+      backColor: FFFFFFFF
+      frontColor: FFFFFFFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-normal-bullet"
+    }
+  }
+]
+outlineColor: 00000000
+mechSideSway: 0
+mechFrontSway: 0
+deathSound: none
+outlines: false
+immunities: [
+  burning
+  damage-flying
+  maid-fairy-lifetime
+]
+deathExplosionEffect: none
+createWreck: false
+/*
+research: {
+  parent: 
+  requirements: [
+    
+  ]
+}
+*/
+useUnitCap: false

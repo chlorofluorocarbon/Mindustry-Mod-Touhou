@@ -1,0 +1,15 @@
+localizedName: 红魔乡二面
+description: "打倒[#FFFFFF]露米娅[]后，两人继续前行。她们来到了雾之湖上。\n在这里，[#FF0000]灵梦[]和[#FFFF00]魔理沙[]将会遇到（没有称号的）[#00DF00]大妖精（大）[]和湖上的冰精[#00BFFF]琪露诺（⑨）[]。"
+captureWave: 31
+planet: gensoukyo
+sector: 272
+research: {
+  parent: touhou-th6-1
+  objectives: [
+    {
+      type: SectorComplete
+      preset: touhou-th6-1
+    }
+  ]
+}
+difficulty: 2

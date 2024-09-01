@@ -1,0 +1,50 @@
+type: UnitFactory
+size: 3
+itemCapacity: 2000
+requirements: [
+  aa-reimu/80
+  ab-marisa/80
+]
+research: core-a-reimari
+researchCost: [
+  aa-reimu/100
+  ab-marisa/100
+]
+category: units
+consumes: {
+  power: 1
+}
+plans: [
+  {
+    unit: uth06aa-0p-reimu
+    time: 1200
+    requirements: [
+      aa-reimu/1000
+      yb-1up/1
+    ]
+  }
+  {
+    unit: uth06ab-0p-reimu
+    time: 1200
+    requirements: [
+      aa-reimu/1000
+      yb-1up/1
+    ]
+  }
+  {
+    unit: uth06ba-0p-marisa
+    time: 1200
+    requirements: [
+      ab-marisa/1000
+      yb-1up/1
+    ]
+  }
+  {
+    unit: uth06bb-0p-marisa
+    time: 1200
+    requirements: [
+      ab-marisa/1000
+      yb-1up/1
+    ]
+  }
+]

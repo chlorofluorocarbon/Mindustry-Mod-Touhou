@@ -1,0 +1,51 @@
+type: GenericCrafter
+size: 2
+itemCapacity: 10
+hasPower: true
+hasLiquids: false
+hasItems: true
+craftTime: 60
+consumes: {
+  power: 1
+  items: [
+    ab-marisa/2
+    ae-patchouli/2
+  ]
+}
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawFlame
+      flameRadius: 0
+      flameColor: FF7FBFFF
+      lightRadius: 96
+      lightAlpha: 0.8
+    }
+    DrawDefault
+  ]
+}
+craftEffect: none
+updateEffect: {
+  type: ParticleEffect
+  line: true
+  colorFrom: FFFF00FF
+  colorTo: FF7FBFBF
+  particles: 3
+  length: 18
+  baseLength: 0
+  strokeFrom: 1.4
+  strokeTo: 0.7
+  lenFrom: 4
+  lenTo: 0
+  lifetime: 30
+  lightScl: 0
+}
+updateEffectChance: 0.169
+outputItem: azzzzbze-stolen-book/2
+category: crafting
+requirements: [
+  ab-marisa/100
+  ae-patchouli/100
+]
+research: hbza-reimu-ruukoto-converter

@@ -1,0 +1,16 @@
+type: Conveyor
+health: 80
+requirements: [
+  aa-reimu/1
+]
+category: distribution
+speed: 0.036
+displayedSpeed: 5
+placeableLiquid: true
+junctionReplacement: bc-reimu-junction
+research: core-a-reimari
+bridgeReplacement: bf-reimu-bridge-conveyor
+underBullets: true
+researchCost: [
+  aa-reimu/4
+]

@@ -1,0 +1,32 @@
+type: GenericCrafter
+size: 2
+itemCapacity: 20
+hasPower: true
+hasItems: true
+craftTime: 40
+consumes: {
+  power: 1.5
+  items: [
+    ab-marisa/4
+    ae-patchouli/1
+  ]
+}
+craftEffect: mine
+updateEffect: none
+outputItem: azac-alice/2
+category: crafting
+requirements: [
+  ab-marisa/120
+  ae-patchouli/30
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    DrawDefault
+    {
+      type: DrawFlame
+      flameColor: BFBF3FFF
+    }
+  ]
+}
+research: hcc-marichiru-rumia-converter

@@ -1,0 +1,133 @@
+type: mech
+createScorch: false
+speed: 0.32
+drag: 1
+accel: 1
+rotateSpeed: 360
+baseRotateSpeed: 360
+health: 31.8
+armor: 0
+canBoost: true
+useUnitCap: false
+boostMultiplier: 1
+hovering: true
+// landshake: 0
+stepShake: 0
+// mechStepShake: 0
+mechStepParticles: false
+range: 240
+maxRange: 240
+outlines: false
+ammoType: azac-alice
+mechLegColor: FFFFFF00
+itemCapacity: 0
+hitSize: 8
+mechSideSway: 0
+mechFrontSway: 0
+deathSound: none
+faceTarget: true
+weapons: [
+  {
+    name: shanghai-noweapon
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    layerOffset: -2
+    recoil: -7
+    recoilPow: 2.4
+    recoilTime: 45
+    shootSound: shanghai
+    noAmmoSound: none
+    reload: 60
+    top: false
+    predictTarget: false
+    rotate: false
+    rotateSpeed: 0
+    shoot: {
+      type: ShootPattern
+      shots: 1
+      // spread: 0
+      shotDelay: 0
+    }
+    bullet: {
+      type: PointBulletType
+      damage: 0
+      speed: 120
+      trailSpacing: 2
+      collidesTiles: true
+      trailEffect: {
+        type: ParticleEffect
+        particles: 1
+        length: 0
+        lifetime: 60
+        sizeFrom: 2
+        sizeTo: 2
+        region: touhou-point-line
+        colorFrom: 7F7FFF7F
+        colorTo: 7F7FFF00
+      }
+      ammoMultiplier: 1
+      // After testing, I found that this "PointBulletType" cannot be used as enemy bullet type because you can always override the max range when controlling manually. 
+      // Since Shanghai doll can't deal any damage, it will still use PointBulletType. 
+      absorbable: true
+      reflectable: false
+      smokeEffect: none
+      shootEffect: {
+        type: WaveEffect
+        lifetime: 60
+        sizeFrom: 6
+        sizeTo: 6
+        strokeFrom: 2
+        strokeTo: 2
+        colorFrom: 7F7FFF7F
+        colorTo: 7F7FFF00
+      }
+      despawnEffect: {
+        type: WaveEffect
+        lifetime: 60
+        sizeFrom: 6
+        sizeTo: 6
+        strokeFrom: 2
+        strokeTo: 2
+        colorFrom: 7F7FFF7F
+        colorTo: 7F7FFF00
+      }
+      hitEffect: {
+        type: WaveEffect
+        lifetime: 60
+        sizeFrom: 6
+        sizeTo: 6
+        strokeFrom: 2
+        strokeTo: 2
+        colorFrom: 7F7FFF7F
+        colorTo: 7F7FFF00
+      }
+    }
+  }
+]
+abilities: [
+  {
+    type: ShieldArcAbility
+    angle: 72
+    radius: 10
+    max: 32
+    regen: 0.03555555
+    cooldown: 900
+    whenShooting: false
+    // The shield may not work properly at all time. Avoid using this type of shield on players.
+    // width: 2
+    width: 4
+    // region: touhou-v7daz-shanghai-shield
+    // This is a field that SHOULD exist. 
+    color: 7F7FFF7F
+  }
+]
+immunities: [
+  burning
+  maid-fairy-lifetime
+]

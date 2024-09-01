@@ -1,0 +1,47 @@
+type: GenericCrafter
+size: 2
+itemCapacity: 10
+hasPower: true
+hasLiquids: false
+hasItems: true
+craftTime: 60
+consumes: {
+  power: 1
+  items: [
+    ae-patchouli/2
+    aa-reimu/2
+  ]
+}
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawCultivator
+      plantColor: FF0000FF
+      plantColorLight: FF7FBFFF
+      bottomColor: BF009FFF
+      bubbles: 12
+      sides: 16
+      strokeMin: 0.3
+      radius: 2.8
+    }
+    DrawDefault
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}
+craftEffect: mine
+updateEffect: none
+outputItem: azzzzbzc-grimoire-about-shrine-maiden/2
+category: crafting
+requirements: [
+  ae-patchouli/80
+  aa-reimu/80
+]
+research: hbza-reimu-ruukoto-converter

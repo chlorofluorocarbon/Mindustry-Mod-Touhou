@@ -1,0 +1,43 @@
+type: ConsumeGenerator
+size: 3
+itemDuration: 180
+requirements: [
+  ae-patchouli/40
+  ad-cirno/50
+  ab-marisa/70
+]
+hasLiquids: true
+hasItems: true
+hasPower: true
+consumes: {
+  liquid: {
+    liquid: ed-cirno-juice
+    amount: 0.1
+  }
+  items: [
+    ad-cirno/1
+    ae-patchouli/1
+  ]
+}
+drawer: {
+  type: DrawMulti
+  drawers:[
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawLiquidRegion
+      drawLiquid: ed-cirno-juice
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -glow
+      color: FF7FBFFF
+    }
+  ]
+}
+consumeEffect: fuelburn
+powerProduction: 15
+research: fcb-light-generator
+category: power
+lightColor: FF7FBF7F

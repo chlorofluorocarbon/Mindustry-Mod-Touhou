@@ -1,0 +1,25 @@
+type: ConsumeGenerator
+itemDuration: 120
+requirements: [
+  ab-marisa/30
+  aa-reimu/10
+]
+consumes: {
+  itemFlammable: {}
+}
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -glow
+      color: FFFF00FF
+    }
+  ]
+}
+powerProduction: 0.6
+research: core-a-reimari
+category: power

@@ -1,0 +1,11 @@
+type: LiquidRouter
+size: 3
+health: 480
+requirements: [
+  ad-cirno/20
+  af-sakuya/50
+]
+placeableLiquid: false
+liquidCapacity: 1800
+category: liquid
+research: icb-sakuya-container

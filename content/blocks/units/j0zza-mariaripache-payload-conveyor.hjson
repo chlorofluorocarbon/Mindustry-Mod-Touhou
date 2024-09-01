@@ -1,0 +1,10 @@
+type: PayloadConveyor
+size: 3
+requirements: [
+  ab-marisa/6
+  azac-alice/4
+  ae-patchouli/3
+]
+research: ja-0p-factory
+category: units
+underBullets: false

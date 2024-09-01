@@ -1,0 +1,14 @@
+type: Battery
+emptyLightColor: FF0000FF
+fullLightColor: 3FFF00FF
+requirements: [
+  ab-marisa/20
+  aa-reimu/5
+]
+consumesPower: true
+outputsPower: true
+consumes: {
+  powerBuffered: 4000
+}
+research: faa-marisa-node
+category: power

@@ -1,0 +1,12 @@
+type: Constructor
+size: 3
+itemCapacity: 200
+requirements: [
+  adzz-koakuma/120
+  af-sakuya/120
+]
+research: core-a-reimari
+category: units
+consumes: {
+  power: 2
+}

@@ -1,0 +1,9 @@
+type: Wall
+size: 1
+health: 200
+requirements: [
+  adzz-koakuma/6
+]
+category: defense
+research: fdza-meiling-wall
+buildCostMultiplier: 1.2

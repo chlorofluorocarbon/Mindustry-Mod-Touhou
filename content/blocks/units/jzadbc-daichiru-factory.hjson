@@ -1,0 +1,59 @@
+type: UnitAssembler
+size: 5
+itemCapacity: 20
+requirements: [
+  af-sakuya/1600
+  ag-remilia/1200
+  ae-patchouli/800
+  adzz-koakuma/1600
+  acz-daiyousei/1000
+  ad-cirno/1000
+]
+areaSize: 5
+consumes: {
+  power: 3
+  liquids: [
+    ed-cirno-juice/0.2
+    eya-p-juice/0.5
+  ]
+}
+plans: [
+  {
+    unit: v6cza-cirno
+    requirements: [
+      touhou-fdb-cirno-wall-large/4
+      touhou-v6cb-cirno/1
+      touhou-th6-enemy-block/1
+    ]
+    time: 1200
+  }
+  {
+    unit: v6bz-daiyousei
+    requirements: [
+      touhou-fczb-daiyousei-wall-large/5
+      touhou-v6bb-daiyousei/1
+      touhou-th6-enemy-block/1
+    ]
+    time: 1200
+  }
+  {
+    unit: v6czb-cirno
+    requirements: [
+      touhou-fdb-cirno-wall-large/6
+      touhou-v6cb-cirno/1
+      touhou-th6-enemy-block/1
+    ]
+    time: 1200
+  }
+  {
+    unit: v6czc-cirno
+    requirements: [
+      touhou-fdb-cirno-wall-large/8
+      touhou-v6cb-cirno/1
+      touhou-th6-enemy-block/1
+    ]
+    time: 1200
+  }
+]
+research: jzada-rumia-factory
+category: units

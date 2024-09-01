@@ -1,0 +1,12 @@
+type: PayloadDeconstructor
+size: 5
+itemCapacity: 200
+requirements: [
+  adzz-koakuma/360
+  af-sakuya/360
+]
+research: j0a-koasaku-constructor
+category: units
+consumes: {
+  power: 1
+}

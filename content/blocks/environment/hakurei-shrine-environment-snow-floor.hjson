@@ -1,0 +1,7 @@
+type: Floor
+wall: hakurei-shrine-environment-snow-floor-boulder
+speedMultiplier: 0.9
+attributes: {
+  1up-boost: 0.2
+}
+variants: 4

@@ -1,0 +1,13 @@
+type: UnitCargoUnloadPoint
+health: 200
+itemCapacity: 160
+requirements: [
+  azac-alice/40
+  ab-marisa/20
+]
+size: 2
+squareSprite: false
+category: distribution
+research: kd-alice-doll-cargo-loader
+underBullets: false
+staleTimeDuration: 300

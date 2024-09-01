@@ -1,0 +1,26 @@
+type: BeamDrill
+size: 2
+drillTime: 180
+tier: 2
+range: 3
+requirements: [
+  aa-reimu/12
+  ab-marisa/12
+]
+consumes: {
+  liquid: {
+    liquid: ed-cirno-juice
+    amount: 0.05
+    booster: true
+    optional: true
+  }
+  power: 0.3
+}
+optionalBoostIntensity: 2.4
+sparks: 12
+sparkColor: FFFF009F
+glowColor: FFFF00FF
+heatColor: FFFF009F
+boostHeatColor: FFFF00FF
+category: production
+research: dbb-marisa-drill

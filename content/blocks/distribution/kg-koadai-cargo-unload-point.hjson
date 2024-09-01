@@ -1,0 +1,13 @@
+type: UnitCargoUnloadPoint
+health: 200
+itemCapacity: 240
+requirements: [
+  adzz-koakuma/40
+  acz-daiyousei/20
+]
+size: 2
+squareSprite: false
+category: distribution
+research: kf-koadai-cargo-loader
+underBullets: false
+staleTimeDuration: 60

@@ -1,0 +1,8 @@
+type: Router
+health: 40
+requirements: [
+  ab-marisa/3
+]
+category: distribution
+research: cc-marisa-junction
+underBullets: false

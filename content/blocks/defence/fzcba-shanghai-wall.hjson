@@ -1,0 +1,37 @@
+type: DirectionalForceProjector
+size: 1
+destroySound: shanghai
+health: 80
+requirements: [
+  azac-alice/3
+]
+width: 6
+length: 8
+hasItems: false
+itemCapacity: 0
+hasLiquids: false
+liquidCapacity: 0
+baseExplosiveness: 5
+shieldHealth: 320
+shieldBreakEffect: {
+  type: WaveEffect
+  sizeFrom: 11.3
+  sizeTo: 11.3
+  colorFrom: FFD37FFF
+  colorTo: FFD37FFF
+  sides: 4
+  strokeFrom: 2
+  strokeTo: 0
+  baseRotation: 39
+  rotWithParent: true
+}
+cooldownNormal: 0.17777778
+cooldownLiquid: 0.17777778
+cooldownBrokenBase: 0.17777778
+category: defense
+consumes:{ 
+  power: 0.05
+}
+conductivePower: true
+research: fzcaa-alice-wall
+buildCostMultiplier: 1.6
