@@ -49,7 +49,7 @@ engines: [
 ]
 allowedInPayloads: true
 payloadCapacity: 128
-pickupUnits: true
+pickupUnits: false
 vulnerableWithPayloads: true
 fogRadius: 0
 targetable: false

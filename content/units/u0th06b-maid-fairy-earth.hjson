@@ -35,7 +35,7 @@ engineColor: 7F3F007F
 engineColorInner: FFFFFF00
 allowedInPayloads: true
 payloadCapacity: 128
-pickupUnits: true
+pickupUnits: false
 vulnerableWithPayloads: true
 fogRadius: 0
 targetable: true

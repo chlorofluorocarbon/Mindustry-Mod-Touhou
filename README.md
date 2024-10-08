@@ -3,3 +3,6 @@
  
  Internal name of the mod: touhou
  
+ Caution: Some zip files are previous testing version files, do NOT use them! 
+ 
+ English translation not completed. 

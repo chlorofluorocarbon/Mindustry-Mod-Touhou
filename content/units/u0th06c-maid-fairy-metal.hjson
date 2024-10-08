@@ -35,7 +35,7 @@ engineColor: DFA7007F
 engineColorInner: FFFFFF00
 allowedInPayloads: true
 payloadCapacity: 64
-pickupUnits: true
+pickupUnits: false
 vulnerableWithPayloads: true
 fogRadius: 0
 targetable: true
