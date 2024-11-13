@@ -1,0 +1,8 @@
+type: Floor
+wall: magical-forest-environment-snow-tree
+speedMultiplier: 0.81
+attributes: {
+  p-boost: 0.2
+  1up-boost: -0.2
+}
+variants: 3

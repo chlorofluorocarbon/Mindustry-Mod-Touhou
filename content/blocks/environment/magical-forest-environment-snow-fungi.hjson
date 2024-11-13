@@ -1,0 +1,9 @@
+type: Floor
+wall: magical-forest-environment-snow-mushroom
+speedMultiplier: 0.45
+dragMultiplier: 1.1
+attributes: {
+  p-boost: -0.8
+  1up-boost: -1.6
+}
+variants: 3
