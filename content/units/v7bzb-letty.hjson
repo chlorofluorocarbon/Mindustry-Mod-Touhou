@@ -1,0 +1,432 @@
+type: mech
+createScorch: false
+speed: 0.1
+drag: 1
+accel: 1
+rotateSpeed: 360
+baseRotateSpeed: 360
+health: 719.8
+armor: 0
+canBoost: false
+// landshake: 0
+stepShake: 0
+// mechStepShake: 0
+mechStepParticles: false
+range: 240
+maxRange: 240
+outlines: false
+ammoType: azaa-letty
+mechLegColor: FFFFFF00
+itemCapacity: 0
+hitSize: 48
+mechSideSway: 0
+mechFrontSway: 0
+deathSound: kuromakuu
+deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 120
+      particles: 16
+      length: 48
+      spin: 2
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-ya-p-point
+    }
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 120
+      particles: 16
+      spin: -1.5
+      length: 48
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-yd-point-item
+    }
+  ]
+}
+weapons: [
+/*
+// ShootSine例。
+  {
+    name: letty-shoot-sine
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 120
+    predictTarget: false
+    alwaysShooting: true
+    shoot: {
+      type: ShootSine
+      // 周期数量与子弹数量有关而非与持续时间总长有关。在需要时调整。
+      shots: 30
+      // 决定周期。周期T = shots / scl / 2 / π
+      scl: 4.77464838
+      // 决定幅度，与子弹数量有关。共30发，mag为16时大约张开60°角。
+      mag: 16
+      shotDelay: 2
+    }
+    rotateSpeed: 360
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 4
+      hitSize: 3
+      pierce: false
+      pierceBuilding: false
+      lifetime: 1800
+      speed: 0.6
+      setDefaults: false
+      despawnEffect: none
+      keepVelocity: false
+      width: 8
+      height: 8
+      makeFire: false
+      hitEffect: none
+      smokeEffect: none
+      reflectable: true
+      shootEffect: none
+      status: letty-freezing
+      statusDuration: 60
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 24
+      backColor: 00FF7FFF
+      frontColor: FFFFFFFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-simple-bullet"
+    }
+  }
+*/
+/*
+// ShootHelix例。
+  {
+    name: letty-shoot-helix
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 120
+    predictTarget: false
+    alwaysShooting: true
+    shoot: {
+      type: ShootHelix
+      // shots为n就会打出2n发子弹，成对出现。
+      shots: 10
+      // 决定周期。周期T = scl * 2 * π / 60
+      scl: 9.5492966
+      // 决定幅度，当前情况下mag为2则幅度为约5格。
+      mag: 2
+      // 吃不准单位，疑似角度制，总之决定相位。
+      offset: 135
+      shotDelay: 6
+    }
+    rotateSpeed: 360
+    bullet: {
+      type: BasicBulletType
+      // trailWidth: 2
+      // trailLength: 20
+      collidesTeam: false
+      damage: 4
+      hitSize: 3
+      pierce: false
+      pierceBuilding: false
+      lifetime: 1800
+      speed: 0.7
+      setDefaults: false
+      despawnEffect: none
+      keepVelocity: false
+      width: 8
+      height: 8
+      makeFire: false
+      hitEffect: none
+      smokeEffect: none
+      reflectable: true
+      shootEffect: none
+      status: letty-freezing
+      statusDuration: 60
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 24
+      backColor: 00FFFFFF
+      frontColor: FFFFFFFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-simple-bullet"
+    }
+  }
+*/
+// ShootSine是发射角度来回转动，而ShootHelix是子弹在垂直于运动方向上平动。
+/*
+// ShootMulti例。
+  {
+    name: letty-shoot-multi
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 240
+    predictTarget: false
+    alwaysShooting: true
+    shoot: {
+      type: ShootMulti
+      // dest中包含的ShootPattern的射击方式，每个都会以source重复。
+      source: {
+        type: ShootSpread
+        shots: 4
+        spread: 45
+        shotDelay: 0
+      }
+      dest: [
+        {
+          type: ShootHelix
+          shots: 10
+          scl: 9.5492966
+          mag: 2
+          offset: 135
+          shotDelay: 6
+        }
+        {
+          type: ShootSine
+          shots: 30
+          scl: 4.77464838
+          mag: 16
+          shotDelay: 6
+        }
+      ]
+    }
+    rotateSpeed: 360
+    bullet: {
+      type: BasicBulletType
+      // trailWidth: 2
+      // trailLength: 20
+      collidesTeam: false
+      damage: 4
+      hitSize: 3
+      pierce: false
+      pierceBuilding: false
+      lifetime: 1800
+      speed: 0.7
+      setDefaults: false
+      despawnEffect: none
+      keepVelocity: false
+      width: 8
+      height: 8
+      makeFire: false
+      hitEffect: none
+      smokeEffect: none
+      reflectable: true
+      shootEffect: none
+      status: letty-freezing
+      statusDuration: 60
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 24
+      backColor: 00FFFFFF
+      frontColor: FFFFFFFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-simple-bullet"
+    }
+  }
+*/
+  {
+    name: letty-coldness
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 240
+    predictTarget: false
+    alwaysShooting: true
+    shoot: {
+      type: ShootMulti
+      source: {
+        type: ShootSpread
+        shots: 3
+        spread: 60
+        shotDelay: 0
+      }
+      dest: [
+        {
+          type: ShootHelix
+          shots: 1
+          scl: 22
+          mag: 1.6
+          offset: 36
+        }
+      ]
+    }
+    rotateSpeed: 360
+    bullet: {
+      type: BasicBulletType
+      trailWidth: 2
+      trailLength: 90
+      trailColor: DFDFFFFF
+      collidesTeam: false
+      damage: 0
+      hitSize: 3
+      pierce: true
+      pierceBuilding: true
+      pierceCap: -1
+      lifetime: 1800
+      speed: 1
+      setDefaults: false
+      despawnEffect: none
+      keepVelocity: false
+      width: 8
+      height: 8
+      makeFire: false
+      hitEffect: none
+      smokeEffect: none
+      reflectable: false
+      absorbable: false
+      hittable: false
+      shootEffect: none
+      status: none
+      statusDuration: 0
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 24
+      backColor: 00000000
+      frontColor: 00000000
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-simple-bullet"
+      intervalBullets: 2
+      bulletInterval: 24
+      intervalRandomSpread: 30
+      intervalAngle: 0
+      intervalSpread: 120
+      intervalDelay: 40
+      intervalBullet: {
+        type: BasicBulletType
+        collidesTeam: false
+        damage: 2
+        hitSize: 3
+        pierce: false
+        pierceBuilding: false
+        lifetime: 1800
+        speed: 0.6
+        setDefaults: false
+        despawnEffect: none
+        keepVelocity: false
+        width: 8
+        height: 8
+        makeFire: false
+        hitEffect: none
+        smokeEffect: none
+        reflectable: true
+        shootEffect: none
+        status: letty-freezing
+        statusDuration: 60
+        collidesAir: true
+        collidesGround: true
+        lightRadius: 24
+        backColor: BFBFFFFF
+        frontColor: FFFFFFFF
+        shrinkX: 0
+        shrinkY: 0
+        sprite: "touhou-simple-bullet"
+      }
+    }
+  }
+  {
+    name: letty-coldness2
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 192
+    predictTarget: false
+    alwaysShooting: true
+    shoot: {
+      type: ShootSpread
+      shots: 9
+      spread: 22.5
+      shotDelay: 0
+    }
+    rotateSpeed: 360
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 8
+      pierce: false
+      pierceBuilding: false
+      lifetime: 1800
+      rangeOverride: 240
+      speed: 0.45
+      setDefaults: false
+      despawnEffect: none
+      keepVelocity: false
+      width: 8
+      height: 8
+      makeFire: false
+      status: letty-freezing
+      statusDuration: 60
+      hitEffect: none
+      smokeEffect: none
+      reflectable: false
+      shootEffect: none
+      
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 24
+      backColor: 7F7FFFFF
+      frontColor: FFFFFFFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-circle-bullet"
+    }
+  }
+]
+immunities: [
+  burning
+  letty-freezing
+  maid-fairy-lifetime
+]
+research: v7bb-letty

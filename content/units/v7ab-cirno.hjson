@@ -1,0 +1,154 @@
+type: mech
+createScorch: false
+speed: 0.4
+drag: 1
+accel: 1
+rotateSpeed: 360
+baseRotateSpeed: 360
+health: 31.8
+armor: 0
+canBoost: false
+// landshake: 0
+stepShake: 0
+// mechStepShake: 0
+mechStepParticles: false
+range: 240
+maxRange: 240
+outlines: false
+ammoType: ad-cirno
+mechLegColor: FFFFFF00
+itemCapacity: 0
+hitSize: 12
+mechSideSway: 0
+mechFrontSway: 0
+deathSound: ataisaikyou
+deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 60
+      particles: 2
+      length: 24
+      spin: 2
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-ya-p-point
+    }
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 60
+      particles: 3
+      spin: -1.5
+      length: 24
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-yd-point-item
+    }
+  ]
+}
+weapons: [
+  {
+    name: cirno-ice
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    alwaysShooting: true
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 180
+    predictTarget: false
+    shoot: {
+      type: ShootSpread
+      shots: 2
+      spread: 9
+      shotDelay: 0
+    }
+    rotateSpeed: 360
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 0
+      hitSize: 6
+      pierce: true
+      pierceBuilding: true
+      pierceCap: -1
+      lifetime: 30
+      speed: 0.021
+      inaccuracy: 0
+      setDefaults: false
+      despawnEffect: none
+      keepVelocity: false
+      width: 0
+      height: 0
+      makeFire: false
+      hitEffect: none
+      smokeEffect: none
+      reflectable: false
+      absorbable: false
+      hittable: false
+      shootEffect: none
+      status: none
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 0
+      backColor: FFFFFFFF
+      frontColor: FFFFFFFF
+      shrinkX: 0
+      shrinkY: 0
+      intervalBullets: 1
+      bulletInterval: 12
+      intervalRandomSpread: 0
+      intervalBullet: {
+        type: BasicBulletType
+        collidesTeam: false
+        damage: 8
+        hitSize: 6
+        pierce: false
+        pierceBuilding: false
+        lifetime: 1800
+        speed: 0.88
+        setDefaults: false
+        despawnEffect: none
+        keepVelocity: false
+        width: 8
+        height: 8
+        makeFire: false
+        hitEffect: none
+        smokeEffect: none
+        reflectable: true
+        shootEffect: none
+        status: none
+        collidesAir: true
+        collidesGround: true
+        lightRadius: 24
+        backColor: FFFFFFFF
+        frontColor: 00BFFFFF
+        shrinkX: 0
+        shrinkY: 0
+        sprite: "touhou-normal-bullet"
+      }
+    }
+  }
+]
+immunities: [
+  burning
+  letty-freezing
+  maid-fairy-lifetime
+]
+research: v7aa-cirno

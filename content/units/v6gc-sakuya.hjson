@@ -144,6 +144,7 @@ weapons: [
         speed: 0.75
         setDefaults: false
         despawnEffect: none
+        keepVelocity: false
         width: 16
         height: 16
         makeFire: false

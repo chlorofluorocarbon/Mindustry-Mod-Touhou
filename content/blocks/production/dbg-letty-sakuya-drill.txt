@@ -1,0 +1,34 @@
+// 语法正确但无效。已弃用，换用咲夜软矿。
+type: Drill
+size: 2
+drillTime: 4800
+tier: 3
+itemCapacity: 16
+liquidCapacity: 24
+hardnessDrillMultiplier: 0
+requirements: [
+  azaa-letty/24
+  af-sakuya/16
+]
+consumes: {
+  liquid: {
+    liquid: ed-cirno-juice
+    amount: 0.06666666
+    booster: true
+    optional: true
+  }
+}
+drillMultipliers: {
+  af-sakuya: 20
+}
+liquidBoostIntensity: 1.7320508
+category: production
+research: {
+  parent: touhou-dbd-alice-drill
+  objectives: [
+    {
+      type: SectorComplete
+      preset: touhou-th6-6
+    }
+  ]
+}

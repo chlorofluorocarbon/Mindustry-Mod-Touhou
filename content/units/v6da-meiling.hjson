@@ -134,6 +134,93 @@ weapons: [
       }
     }
   }
+  {
+    name: cirno-ice2
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    alwaysShooting: true
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 180
+    predictTarget: false
+    shoot: {
+      type: ShootSpread
+      shots: 9
+      spread: 20
+      shotDelay: 0
+    }
+    rotateSpeed: 360
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 0
+      hitSize: 6
+      pierce: true
+      pierceBuilding: true
+      pierceCap: -1
+      lifetime: 35
+      speed: 0.021
+      inaccuracy: 0
+      setDefaults: false
+      despawnEffect: none
+      keepVelocity: false
+      width: 0
+      height: 0
+      makeFire: false
+      hitEffect: none
+      smokeEffect: none
+      reflectable: false
+      absorbable: false
+      hittable: false
+      shootEffect: none
+      status: none
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 0
+      backColor: FFFFFFFF
+      frontColor: FFFFFFFF
+      shrinkX: 0
+      shrinkY: 0
+      intervalBullets: 1
+      bulletInterval: 25
+      intervalRandomSpread: 0
+      intervalBullet: {
+        type: BasicBulletType
+        collidesTeam: false
+        damage: 8
+        hitSize: 6
+        pierce: false
+        pierceBuilding: false
+        lifetime: 1800
+        speed: 0.44
+        setDefaults: false
+        despawnEffect: none
+        keepVelocity: false
+        width: 8
+        height: 8
+        makeFire: false
+        hitEffect: none
+        smokeEffect: none
+        reflectable: true
+        shootEffect: none
+        status: none
+        collidesAir: true
+        collidesGround: true
+        lightRadius: 24
+        backColor: FFFFFFFF
+        frontColor: 00BFFFFF
+        shrinkX: 0
+        shrinkY: 0
+        sprite: "touhou-normal-bullet"
+      }
+    }
+  }
 ]
 immunities: [
   burning

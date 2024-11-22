@@ -72,7 +72,8 @@ weapons: [
     noAmmoSound: none
     reload: 150
     predictTarget: false
-    rotateSpeed: 360
+    rotate: false
+    rotateSpeed: 0
     shoot: {
       type: ShootSpread
       shots: 24

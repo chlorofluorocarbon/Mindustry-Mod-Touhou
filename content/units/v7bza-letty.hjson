@@ -1,0 +1,512 @@
+type: mech
+createScorch: false
+speed: 0.1
+drag: 1
+accel: 1
+rotateSpeed: 360
+baseRotateSpeed: 360
+health: 559.8
+armor: 0
+canBoost: false
+// landshake: 0
+stepShake: 0
+// mechStepShake: 0
+mechStepParticles: false
+range: 240
+maxRange: 240
+outlines: false
+ammoType: azaa-letty
+mechLegColor: FFFFFF00
+itemCapacity: 0
+hitSize: 48
+mechSideSway: 0
+mechFrontSway: 0
+deathSound: kuromakuu
+deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 120
+      particles: 12
+      length: 48
+      spin: 2
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-ya-p-point
+    }
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 120
+      particles: 12
+      spin: -1.5
+      length: 48
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-yd-point-item
+    }
+  ]
+}
+weapons: [
+  {
+    name: letty-coldness1
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 240
+    predictTarget: false
+    alwaysShooting: true
+    shoot: {
+      type: ShootSpread
+      shots: 11
+      spread: 16.36363636
+      shotDelay: 10
+    }
+    rotateSpeed: 360
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 0
+      hitSize: 6
+      pierce: true
+      pierceBuilding: true
+      pierceCap: -1
+      lifetime: 10
+      speed: 0.0
+      inaccuracy: 0
+      setDefaults: false
+      despawnEffect: none
+      keepVelocity: false
+      width: 0
+      height: 0
+      makeFire: false
+      hitEffect: none
+      smokeEffect: none
+      reflectable: false
+      absorbable: false
+      hittable: false
+      shootEffect: none
+      status: none
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 0
+      backColor: FFFFFFFF
+      frontColor: FFFFFFFF
+      shrinkX: 0
+      shrinkY: 0
+      intervalBullets: 1
+      bulletInterval: 60
+      intervalRandomSpread: 0
+      intervalBullet: {
+        type: BasicBulletType
+        collidesTeam: false
+        damage: 4
+        hitSize: 3
+        pierce: false
+        pierceBuilding: false
+        lifetime: 1800
+        speed: 0.5
+        setDefaults: false
+        despawnEffect: none
+        keepVelocity: false
+        width: 8
+        height: 8
+        makeFire: false
+        hitEffect: none
+        smokeEffect: none
+        reflectable: true
+        shootEffect: none
+        status: letty-freezing
+        statusDuration: 60
+        collidesAir: true
+        collidesGround: true
+        lightRadius: 24
+        backColor: 00FF7FFF
+        frontColor: FFFFFFFF
+        shrinkX: 0
+        shrinkY: 0
+        sprite: "touhou-simple-bullet"
+      }
+    }
+  }
+  {
+    name: letty-coldness2
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 240
+    predictTarget: false
+    alwaysShooting: true
+    shoot: {
+      type: ShootSpread
+      shots: 11
+      spread: 16.36363636
+      shotDelay: 10
+    }
+    rotateSpeed: 360
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 4
+      hitSize: 3
+      pierce: false
+      pierceBuilding: false
+      lifetime: 1800
+      speed: 0.6
+      setDefaults: false
+      despawnEffect: none
+      keepVelocity: false
+      width: 8
+      height: 8
+      makeFire: false
+      hitEffect: none
+      smokeEffect: none
+      reflectable: true
+      shootEffect: none
+      status: letty-freezing
+      statusDuration: 60
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 24
+      backColor: 00FF7FFF
+      frontColor: FFFFFFFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-simple-bullet"
+    }
+  }
+  {
+    name: letty-coldness3
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 240
+    predictTarget: false
+    alwaysShooting: true
+    shoot: {
+      type: ShootSpread
+      shots: 11
+      spread: 16.36363636
+      shotDelay: 10
+    }
+    rotateSpeed: 360
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 4
+      hitSize: 3
+      pierce: false
+      pierceBuilding: false
+      lifetime: 1800
+      speed: 0.7
+      setDefaults: false
+      despawnEffect: none
+      keepVelocity: false
+      width: 8
+      height: 8
+      makeFire: false
+      hitEffect: none
+      smokeEffect: none
+      reflectable: true
+      shootEffect: none
+      status: letty-freezing
+      statusDuration: 60
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 24
+      backColor: 00FF7FFF
+      frontColor: FFFFFFFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-simple-bullet"
+    }
+  }
+  {
+    name: letty-coldness4
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 240
+    predictTarget: false
+    alwaysShooting: true
+    shoot: {
+      type: ShootSpread
+      shots: 11
+      spread: 16.36363636
+      shotDelay: 10
+    }
+    rotateSpeed: 360
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 4
+      hitSize: 3
+      pierce: false
+      pierceBuilding: false
+      lifetime: 1800
+      speed: 0.8
+      setDefaults: false
+      despawnEffect: none
+      keepVelocity: false
+      width: 8
+      height: 8
+      makeFire: false
+      hitEffect: none
+      smokeEffect: none
+      reflectable: true
+      shootEffect: none
+      status: letty-freezing
+      statusDuration: 60
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 24
+      backColor: 00FF7FFF
+      frontColor: FFFFFFFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-simple-bullet"
+    }
+  }
+  {
+    name: letty-coldness5
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 240
+    predictTarget: false
+    alwaysShooting: true
+    shoot: {
+      type: ShootSpread
+      shots: 11
+      spread: 16.36363636
+      shotDelay: 10
+    }
+    rotateSpeed: 360
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 4
+      hitSize: 3
+      pierce: false
+      pierceBuilding: false
+      lifetime: 1800
+      speed: 0.9
+      setDefaults: false
+      despawnEffect: none
+      keepVelocity: false
+      width: 8
+      height: 8
+      makeFire: false
+      hitEffect: none
+      smokeEffect: none
+      reflectable: true
+      shootEffect: none
+      status: letty-freezing
+      statusDuration: 60
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 24
+      backColor: 00FF7FFF
+      frontColor: FFFFFFFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-simple-bullet"
+    }
+  }
+  {
+    name: letty-coldness-c
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 180
+    predictTarget: false
+    rotateSpeed: 360
+    alwaysShooting: true
+    shoot: {
+      type: ShootPattern
+      shots: 30
+      shotDelay: 3
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      keepVelocity: false
+      damage: 6
+      hitSize: 6
+      inaccuracy: 180
+      pierce: false
+      pierceBuilding: false
+      lifetime: 1800
+      rangeOverride: 240
+      speed: 0.48
+      setDefaults: false
+      despawnEffect: none
+      width: 8
+      height: 8
+      makeFire: false
+      status: letty-freezing
+      statusDuration: 60
+      hitEffect: none
+      smokeEffect: none
+      reflectable: true
+      shootEffect: none
+      
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 24
+      backColor: 0000FFFF
+      frontColor: FFFFFFFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-circle-bullet"
+    }
+  }
+  {
+    name: letty-coldness-b
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 240
+    predictTarget: false
+    rotateSpeed: 360
+    shoot: {
+      type: ShootPattern
+      shots: 1
+      firstShotDelay: 120
+    }
+    alwaysShooting: true
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      inaccuracy: 0
+      damage: 12
+      hitSize: 12
+      pierce: true
+      pierceBuilding: true
+      pierceCap: 3
+      lifetime: 1800
+      speed: 0.7
+      drag: 0
+      setDefaults: false
+      despawnEffect: none
+      width: 16
+      height: 16
+      makeFire: false
+      hitEffect: none
+      smokeEffect: none
+      reflectable: true
+      absorbable: false
+      hittable: true
+      shootEffect: none
+      chargeEffect: none
+      status: letty-freezing
+      statusDuration: 60
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 32
+      backColor: 007F7FFF
+      frontColor: FFFFFFFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-circle-bullet"
+      intervalBullets: 2
+      bulletInterval: 40
+      intervalRandomSpread: 0
+      intervalSpread: 90
+      intervalBullet: {
+        type: BasicBulletType
+        collidesTeam: false
+        damage: 2
+        hitSize: 3
+        pierce: false
+        pierceBuilding: false
+        lifetime: 180
+        speed: 0.6
+        setDefaults: false
+        despawnEffect: none
+        width: 8
+        height: 8
+        makeFire: false
+        hitEffect: none
+        smokeEffect: none
+        reflectable: true
+        shootEffect: none
+        status: letty-freezing
+        statusDuration: 60
+        collidesAir: true
+        collidesGround: true
+        lightRadius: 24
+        backColor: 007F7FFF
+        frontColor: FFFFFFFF
+        shrinkX: 0
+        shrinkY: 0
+        sprite: "touhou-simple-bullet"
+      }
+    }
+  }
+]
+immunities: [
+  burning
+  letty-freezing
+  maid-fairy-lifetime
+]
+research: v7bb-letty

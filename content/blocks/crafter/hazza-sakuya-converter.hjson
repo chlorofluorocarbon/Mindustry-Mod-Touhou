@@ -1,0 +1,27 @@
+type: GenericCrafter
+size: 1
+itemCapacity: 30
+liquidCapacity: 0
+hasPower: false
+hasLiquids: false
+hasItems: true
+craftTime: 4
+consumes: {
+  items: [
+    af-sakuya-soft/1
+  ]
+}
+craftEffect: none
+updateEffect: fuelburn
+outputItem: af-sakuya/1
+category: crafting
+requirements: [
+  af-sakuya/5
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    DrawDefault
+  ]
+}
+research: hba-reimu-juicer
