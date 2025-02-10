@@ -84,6 +84,7 @@ weapons: [
       collidesTeam: false
       keepVelocity: false
       damage: 8
+      hitSize: 6
       pierce: false
       pierceBuilding: false
       lifetime: 1800

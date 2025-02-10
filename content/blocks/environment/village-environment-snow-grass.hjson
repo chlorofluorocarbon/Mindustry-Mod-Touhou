@@ -1,6 +1,6 @@
 type: Floor
 wall: village-environment-snow-grass-wall
-speedMultiplier: 0.8
+speedMultiplier: 0.81
 attributes: {
   p-boost: 0.05
 }

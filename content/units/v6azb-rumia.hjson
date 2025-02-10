@@ -189,7 +189,7 @@ weapons: [
       type: BasicBulletType
       collidesTeam: false
       damage: 6
-      hitSize: 4
+      hitSize: 6
       pierce: false
       pierceBuilding: false
       lifetime: 1800
