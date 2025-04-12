@@ -114,14 +114,14 @@ abilities: [
   {
     type: ShieldArcAbility
     angle: 72
-    radius: 10
+    radius: 8
     max: 32
-    regen: 0.03555555
+    regen: 0.03333333
     cooldown: 900
     whenShooting: false
-    // The shield may not work properly at all time. Avoid using this type of shield on players.
+    // The shield may not work properly at all time. Avoid using this type of shield on players...Maybe fixed in v8?
     // width: 2
-    width: 4
+    width: 2
     // region: touhou-v7daz-shanghai-shield
     // This is a field that SHOULD exist. 
     color: 7F7FFF7F

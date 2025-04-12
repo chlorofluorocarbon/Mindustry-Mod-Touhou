@@ -41,7 +41,7 @@ weapons: [
     shoot: {
       type: ShootSpread
       shots: 3
-      spread: 5
+      spread: 10
       shotDelay: 0
     }
     bullet: {
@@ -92,7 +92,7 @@ weapons: [
     shoot: {
       type: ShootSpread
       shots: 4
-      spread: 5
+      spread: 10
       shotDelay: 0
     }
     bullet: {

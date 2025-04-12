@@ -46,8 +46,11 @@ shootType: {
   fragBullets: 8
   fragRandomSpread: 0
   fragSpread: 45
+  fragAngle: 22.5
   fragVelocityMin: 1
   fragVelocityMax: 1
+  fragOffsetMax: 0
+  fragOffsetMin: 0
   fragBullet: {
     type: BasicBulletType
     collidesTeam: false
@@ -132,6 +135,8 @@ destroyBullet: {
   fragOffsetMin: 0
   fragVelocityMin: 0
   fragVelocityMax: 0
+  fragOffsetMax: 0
+  fragOffsetMin: 0
   fragBullet: {
     type: BasicBulletType
     spawnUnit: u00-bomb-bullet-cleaner

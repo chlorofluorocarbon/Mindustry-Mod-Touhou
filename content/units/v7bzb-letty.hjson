@@ -206,7 +206,7 @@ weapons: [
       source: {
         type: ShootSpread
         shots: 4
-        spread: 45
+        spread: 90
         shotDelay: 0
       }
       dest: [
@@ -282,7 +282,7 @@ weapons: [
       source: {
         type: ShootSpread
         shots: 3
-        spread: 60
+        spread: 120
         shotDelay: 0
       }
       dest: [
@@ -386,8 +386,9 @@ weapons: [
     alwaysShooting: true
     shoot: {
       type: ShootSpread
-      shots: 9
-      spread: 22.5
+      // shots: 9
+      shots: 8
+      spread: 45
       shotDelay: 0
     }
     rotateSpeed: 360

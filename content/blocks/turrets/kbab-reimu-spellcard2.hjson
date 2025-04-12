@@ -132,6 +132,8 @@ destroyBullet: {
   fragOffsetMin: 0
   fragVelocityMin: 0
   fragVelocityMax: 0
+  fragOffsetMax: 0
+  fragOffsetMin: 0
   fragBullet: {
     type: BasicBulletType
     spawnUnit: u00-bomb-bullet-cleaner

@@ -76,7 +76,7 @@ weapons: [
     shoot: {
       type: ShootSpread
       shots: 9
-      spread: 20
+      spread: 40
       shotDelay: 0
     }
     bullet: {

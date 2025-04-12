@@ -138,6 +138,8 @@ weapons: [
       type: ShootPattern
       shots: 1
       // spread: 0
+      // I don't understand why it doesn't work properly when I'm controlling the first unit (made in the core). Maybe core units always have a delay of reload + firstShotDelay before the first shot?
+      // Proved, true. So now the unit will spawn the first other unit a lot slower. 
       shotDelay: 0
       firstShotDelay: 2400
     }

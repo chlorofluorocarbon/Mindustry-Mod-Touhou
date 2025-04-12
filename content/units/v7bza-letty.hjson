@@ -76,7 +76,7 @@ weapons: [
     shoot: {
       type: ShootSpread
       shots: 11
-      spread: 16.36363636
+      spread: 32.72727273
       shotDelay: 10
     }
     rotateSpeed: 360
@@ -164,7 +164,7 @@ weapons: [
     shoot: {
       type: ShootSpread
       shots: 11
-      spread: 16.36363636
+      spread: 32.72727273
       shotDelay: 10
     }
     rotateSpeed: 360
@@ -217,7 +217,7 @@ weapons: [
     shoot: {
       type: ShootSpread
       shots: 11
-      spread: 16.36363636
+      spread: 32.72727273
       shotDelay: 10
     }
     rotateSpeed: 360
@@ -270,7 +270,7 @@ weapons: [
     shoot: {
       type: ShootSpread
       shots: 11
-      spread: 16.36363636
+      spread: 32.72727273
       shotDelay: 10
     }
     rotateSpeed: 360
@@ -323,7 +323,7 @@ weapons: [
     shoot: {
       type: ShootSpread
       shots: 11
-      spread: 16.36363636
+      spread: 32.72727273
       shotDelay: 10
     }
     rotateSpeed: 360

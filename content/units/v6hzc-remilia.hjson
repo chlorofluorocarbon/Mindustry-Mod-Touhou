@@ -41,7 +41,7 @@ weapons: [
     shoot: {
       type: ShootSpread
       shots: 10
-      spread: 2.5
+      spread: 5
       shotDelay: 0
     }
     bullet: {
@@ -97,7 +97,7 @@ weapons: [
     shoot: {
       type: ShootSpread
       shots: 198
-      spread: 10
+      spread: 20
       shotDelay: 15
     }
     bullet: {
@@ -135,7 +135,7 @@ weapons: [
       fragBullets: 4
       fragRandomSpread: 0
       fragSpread: 90
-      fragAngle: 45
+      fragAngle: 0
       fragVelocityMin: 1
       fragVelocityMax: 1
       fragBullet: {

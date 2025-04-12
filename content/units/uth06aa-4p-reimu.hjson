@@ -1,4 +1,5 @@
 type: mech
+wobble: false
 createScorch: false
 speed: 1
 drag: 1
@@ -111,7 +112,7 @@ weapons: [
     shoot: {
       type: ShootSpread
       shots: 4
-      spread: 4
+      spread: 8
       shotDelay: 0
     }
     bullet: {

@@ -150,6 +150,7 @@ parent: sun
 solarSystem: sun
 launchCandidates: []
 // "Deprecated" on Github
+/*
 itemWhitelist: [
   aa-reimu
   ab-marisa
@@ -184,3 +185,4 @@ itemWhitelist: [
   zy-mixture-fragment
   zz-mixture
 ]
+*/
