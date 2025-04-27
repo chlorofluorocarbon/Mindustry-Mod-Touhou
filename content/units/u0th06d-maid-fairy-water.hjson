@@ -219,7 +219,7 @@ abilities: [
   }
 ]
 research: {
-  parent: u0bf-seven-observation-semiauto-doll
+  parent: u0th060-maid-fairy-null
   requirements: [
     azzzzd-stablized-five-element-mixture/100
     ad-cirno/100

@@ -13,7 +13,7 @@ requirements: [
 ]
 thrusterLength: 10
 destroySound: none
-unitType: u0th06a-maid-fairy-fire
+unitType: u0th060-maid-fairy-null
 category: effect
 research: core-bf-pachuari
 researchCostMultiplier: 0.25

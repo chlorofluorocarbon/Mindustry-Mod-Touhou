@@ -77,6 +77,14 @@ plans: [
     ]
   }
   {
+    unit: u0th060-maid-fairy-null
+    time: 180
+    requirements: [
+      azzzzd-stablized-five-element-mixture/1200
+      ya-p-point/10
+    ]
+  }
+  {
     unit: u0th06a-maid-fairy-fire
     time: 180
     requirements: [

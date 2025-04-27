@@ -138,6 +138,8 @@ weapons: [
       fragAngle: 0
       fragVelocityMin: 1
       fragVelocityMax: 1
+      fragOffsetMin: 0
+      fragOffsetMax: 0
       fragBullet: {
         type: BasicBulletType
         collidesTeam: false
@@ -232,6 +234,8 @@ weapons: [
       fragAngle: 0
       fragVelocityMin: 0.5
       fragVelocityMax: 1.7
+      fragOffsetMin: 0
+      fragOffsetMax: 0
       fragBullet: {
         type: BasicBulletType
         collidesTeam: false

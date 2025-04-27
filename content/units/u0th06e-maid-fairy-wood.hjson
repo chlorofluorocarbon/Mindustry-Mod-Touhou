@@ -208,8 +208,9 @@ immunities: [
   damage-flying
 ]
 abilities: [
-// Force field example. 
+// Shield arc example. 
 // The damage for maid fairy timer never applys on the force field , but it has a serious bug that happens very often: bullets may ignore it. So I deleted this. 
+// In v8 (147+), this might have been fixed. 
 /*
   {
     type: ShieldArcAbility
@@ -233,7 +234,7 @@ abilities: [
   }
 ]
 research: {
-  parent: u0bf-seven-observation-semiauto-doll
+  parent: u0th060-maid-fairy-null
   requirements: [
     azzzzd-stablized-five-element-mixture/100
     acz-daiyousei/100

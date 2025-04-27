@@ -1,0 +1,500 @@
+type: payload
+createScorch: false
+coreUnitDock: true
+controller: BuilderAI
+isEnemy: false
+envDisabled: 0
+range: 32
+aimDst: 0
+faceTarget: true
+targetPriority: -2
+lowAltitude: false
+mineWalls: true
+mineFloor: true
+mineRange: 32
+buildRange: 32
+mineHardnessScaling: true
+itemOffsetY: 0
+flying: true
+mineSpeed: 0.2
+mineTier: 1
+buildSpeed: 0.1
+buildBeamOffset: 3
+drag: 0.04
+speed: 3.2
+rotateSpeed: 7
+accel: 0.05
+itemCapacity: 10
+// Equal to 60 seconds of lifetime.
+health: 0.13333333
+armor: 0
+hitSize: 6
+engineOffset: 0
+engineLayer: -10
+engineSize: 6
+engineColor: 7F7F7F7F
+engineColorInner: FFFFFF00
+allowedInPayloads: true
+payloadCapacity: 64
+pickupUnits: false
+vulnerableWithPayloads: true
+fogRadius: 0
+targetable: true
+hittable: true
+weapons: [
+  {
+    type: PointDefenseWeapon
+    name: maid-fairy-defense
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 2
+    shootSound: none
+    noAmmoSound: none
+    reload: 120
+    rotateSpeed: 360
+    targetInterval: 1
+    targetSwitchInterval: 1
+    bullet: {
+      shootEffect: none
+      maxRange: 16
+      damage: 8
+    }
+  }
+  {
+    type: RepairBeamWeapon
+    layerOffset: 10
+    reload: 20
+    x: 0
+    y: 3
+    rotate: false
+    shootY: 0
+    beamWidth: 0.7
+    repairSpeed: 0.2
+    fractionRepairSpeed: 0.01
+    shootCone: 15
+    mirror: false
+    targetUnits: false
+    targetBuildings: true
+    autoTarget: false
+    controllable: true
+    laserColor: 7F3F009F
+    healColor: 7F3F003F
+    bullet: 
+    {
+      type: BulletType
+      maxRange: 32
+    }
+  }
+  {
+    name: null-metal-producer
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 2100
+    alwaysShooting: true
+    predictTarget: false
+    rotateSpeed: 360
+    shoot: {
+      type: ShootPattern
+      shots: 1
+      // I don't understand why it doesn't work properly when I'm controlling the first unit (made in the core). Maybe core units always have a delay of reload + firstShotDelay before the first shot?
+      // Proved, true. So now the unit will spawn the first other unit a lot slower, if I keep using . 
+      // Thus, changed to this null maid fairy.
+      // Actually, using respawn after the shot will make the cooldown for these spawners shorter (from 40s-20s+death+40s-20s+death+40s-... to 40s-40s-...)
+      shotDelay: 0
+      firstShotDelay: 300
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 0
+      inaccuracy: 0
+      angleOffset: -144
+      hitSize: 3
+      pierce: false
+      pierceBuilding: false
+      lifetime: 60
+      speed: 0.5
+      setDefaults: false
+      despawnHit: true
+      despawnUnit: u0th06c-maid-fairy-metal
+      despawnUnitRadius: 0
+      despawnEffect: none
+      width: 8
+      height: 8
+      makeFire: false
+      status: none
+      hitEffect: {
+        type: WaveEffect
+        colorFrom: DFA700FF
+        colorTo: DFA700FF
+        sizeFrom: 1
+        strokeFrom: 2
+        sizeTo: 12
+        strokeTo: 2
+        lifetime: 15
+      }
+      smokeEffect: none
+      hittable: false
+      reflectable: false
+      absorbable: false
+      shootEffect: none
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 24
+      backColor: 7F7F7FFF
+      frontColor: 7F7F7FFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-shanghai-spawn"
+    }
+  }
+  {
+    name: null-water-producer
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 2100
+    alwaysShooting: true
+    predictTarget: false
+    rotateSpeed: 360
+    shoot: {
+      type: ShootPattern
+      shots: 1
+      shotDelay: 0
+      firstShotDelay: 300
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 0
+      inaccuracy: 0
+      angleOffset: 144
+      hitSize: 3
+      pierce: false
+      pierceBuilding: false
+      lifetime: 60
+      speed: 0.5
+      setDefaults: false
+      despawnHit: true
+      despawnUnit: u0th06d-maid-fairy-water
+      despawnUnitRadius: 0
+      despawnEffect: none
+      width: 8
+      height: 8
+      makeFire: false
+      status: none
+      hitEffect: {
+        type: WaveEffect
+        colorFrom: 00BFFFFF
+        colorTo: 00BFFFFF
+        sizeFrom: 1
+        strokeFrom: 2
+        sizeTo: 12
+        strokeTo: 2
+        lifetime: 15
+      }
+      smokeEffect: none
+      hittable: false
+      reflectable: false
+      absorbable: false
+      shootEffect: none
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 24
+      backColor: 7F7F7FFF
+      frontColor: 7F7F7FFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-shanghai-spawn"
+    }
+  }
+  {
+    name: null-wood-producer
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 2100
+    alwaysShooting: true
+    predictTarget: false
+    rotateSpeed: 360
+    shoot: {
+      type: ShootPattern
+      shots: 1
+      shotDelay: 0
+      firstShotDelay: 300
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 0
+      inaccuracy: 0
+      angleOffset: 72
+      hitSize: 3
+      pierce: false
+      pierceBuilding: false
+      lifetime: 60
+      speed: 0.5
+      setDefaults: false
+      despawnHit: true
+      despawnUnit: u0th06e-maid-fairy-wood
+      despawnUnitRadius: 0
+      despawnEffect: none
+      width: 8
+      height: 8
+      makeFire: false
+      status: none
+      hitEffect: {
+        type: WaveEffect
+        colorFrom: 007F00FF
+        colorTo: 007F00FF
+        sizeFrom: 1
+        strokeFrom: 2
+        sizeTo: 12
+        strokeTo: 2
+        lifetime: 15
+      }
+      smokeEffect: none
+      hittable: false
+      reflectable: false
+      absorbable: false
+      shootEffect: none
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 24
+      backColor: 7F7F7FFF
+      frontColor: 7F7F7FFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-shanghai-spawn"
+    }
+  }
+  {
+    name: null-fire-producer
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 2100
+    alwaysShooting: true
+    predictTarget: false
+    rotateSpeed: 360
+    shoot: {
+      type: ShootPattern
+      shots: 1
+      shotDelay: 0
+      firstShotDelay: 300
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 0
+      inaccuracy: 0
+      angleOffset: 0
+      hitSize: 3
+      pierce: false
+      pierceBuilding: false
+      lifetime: 60
+      speed: 0.5
+      setDefaults: false
+      despawnHit: true
+      despawnUnit: u0th06a-maid-fairy-fire
+      despawnUnitRadius: 0
+      despawnEffect: none
+      width: 8
+      height: 8
+      makeFire: false
+      status: none
+      hitEffect: {
+        type: WaveEffect
+        colorFrom: FF0000FF
+        colorTo: FF0000FF
+        sizeFrom: 1
+        strokeFrom: 2
+        sizeTo: 12
+        strokeTo: 2
+        lifetime: 15
+      }
+      smokeEffect: none
+      hittable: false
+      reflectable: false
+      absorbable: false
+      shootEffect: none
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 24
+      backColor: 7F7F7FFF
+      frontColor: 7F7F7FFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-shanghai-spawn"
+    }
+  }
+  {
+    name: null-earth-producer
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 2100
+    alwaysShooting: true
+    predictTarget: false
+    rotateSpeed: 360
+    shoot: {
+      type: ShootPattern
+      shots: 1
+      shotDelay: 0
+      firstShotDelay: 300
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 0
+      inaccuracy: 0
+      angleOffset: -72
+      hitSize: 3
+      pierce: false
+      pierceBuilding: false
+      lifetime: 60
+      speed: 0.5
+      setDefaults: false
+      despawnHit: true
+      despawnUnit: u0th06b-maid-fairy-earth
+      despawnUnitRadius: 0
+      despawnEffect: none
+      width: 8
+      height: 8
+      makeFire: false
+      status: none
+      hitEffect: {
+        type: WaveEffect
+        colorFrom: 7F3F00FF
+        colorTo: 7F3F00FF
+        sizeFrom: 1
+        strokeFrom: 2
+        sizeTo: 12
+        strokeTo: 2
+        lifetime: 15
+      }
+      smokeEffect: none
+      hittable: false
+      reflectable: false
+      absorbable: false
+      shootEffect: none
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 24
+      backColor: 7F7F7FFF
+      frontColor: 7F7F7FFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-shanghai-spawn"
+    }
+  }
+]
+outlineColor: 00000000
+mechSideSway: 0
+mechFrontSway: 0
+// Change deathSound to "Iyada" (null fairy) later
+deathSound: thbiu
+deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 60
+      particles: 4
+      length: 20
+      spin: 2
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-ya-p-point
+    }
+  ]
+}
+outlines: false
+mineItems: [
+  aa-reimu
+  ab-marisa
+  ac-rumia
+  acz-daiyousei
+  ad-cirno
+  adz-meiling
+  adzz-koakuma
+  ae-patchouli
+  af-sakuya
+  ag-remilia
+  ah-flandre
+  azaa-letty
+  azab-chen
+  azac-alice
+  azae-youmu
+  azaf-yuyuko
+  azag-ran
+  azah-yukari
+]
+immunities: [
+  burning
+  damage-flying
+]
+abilities: [
+  {
+    type: StatusFieldAbility
+    effect: maid-fairy-lifetime
+    duration: 27000
+    reload: 120
+    applyEffect: none
+    activeEffect: none
+    range: 0.5
+  }
+]
+research: {
+  parent: u0bf-seven-observation-semiauto-doll
+  requirements: [
+    azzzzd-stablized-five-element-mixture/200
+  ]
+}
+useUnitCap: false
