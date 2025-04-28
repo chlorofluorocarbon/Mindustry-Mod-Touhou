@@ -219,7 +219,7 @@ abilities: [
   }
 ]
 research: {
-  parent: u0th06aa-maid-fairy-null
+  parent: u0th060-maid-fairy-null
   requirements: [
     azzzzd-stablized-five-element-mixture/100
     adz-meiling/100

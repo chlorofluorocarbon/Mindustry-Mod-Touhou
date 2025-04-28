@@ -298,7 +298,7 @@ immunities: [
   damage-flying
 ]
 research: {
-  parent: u0bf-seven-observation-semiauto-doll
+  parent: u0th06a-maid-fairy-fire
   requirements: [
     azzzzd-stablized-five-element-mixture/100
     ae-patchouli/100
