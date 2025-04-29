@@ -182,4 +182,5 @@ outlineRadius: 0
 outlines: false
 immunities: [
   damage-flying
+  maid-fairy-lifetime
 ]

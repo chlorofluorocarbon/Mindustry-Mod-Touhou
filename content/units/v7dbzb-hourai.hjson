@@ -1,0 +1,110 @@
+type: mech
+createScorch: false
+speed: 0.32
+drag: 1
+accel: 1
+rotateSpeed: 360
+baseRotateSpeed: 360
+health: 15.8
+armor: 0
+canBoost: true
+useUnitCap: false
+boostMultiplier: 1
+hovering: true
+// landshake: 0
+stepShake: 0
+// mechStepShake: 0
+mechStepParticles: false
+range: 8
+maxRange: 8
+outlines: false
+ammoType: azac-alice
+mechLegColor: FFFFFF00
+itemCapacity: 0
+hitSize: 8
+mechSideSway: 0
+mechFrontSway: 0
+deathSound: hourai
+deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 60
+      particles: 1
+      spin: -1.5
+      length: 24
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-yd-point-item
+    }
+  ]
+}
+weapons: [
+  {
+    name: hourai-weapon
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    layerOffset: -2
+    recoil: -6
+    recoilPow: 2.4
+    recoilTime: 45
+    shootSound: hourai
+    noAmmoSound: none
+    reload: 60
+    top: false
+    predictTarget: false
+    rotateSpeed: 360
+    shoot: {
+      type: ShootPattern
+      shots: 1
+      // spread: 0
+      shotDelay: 0
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 2
+      hitSize: 4
+      pierce: true
+      pierceCap: -1
+      pierceBuilding: false
+      lifetime: 8
+      speed: 1
+      setDefaults: false
+      despawnEffect: none
+      width: 0
+      height: 0
+      makeFire: false
+      status: none
+      hitEffect: none
+      smokeEffect: none
+      reflectable: false
+      absorbable: false
+      shootEffect: none
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 0
+      backColor: 00000000
+      frontColor: 00000000
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-simple-bullet"
+    }
+  }
+]
+immunities: [
+  burning
+  maid-fairy-lifetime
+]

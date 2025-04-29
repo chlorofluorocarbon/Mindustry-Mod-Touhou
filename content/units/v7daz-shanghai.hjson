@@ -5,7 +5,7 @@ drag: 1
 accel: 1
 rotateSpeed: 360
 baseRotateSpeed: 360
-health: 31.8
+health: 15.8
 armor: 0
 canBoost: true
 useUnitCap: false
@@ -24,7 +24,27 @@ itemCapacity: 0
 hitSize: 8
 mechSideSway: 0
 mechFrontSway: 0
-deathSound: none
+deathSound: shanghai
+deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 60
+      particles: 1
+      spin: -1.5
+      length: 24
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-yd-point-item
+    }
+  ]
+}
 faceTarget: true
 weapons: [
   {
@@ -38,9 +58,9 @@ weapons: [
     shootX: 0
     shootY: 0
     layerOffset: -2
-    recoil: -7
-    recoilPow: 2.4
-    recoilTime: 45
+    recoil: 0
+    recoilPow: 0
+    recoilTime: 0
     shootSound: shanghai
     noAmmoSound: none
     reload: 60
@@ -115,9 +135,9 @@ abilities: [
     type: ShieldArcAbility
     angle: 72
     radius: 8
-    max: 32
+    max: 16
     regen: 0.03333333
-    cooldown: 900
+    cooldown: 480
     whenShooting: false
     // The shield may not work properly at all time. Avoid using this type of shield on players...Maybe fixed in v8?
     // width: 2

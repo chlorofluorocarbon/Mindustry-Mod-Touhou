@@ -1,6 +1,6 @@
 type: payload
 createScorch: false
-coreUnitDock: true
+coreUnitDock: false
 controller: BuilderAI
 isEnemy: false
 envDisabled: 0

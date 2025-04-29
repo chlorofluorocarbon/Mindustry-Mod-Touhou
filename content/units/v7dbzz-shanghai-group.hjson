@@ -1,0 +1,155 @@
+type: missile
+wobble: false
+createScorch: false
+lowAltitude: true
+accel: 1
+drag: 0.2
+hitSize: 14
+missileAccelTime: 0
+speed: 0.5
+lifetime: 120
+physics: true
+allowedInPayloads: false
+homingDelay: 0
+health: 48
+createWreck: false
+createScorch: false
+deathSound: none
+deathShake: 0
+deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: WaveEffect
+      colorFrom: 7F7FFFFF
+      colorTo: 7F7FFFFF
+      sizeFrom: 1
+      strokeFrom: 2
+      sizeTo: 24
+      strokeTo: 2
+      lifetime: 20
+    }
+  ]
+}
+useUnitCap: false
+isEnemy: false
+controller: MissileAI
+playerControllable: false
+rotateSpeed: 0
+range: 3
+engineSize: 0
+engineOffset: 0
+maxRange: 3
+flying: true
+weapons: [
+  {
+    name: shanghai-split
+    x: 0
+    mirror: false
+    shootCone: 360
+    reload: 60
+    shootOnDeath: true
+    shootSound: none
+    shootX: 0
+    shootY: 0
+    inaccuracy: 0
+    shoot: {
+      type: ShootPattern
+      shots: 1
+    }
+    bullet: {
+      type: BasicBulletType
+      killShooter: true
+      collidesTeam: false
+      damage: 0
+      splashDamage: 0
+      splashDamageRadius: 0
+      hitSize: 0
+      pierce: false
+      pierceBuilding: false
+      lifetime: 0
+      speed: 0
+      setDefaults: false
+      despawnHit: true
+      hitEffect: none
+      width: 0
+      height: 0
+      makeFire: false
+      status: none
+      keepVelocity: true
+      despawnEffect: none
+      smokeEffect: none
+      reflectable: false
+      hittable: false
+      absorbable: false
+      shootEffect: none
+      collidesAir: false
+      collidesGround: false
+      collides: false
+      lightRadius: 0
+      backColor: FFFFFFFF
+      frontColor: FFFFFFFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-normal-bullet"
+      fragBullets: 3
+      fragRandomSpread: 0
+      fragSpread: 120
+      fragAngle: 0
+      fragVelocityMin: 1
+      fragVelocityMax: 1 
+      fragOffsetMax: 0
+      fragOffsetMin: 0
+      fragBullet: {
+        type: BasicBulletType
+        collidesTeam: false
+        damage: 0
+        inaccuracy: 0
+        hitSize: 3
+        pierce: false
+        pierceBuilding: false
+        lifetime: 60
+        speed: 0.5
+        setDefaults: false
+        despawnHit: true
+        despawnUnit: v7daz-shanghai
+        despawnUnitRadius: 0
+        despawnEffect: none
+        width: 8
+        height: 8
+        makeFire: false
+        status: none
+        hitEffect: {
+          type: WaveEffect
+          colorFrom: 7F7FFFFF
+          colorTo: 7F7FFFFF
+          sizeFrom: 1
+          strokeFrom: 2
+          sizeTo: 12
+          strokeTo: 2
+          lifetime: 15
+        }
+        smokeEffect: none
+        hittable: false
+        reflectable: false
+        absorbable: false
+        shootEffect: none
+        collidesAir: true
+        collidesGround: true
+        lightRadius: 24
+        backColor: FFFF7FFF
+        frontColor: FFFF7FFF
+        shrinkX: 0
+        shrinkY: 0
+        sprite: "touhou-shanghai-spawn"
+      }
+    }
+  }
+]
+outlineColor: 00000000
+outlineRadius: 0
+outlines: false
+immunities: [
+  damage-flying
+  maid-fairy-lifetime
+]

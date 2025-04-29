@@ -1,9 +1,8 @@
 type: PowerTurret
 shoot: {
-  type: ShootSpread
-  shots: 180
-  spread: 2
-  shotDelay: 0
+  type: ShootPattern
+  shots: 8
+  shotDelay: 3.75
 }
 shootType: {
   type: BasicBulletType
@@ -17,16 +16,15 @@ shootType: {
   lightRadius: 0
   width: 0
   height: 0
-  lifetime: 12
-  speed: 2
-  damage: 0.000001
+  lifetime: 0
+  speed: 0
+  damage: 0
   incendChance: 0
-  hitEffect: none
+  shootEffect: none
   smokeEffect: none
   chargeEffect: none
-  shootEffect: none
-  knockback: -0.8
-  impact: true
+  hitEffect: none
+  knockback: 0
   despawnEffect: none
   hitSound: none
   despawnSound: none
@@ -35,7 +33,8 @@ shootType: {
   pierce: true
   pierceBuilding: true
   pierceCap: -1
-  hitSize: 4
+  drawSize: 0.01
+  hitSize: 0.01
   status: none
   hittable: false
   reflectable: false
@@ -44,6 +43,53 @@ shootType: {
   hitColor: 00000000
   healColor: 00000000
   healEffect: none
+  fragBullets: 60
+  fragRandomSpread: 0
+  fragSpread: 6
+  fragOffsetMax: 0
+  fragOffsetMin: 0
+  fragVelocityMin: 1
+  fragVelocityMax: 1
+  fragBullet: {   
+    type: BasicBulletType
+    shrinkX: 0
+    shrinkY: 0
+    backColor: 00000000
+    frontColor: 00000000
+    mixColorFrom: 00000000
+    mixColorTo: 00000000
+    lightColor: 00000000
+    lightRadius: 0
+    width: 0
+    height: 0
+    lifetime: 12
+    speed: 2
+    damage: 0.000001
+    incendChance: 0
+    hitEffect: none
+    smokeEffect: none
+    chargeEffect: none
+    shootEffect: none
+    knockback: -0.6
+    impact: true
+    despawnEffect: none
+    hitSound: none
+    despawnSound: none
+    ammoMultiplier: 1
+    recoil: 0
+    pierce: true
+    pierceBuilding: true
+    pierceCap: -1
+    hitSize: 4
+    status: none
+    hittable: false
+    reflectable: false
+    absorbable: false
+    setDefaults: true
+    hitColor: 00000000
+    healColor: 00000000
+    healEffect: none
+  }
 }
 size: 1
 reload: 60

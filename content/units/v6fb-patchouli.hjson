@@ -32,7 +32,7 @@ weapons: [
     y: 0
     xRand: 0
     shootX: 0
-    shootY: 2
+    shootY: 0
     shootSound: none
     noAmmoSound: none
     reload: 96
@@ -47,6 +47,7 @@ weapons: [
     bullet: {
       type: BasicBulletType
       collidesTeam: false
+      keepVelocity: false
       damage: 8
       hitSize: 6
       pierce: false
@@ -83,7 +84,7 @@ weapons: [
     y: 0
     xRand: 0
     shootX: 0
-    shootY: 2
+    shootY: 0
     shootSound: none
     noAmmoSound: none
     reload: 96
@@ -98,6 +99,7 @@ weapons: [
     bullet: {
       type: BasicBulletType
       collidesTeam: false
+      keepVelocity: false
       damage: 8
       hitSize: 6
       pierce: false

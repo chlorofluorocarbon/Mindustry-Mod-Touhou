@@ -15,6 +15,6 @@ description:
   
   星球文件使用了模组Asthosus中的星球文件作为模板。（画起来真的很麻烦）
   '''f
-version: "0.7.3.15f"
+version: "0.7.3.16a"
 minGameVersion: 147
 subtitle: 试着在Mindustry里躲弹幕吧！

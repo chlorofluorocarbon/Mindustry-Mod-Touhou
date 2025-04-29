@@ -193,7 +193,7 @@ weapons: [
       collidesGround: true
       lightRadius: 24
       backColor: FFFFFFFF
-       frontColor: 7F7FFFFFF
+      frontColor: 7F7FFFFFF
       shrinkX: 0
       shrinkY: 0
       sprite: "touhou-normal-bullet"
@@ -247,7 +247,7 @@ weapons: [
       collidesGround: true
       lightRadius: 24
       backColor: FFFFFFFF
-       frontColor: 7F7FFFFFF
+      frontColor: 7F7FFFFFF
       shrinkX: 0
       shrinkY: 0
       sprite: "touhou-normal-bullet"
@@ -300,7 +300,7 @@ weapons: [
       collidesGround: true
       lightRadius: 24
       backColor: FFFFFFFF
-       frontColor: 7F7FFFFFF
+      frontColor: 7F7FFFFFF
       shrinkX: 0
       shrinkY: 0
       sprite: "touhou-normal-bullet"
