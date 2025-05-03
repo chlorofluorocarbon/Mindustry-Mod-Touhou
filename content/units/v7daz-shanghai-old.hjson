@@ -5,7 +5,7 @@ drag: 1
 accel: 1
 rotateSpeed: 360
 baseRotateSpeed: 360
-health: 7.8
+health: 15.8
 armor: 0
 canBoost: true
 useUnitCap: false

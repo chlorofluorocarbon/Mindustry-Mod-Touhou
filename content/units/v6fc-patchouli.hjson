@@ -22,6 +22,41 @@ hitSize: 16
 mechSideSway: 0
 mechFrontSway: 0
 deathSound: mukyu
+deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 60
+      particles: 6
+      length: 24
+      spin: 2
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-ya-p-point
+    }
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 60
+      particles: 8
+      spin: -1.5
+      length: 24
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-yd-point-item
+    }
+  ]
+}
 weapons: [
   {
     name: patchouli-book1

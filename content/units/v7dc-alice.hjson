@@ -1,0 +1,354 @@
+// If made by player, it will be very likely that this unit creates too many dolls (subunits) in the game, please drown them in deep liquid. 
+type: mech
+createScorch: false
+speed: 0.3
+drag: 1
+accel: 1
+rotateSpeed: 360
+baseRotateSpeed: 360
+health: 71.8
+armor: 0
+canBoost: false
+// landshake: 0
+stepShake: 0
+// mechStepShake: 0
+mechStepParticles: false
+range: 240
+maxRange: 240
+outlines: false
+ammoType: azac-alice
+mechLegColor: FFFFFF00
+itemCapacity: 0
+hitSize: 16
+mechSideSway: 0
+mechFrontSway: 0
+deathSound: none
+deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 60
+      particles: 6
+      length: 24
+      spin: 2
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-ya-p-point
+    }
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 60
+      particles: 8
+      spin: -1.5
+      length: 24
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-yd-point-item
+    }
+  ]
+}
+weapons: [
+  {
+    name: alice-doll
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 210
+    alwaysShooting: true
+    predictTarget: false
+    rotateSpeed: 360
+    shoot: {
+      type: ShootSpread
+      shots: 2
+      spread: 15
+      shotDelay: 0
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 0
+      hitSize: 3
+      pierce: true
+      pierceBuilding: true
+      pierceCap: -1
+      lifetime: 70
+      speed: 0.1
+      inaccuracy: 0
+      setDefaults: false
+      despawnEffect: none
+      keepVelocity: false
+      width: 0
+      height: 0
+      makeFire: false
+      hitEffect: none
+      smokeEffect: none
+      reflectable: false
+      absorbable: false
+      hittable: false
+      shootEffect: none
+      status: none
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 0
+      backColor: FFFFFFFF
+      frontColor: FFFFFFFF
+      shrinkX: 0
+      shrinkY: 0
+      intervalBullets: 1
+      bulletInterval: 15
+      intervalRandomSpread: 0
+      intervalBullet: {
+        damage: 8
+        hitSize: 3
+        pierce: false
+        pierceBuilding: false
+        lifetime: 1800
+        rangeOverride: 240
+        speed: 0.5
+        setDefaults: false
+        despawnEffect: none
+        keepVelocity: false
+        width: 8
+        height: 8
+        makeFire: false
+        status: none
+        hitEffect: none
+        smokeEffect: none
+        reflectable: true
+        shootEffect: none
+        collidesAir: true
+        collidesGround: true
+        lightRadius: 24
+        backColor: FFFF7FFF
+        frontColor: FFFFFF9F
+        shrinkX: 0
+        shrinkY: 0
+        sprite: "touhou-simple-bullet"
+      }
+    }
+  }
+  {
+    name: alice-alice-producer
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 540
+    alwaysShooting: true
+    predictTarget: false
+    rotateSpeed: 360
+    shoot: {
+      type: ShootPattern
+      shots: 1
+      // spread: 0
+      shotDelay: 0
+      firstShotDelay: 300
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 0
+      angleOffset: 180
+      inaccuracy: 15
+      hitSize: 3
+      pierce: false
+      pierceBuilding: false
+      lifetime: 60
+      speed: 0.5
+      setDefaults: false
+      despawnHit: true
+      despawnUnit: v7da-alice
+      despawnUnitRadius: 0
+      despawnEffect: none
+      width: 8
+      height: 8
+      makeFire: false
+      status: none
+      hitEffect: {
+        type: WaveEffect
+        colorFrom: FFFF7FFF
+        colorTo: FFFF7FFF
+        sizeFrom: 1
+        strokeFrom: 2
+        sizeTo: 12
+        strokeTo: 2
+        lifetime: 15
+      }
+      smokeEffect: none
+      hittable: false
+      reflectable: false
+      absorbable: false
+      shootEffect: none
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 32
+      backColor: FFFF7FFF
+      frontColor: FFFF7FFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-shanghai-spawn"
+    }
+  }
+  {
+    name: alice-shanghai3-producer
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 840
+    alwaysShooting: true
+    predictTarget: false
+    rotateSpeed: 360
+    shoot: {
+      type: ShootPattern
+      shots: 1
+      // spread: 0
+      shotDelay: 0
+      firstShotDelay: 600
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 0
+      inaccuracy: 15
+      hitSize: 3
+      pierce: false
+      pierceBuilding: false
+      lifetime: 60
+      speed: 0.5
+      setDefaults: false
+      despawnHit: true
+      despawnUnit: v7dcza-shanghai
+      despawnUnitRadius: 0
+      despawnEffect: none
+      width: 12
+      height: 12
+      makeFire: false
+      status: none
+      hitEffect: {
+        type: WaveEffect
+        colorFrom: 7F7FFFFF
+        colorTo: 7F7FFFFF
+        sizeFrom: 1
+        strokeFrom: 2
+        sizeTo: 24
+        strokeTo: 2
+        lifetime: 15
+      }
+      smokeEffect: none
+      hittable: false
+      reflectable: false
+      absorbable: false
+      shootEffect: none
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 40
+      backColor: FFFF7FFF
+      frontColor: FFFF7FFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-shanghai-hexagon-spawn"
+    }
+  }
+  {
+    name: alice-hourai2-producer
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 660
+    alwaysShooting: true
+    predictTarget: false
+    rotateSpeed: 360
+    shoot: {
+      type: ShootPattern
+      shots: 1
+      // spread: 0
+      shotDelay: 0
+      firstShotDelay: 420
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 0
+      inaccuracy: 15
+      hitSize: 3
+      pierce: false
+      pierceBuilding: false
+      lifetime: 60
+      speed: 0.5
+      setDefaults: false
+      despawnHit: true
+      despawnUnit: v7dczb-hourai
+      despawnUnitRadius: 0
+      despawnEffect: none
+      width: 12
+      height: 12
+      makeFire: false
+      status: none
+      hitEffect: {
+        type: WaveEffect
+        colorFrom: FF0000FF
+        colorTo: FF0000FF
+        sizeFrom: 1
+        strokeFrom: 2
+        sizeTo: 18
+        strokeTo: 2
+        lifetime: 15
+      }
+      smokeEffect: none
+      hittable: false
+      reflectable: false
+      absorbable: false
+      shootEffect: none
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 24
+      backColor: FFFF7FFF
+      frontColor: FFFF7FFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-hourai-triangle-spawn"
+    }
+  }
+]
+immunities: [
+  burning
+  maid-fairy-lifetime
+]

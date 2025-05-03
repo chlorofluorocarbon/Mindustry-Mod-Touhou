@@ -102,15 +102,15 @@ weapons: [
       collidesAir: true
       collidesGround: true
       lightRadius: 24
-      backColor: FFFFFFFF
-      frontColor: FFFF7FFF
+      backColor: FFFF7FFF
+      frontColor: FFFFFF9F
       shrinkX: 0
       shrinkY: 0
       sprite: "touhou-simple-bullet"
     }
   }
   {
-    name: alice-shanghai-producer
+    name: alice-shanghai2-producer
     mirror: false
     ejectEffect: none
     alternate: false
@@ -157,7 +157,7 @@ weapons: [
         colorTo: 7F7FFFFF
         sizeFrom: 1
         strokeFrom: 2
-        sizeTo: 12
+        sizeTo: 18
         strokeTo: 2
         lifetime: 15
       }

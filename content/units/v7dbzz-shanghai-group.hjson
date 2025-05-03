@@ -53,6 +53,7 @@ weapons: [
     shootX: 0
     shootY: 0
     inaccuracy: 0
+    shake: 0
     shoot: {
       type: ShootPattern
       shots: 1
@@ -92,6 +93,8 @@ weapons: [
       shrinkX: 0
       shrinkY: 0
       sprite: "touhou-normal-bullet"
+      hitShake: 0
+      despawnShake: 0
       fragBullets: 3
       fragRandomSpread: 0
       fragSpread: 120
@@ -137,8 +140,8 @@ weapons: [
         collidesAir: true
         collidesGround: true
         lightRadius: 24
-        backColor: FFFF7FFF
-        frontColor: FFFF7FFF
+        backColor: 7F7FFFFF
+        frontColor: 7F7FFFFF
         shrinkX: 0
         shrinkY: 0
         sprite: "touhou-shanghai-spawn"

@@ -1,0 +1,310 @@
+type: mech
+createScorch: false
+speed: 0.32
+drag: 1
+accel: 1
+rotateSpeed: 360
+baseRotateSpeed: 360
+health: 95.8
+armor: 0
+canBoost: true
+useUnitCap: false
+boostMultiplier: 1
+hovering: true
+// landshake: 0
+stepShake: 0
+// mechStepShake: 0
+mechStepParticles: false
+range: 96
+maxRange: 96
+outlines: false
+ammoType: azac-alice
+mechLegColor: FFFFFF00
+itemCapacity: 0
+hitSize: 16
+mechSideSway: 0
+mechFrontSway: 0
+deathSound: shanghai
+deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 60
+      particles: 6
+      length: 24
+      spin: 2
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-ya-p-point
+    }
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 60
+      particles: 8
+      spin: -1.5
+      length: 24
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-yd-point-item
+    }
+  ]
+}
+faceTarget: true
+weapons: [
+  {
+    name: shanghai-continuous-laser-weapon
+    continuous: true
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 300
+    shake: 0
+    top: false
+    predictTarget: false
+    rotate: false
+    rotateSpeed: 0
+    shootStatus: unmoving
+    shootStatusDuration: 160
+    shoot: {
+      type: ShootPattern
+      shots: 1
+      // spread: 0
+      firstShotDelay: 60
+    }
+    bullet: {
+      type: ContinuousLaserBulletType
+      chargeEffect: {
+        type: MultiEffect
+        effects: [
+          {
+             type: WaveEffect
+             lifetime: 60
+             sizeFrom: 20
+             sizeTo: 20
+             strokeFrom: 2
+             strokeTo: 0
+             colorFrom: BF3FFFFF
+             colorTo: BF3FFFFF
+          }
+          {
+             type: WaveEffect
+             lifetime: 60
+             sizeFrom: 20
+             sizeTo: 1
+             strokeFrom: 0
+             strokeTo: 2
+             colorFrom: BF3FFFFF
+             colorTo: DF9FFFFF
+          }
+        ]
+      }
+      shake: 0
+      length: 96
+      damageInterval: 5
+      fadeTime: 20
+      lightStroke: 16
+      divisions: 36
+      colors: [
+        7F00FF6F
+        7F00FFAF
+        BF3FFFFF
+        DF9FFFFF
+      ]
+      strokeFrom: 1
+      strokeTo: 0.8
+      backLength: 6
+      frontLength: 8
+      width: 6
+      oscScl: 0
+      oscMag: 0
+      collidesTeam: false
+      keepVelocity: false
+      damage: 1
+      hitSize: 4
+      pierce: true
+      pierceCap: 3
+      pierceBuilding: false
+      lifetime: 90
+      rangeOverride: 240
+      speed: 0
+      setDefaults: false
+      despawnEffect: none
+      makeFire: false
+      status: none
+      hitEffect: none
+      smokeEffect: none
+      reflectable: true
+      shootEffect: none
+      collidesAir: true
+      collidesGround: true
+      hitShake: 0
+      despawnShake: 0
+    }
+  }
+  {
+    name: shanghai-continuous-laser-weapon-indicator
+    continuous: true
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 360
+    shake: 0
+    top: false
+    predictTarget: false
+    rotate: false
+    rotateSpeed: 0
+    shootStatus: none
+    shoot: {
+      type: ShootPattern
+      shots: 1
+      // spread: 0
+      firstShotDelay: 0
+    }
+    bullet: {
+      type: ContinuousLaserBulletType
+      shake: 0
+      length: 96
+      damageInterval: 60
+      fadeTime: 20
+      lightStroke: 16
+      divisions: 36
+      colors: [
+        7F00FF3F
+        7F00FF5F
+        BF3FFF7F
+        DF9FFFFF
+      ]
+      strokeFrom: 1
+      strokeTo: 0.8
+      backLength: 6
+      frontLength: 8
+      width: 2
+      oscScl: 0
+      oscMag: 0
+      collidesTeam: false
+      keepVelocity: false
+      damage: 0
+      hitSize: 4
+      pierce: true
+      pierceCap: 3
+      pierceBuilding: false
+      lifetime: 90
+      rangeOverride: 240
+      speed: 0
+      setDefaults: false
+      despawnEffect: none
+      makeFire: false
+      status: none
+      hitEffect: none
+      smokeEffect: none
+      reflectable: true
+      shootEffect: none
+      collidesAir: true
+      collidesGround: true
+      hitShake: 0
+      despawnShake: 0
+    }
+  }
+  {
+    name: shanghai3-shanghai2-producer
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 1800
+    alwaysShooting: true
+    predictTarget: false
+    rotateSpeed: 360
+    shoot: {
+      type: ShootPattern
+      shots: 1
+      // spread: 0
+      shotDelay: 0
+      firstShotDelay: 1500
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 0
+      inaccuracy: 0
+      hitSize: 0
+      pierce: false
+      pierceBuilding: false
+      lifetime: 0
+      speed: 0
+      keepVelocity: false
+      setDefaults: false
+      despawnHit: true
+      despawnUnit: v7dczy-shanghai-group
+      despawnUnitRadius: 0
+      despawnEffect: none
+      width: 0
+      height: 0
+      makeFire: false
+      status: none
+      hitEffect: none
+      smokeEffect: none
+      hittable: false
+      reflectable: false
+      absorbable: false
+      shootEffect: none
+      collidesAir: false
+      collidesGround: false
+      lightRadius: 0
+      backColor: 00000000
+      frontColor: 00000000
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-shanghai-spawn"
+    }
+  }
+]
+abilities: [
+  {
+    type: ShieldArcAbility
+    angle: 300
+    radius: 14
+    max: 144
+    regen: 0.1
+    cooldown: 1440
+    whenShooting: false
+    width: 2
+    // region: touhou-v7dcza-shanghai-shield
+    color: 7F7FFF7F
+  }
+]
+immunities: [
+  burning
+  maid-fairy-lifetime
+]

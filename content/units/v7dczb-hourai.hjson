@@ -1,0 +1,251 @@
+type: mech
+createScorch: false
+speed: 1.0
+drag: 1
+accel: 1
+rotateSpeed: 360
+baseRotateSpeed: 360
+health: 35.8
+armor: 0
+canBoost: true
+useUnitCap: false
+boostMultiplier: 1
+hovering: true
+// landshake: 0
+stepShake: 0
+// mechStepShake: 0
+mechStepParticles: false
+range: 12
+maxRange: 12
+outlines: false
+ammoType: azac-alice
+mechLegColor: FFFFFF00
+itemCapacity: 0
+hitSize: 8
+mechSideSway: 0
+mechFrontSway: 0
+deathSound: hourai
+deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 60
+      particles: 2
+      length: 24
+      spin: 2
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-ya-p-point
+    }
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 60
+      particles: 3
+      spin: -1.5
+      length: 24
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-yd-point-item
+    }
+  ]
+}
+deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 60
+      particles: 2
+      length: 24
+      spin: 2
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-ya-p-point
+    }
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 60
+      particles: 3
+      spin: -1.5
+      length: 24
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-yd-point-item
+    }
+  ]
+}
+weapons: [
+  {
+    name: hourai2-weapon
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    layerOffset: -2
+    recoil: -7.5
+    recoilPow: 2.4
+    recoilTime: 45
+    shootSound: hourai
+    noAmmoSound: none
+    reload: 120
+    top: false
+    predictTarget: false
+    rotate: false
+    rotateSpeed: 0
+    shootStatus: unmoving
+    shootStatusDuration: 55
+    shoot: {
+      type: ShootPattern
+      shots: 2
+      // spread: 0
+      shotDelay: 20
+      firstShotDelay: 30
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      chargeEffect: {
+        type: MultiEffect
+        effects: [
+          {
+             type: WaveEffect
+             lifetime: 30
+             sizeFrom: 15
+             sizeTo: 15
+             strokeFrom: 2
+             strokeTo: 0
+             colorFrom: FF0000FF
+             colorTo: FF0000FF
+          }
+          {
+             type: WaveEffect
+             lifetime: 30
+             sizeFrom: 15
+             sizeTo: 1
+             strokeFrom: 0
+             strokeTo: 2
+             colorFrom: FF0000FF
+             colorTo: FF7F7FFF
+          }
+        ]
+      }
+      damage: 18
+      hitSize: 4
+      pierce: true
+      pierceCap: -1
+      pierceBuilding: false
+      lifetime: 8
+      speed: 1.5
+      setDefaults: false
+      despawnEffect: none
+      width: 0
+      height: 0
+      makeFire: false
+      status: none
+      hitEffect: none
+      smokeEffect: none
+      reflectable: false
+      absorbable: false
+      hittable: false
+      shootEffect: none
+      collidesAir: true
+      collidesGround: true
+      lightRadius: 0
+      backColor: 00000000
+      frontColor: 00000000
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-simple-bullet"
+    }
+  }
+  {
+    name: hourai2-hourai1-producer
+    mirror: false
+    ejectEffect: none
+    alternate: false
+    x: 0
+    y: 0
+    xRand: 0
+    shootX: 0
+    shootY: 0
+    shootSound: none
+    noAmmoSound: none
+    reload: 1200
+    alwaysShooting: true
+    predictTarget: false
+    rotateSpeed: 360
+    shoot: {
+      type: ShootPattern
+      shots: 1
+      // spread: 0
+      shotDelay: 0
+      firstShotDelay: 1080
+    }
+    bullet: {
+      type: BasicBulletType
+      collidesTeam: false
+      damage: 0
+      inaccuracy: 0
+      hitSize: 0
+      pierce: false
+      pierceBuilding: false
+      lifetime: 0
+      speed: 0
+      keepVelocity: false
+      setDefaults: false
+      despawnHit: true
+      despawnUnit: v7dczz-hourai-group
+      despawnUnitRadius: 0
+      despawnEffect: none
+      width: 0
+      height: 0
+      makeFire: false
+      status: none
+      hitEffect: none
+      smokeEffect: none
+      hittable: false
+      reflectable: false
+      absorbable: false
+      shootEffect: none
+      collidesAir: false
+      collidesGround: false
+      lightRadius: 0
+      backColor: 00000000
+      frontColor: 00000000
+      shrinkX: 0
+      shrinkY: 0
+      hitShake: 0
+      despawnShake: 0
+      sprite: "touhou-shanghai-spawn"
+    }
+  }
+]
+immunities: [
+  burning
+  maid-fairy-lifetime
+]

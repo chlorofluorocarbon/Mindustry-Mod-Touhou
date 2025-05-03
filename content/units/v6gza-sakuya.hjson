@@ -22,6 +22,26 @@ hitSize: 48
 mechSideSway: 0
 mechFrontSway: 0
 deathSound: bujikasakuyasann
+deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      colorFrom: FFFFFFFF
+      colorTo: FFFFFFFF
+      lifetime: 120
+      particles: 1
+      spin: -2
+      length: 48
+      sizeFrom: 4
+      sizeTo: 0
+      followParent: true
+      lightScl: 0
+      lightOpacity: 0
+      region: touhou-yb-1up
+    }
+  ]
+}
 weapons: [
   {
     name: sakuya-knife-a

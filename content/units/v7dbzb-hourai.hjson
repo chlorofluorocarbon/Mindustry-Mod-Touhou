@@ -1,6 +1,6 @@
 type: mech
 createScorch: false
-speed: 0.32
+speed: 1.0
 drag: 1
 accel: 1
 rotateSpeed: 360
@@ -57,7 +57,7 @@ weapons: [
     shootX: 0
     shootY: 0
     layerOffset: -2
-    recoil: -6
+    recoil: -6.75
     recoilPow: 2.4
     recoilTime: 45
     shootSound: hourai
@@ -65,17 +65,46 @@ weapons: [
     reload: 60
     top: false
     predictTarget: false
-    rotateSpeed: 360
+    rotate: false
+    rotateSpeed: 0
+    shootStatus: unmoving
+    shootStatusDuration: 35
     shoot: {
       type: ShootPattern
       shots: 1
       // spread: 0
       shotDelay: 0
+      firstShotDelay: 30
     }
     bullet: {
       type: BasicBulletType
       collidesTeam: false
-      damage: 2
+      chargeEffect: {
+        type: MultiEffect
+        effects: [
+          {
+             type: WaveEffect
+             lifetime: 30
+             sizeFrom: 15
+             sizeTo: 15
+             strokeFrom: 2
+             strokeTo: 0
+             colorFrom: FF0000FF
+             colorTo: FF0000FF
+          }
+          {
+             type: WaveEffect
+             lifetime: 30
+             sizeFrom: 15
+             sizeTo: 1
+             strokeFrom: 0
+             strokeTo: 2
+             colorFrom: FF0000FF
+             colorTo: FF7F7FFF
+          }
+        ]
+      }
+      damage: 8
       hitSize: 4
       pierce: true
       pierceCap: -1
@@ -92,6 +121,7 @@ weapons: [
       smokeEffect: none
       reflectable: false
       absorbable: false
+      hittable: false
       shootEffect: none
       collidesAir: true
       collidesGround: true

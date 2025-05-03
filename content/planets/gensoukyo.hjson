@@ -146,6 +146,7 @@ clearSectorOnLose: true
 // allowWaves: true
 prebuildBase: true
 defaultCore: touhou-core-a-reimari
+defaultEnv: 1
 parent: sun
 solarSystem: sun
 launchCandidates: []

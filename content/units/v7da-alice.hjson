@@ -87,8 +87,8 @@ weapons: [
       collidesAir: true
       collidesGround: true
       lightRadius: 24
-      backColor: FFFFFFFF
-      frontColor: FFFF7FFF
+      backColor: FFFF7FFF
+      frontColor: FFFFFF9F
       shrinkX: 0
       shrinkY: 0
       sprite: "touhou-simple-bullet"
