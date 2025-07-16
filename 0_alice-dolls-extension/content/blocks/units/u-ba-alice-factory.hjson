@@ -1,0 +1,24 @@
+type: UnitFactory
+size: 3
+itemCapacity: 2000
+requirements: [
+  touhou-azac-alice/160
+]
+research: touhou-ja-0p-factory
+researchCost: [
+  touhou-azac-alice/200
+]
+category: units
+consumes: {
+  power: 1
+}
+plans: [
+  {
+    unit: u-uaa-alice
+    time: 1200
+    requirements: [
+      touhou-azac-alice/1000
+      touhou-yb-1up/1
+    ]
+  }
+]

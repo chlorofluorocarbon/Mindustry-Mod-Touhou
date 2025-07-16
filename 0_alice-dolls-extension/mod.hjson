@@ -1,0 +1,21 @@
+name: alice-dolls-extension
+displayName: Touhou extension: Alice and her dolls
+author: Chlorofluorocarbon0902
+description:
+  '''
+  这个模组是touhou模组的扩展内容，包含爱丽丝作为自机，她会利用人形作为弹幕主要输出能力。
+  注意：这个模组必须有模组“touhou”作为前置模组！
+  游玩模组前，请务必先阅读本说明。部分说明和touhou模组是重复的。
+  
+  当前版本没有完成bundle.properties。
+  
+  游玩注意：如果发现弹幕发光过于瞎眼，请在设置-图形里将光效强度调整为0%。
+  模组中的“详情”部分（即研究后解锁的详细信息）内容主要源自二设，不适合作为入坑东方参考资料！
+  模组中的“详情”部分偶尔会出现剧透，请自行决定是否观看。
+  '''
+dependencies: [
+  touhou
+]
+version: "0.2.0"
+minGameVersion: 147
+subtitle: 爱丽丝厨和则批专属的东方模组补充包！

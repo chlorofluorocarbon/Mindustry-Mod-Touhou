@@ -1,0 +1,6 @@
+// type: StatusEffect
+speedMultiplier: 0
+reloadMultiplier: 1
+buildSpeedMultiplier: 0
+effect: none
+applyEffect: none

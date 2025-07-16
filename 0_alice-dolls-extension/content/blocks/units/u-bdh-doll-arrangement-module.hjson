@@ -1,0 +1,8 @@
+type: UnitAssemblerModule
+size: 3
+requirements: [
+  touhou-azac-alice/54
+]
+research: u-bc-doll-assembler
+category: units
+tier: 6

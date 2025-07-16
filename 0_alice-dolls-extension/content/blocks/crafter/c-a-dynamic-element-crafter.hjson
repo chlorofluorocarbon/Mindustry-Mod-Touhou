@@ -1,0 +1,33 @@
+type: GenericCrafter
+size: 2
+itemCapacity: 30
+hasPower: true
+hasLiquids: false
+hasItems: true
+craftTime: 180
+consumes: {
+  power: 0.8
+  items: [
+    touhou-azac-alice/6
+  ]
+}
+drawer: {
+  type: DrawMulti
+  drawers: [
+    DrawDefault
+    {
+      type: DrawFlame
+      flameColor: B4B47EFF
+      lightRadius: 40
+      lightAlpha: 0.4
+    }
+  ]
+}
+craftEffect: mine
+updateEffect: none
+outputItem: a-a-dynamic-element/4
+category: crafting
+requirements: [
+  touhou-azac-alice/60
+]
+research: touhou-hce-pachumari-alice-converter

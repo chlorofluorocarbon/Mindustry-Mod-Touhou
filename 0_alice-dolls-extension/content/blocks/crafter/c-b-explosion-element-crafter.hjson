@@ -1,0 +1,34 @@
+type: GenericCrafter
+size: 2
+itemCapacity: 10
+hasPower: true
+hasLiquids: false
+hasItems: true
+craftTime: 90
+consumes: {
+  power: 0.8
+  items: [
+    touhou-azac-alice/2
+    touhou-ae-patchouli/1
+  ]
+}
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    DrawWeave
+    DrawDefault
+  ]
+}
+craftEffect: mine
+updateEffect: none
+outputItem: a-b-explosion-element/2
+category: crafting
+requirements: [
+  touhou-azac-alice/45
+  touhou-ae-patchouli/15
+]
+research: touhou-hce-pachumari-alice-converter

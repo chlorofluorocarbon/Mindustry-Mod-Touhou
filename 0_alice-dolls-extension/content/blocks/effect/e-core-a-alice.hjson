@@ -1,0 +1,14 @@
+type: CoreBlock
+size: 3
+health: 1100
+requirements: [
+  touhou-azac-alice/2000
+]
+destroySound: none
+unitType: touhou-u0a-ruukoto
+category: effect
+research: {
+  parent: touhou-core-a-reimari
+}
+itemCapacity: 5000
+unitCapModifier: 4

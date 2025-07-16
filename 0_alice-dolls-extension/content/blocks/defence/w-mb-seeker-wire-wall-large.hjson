@@ -1,0 +1,509 @@
+type: PowerTurret
+shootType: {
+  type: BasicBulletType
+  shrinkX: 0
+  shrinkY: 0
+  backColor: BF3F3FFF
+  frontColor: FF7F7FFF
+  mixColorFrom: 00000000
+  mixColorTo: 00000000
+  lightColor: BF3F3FFF
+  lightRadius: 24
+  width: 6
+  height: 6
+  lifetime: 20
+  lifeScaleRandMin: 0.75
+  lifeScaleRandMin: 1.25
+  speed: 1.5
+  damage: 2
+  incendChance: 0
+  shootEffect: {
+    type: ParticleEffect
+    colorFrom: BF3F3FBF
+    colorTo: BF3F3F00
+    particles: 1
+    randLength: false
+    length: 0
+    baseLength: 0
+    lifetime: 45
+    sizeFrom: 5
+    sizeTo: 5
+    strokeFrom: 0
+    strokeTo: 0
+  }
+  smokeEffect: none
+  chargeEffect: none
+  hitEffect: none
+  despawnEffect: {
+    type: ParticleEffect
+    colorFrom: BF3F3FBF
+    colorTo: BF3F3F00
+    particles: 1
+    randLength: false
+    length: 0
+    baseLength: 0
+    lifetime: 45
+    sizeFrom: 5
+    sizeTo: 5
+    strokeFrom: 0
+    strokeTo: 0
+  }
+  hitSound: none
+  despawnSound: pew
+  trailLength: 16
+  trailWidth: 2.4
+  trailColor: BF3F3FFF
+  ammoMultiplier: 1
+  recoil: 0
+  pierce: true
+  pierceBuilding: true
+  pierceCap: -1
+  hitSize: 3
+  status: none
+  statusDuration: 0
+  hittable: false
+  reflectable: true
+  absorbable: false
+  setDefaults: true
+  hitColor: 00000000
+  healColor: 00000000
+  healEffect: none
+  sprite: touhou-huge-bullet
+  fragOnHit: false
+  fragBullets: 1
+  fragOffsetMin: 0
+  fragOffsetMax: 0
+  fragVelocityMin: 1
+  fragVelocityMax: 1
+  fragRandomSpread: 360
+  fragBullet: {
+    type: BasicBulletType
+    shrinkX: 0
+    shrinkY: 0
+    backColor: BF3F3FFF
+    frontColor: FF7F7FFF
+    mixColorFrom: 00000000
+    mixColorTo: 00000000
+    lightColor: BF3F3FFF
+    lightRadius: 24
+    width: 6
+    height: 6
+    lifetime: 20
+    lifeScaleRandMin: 0.75
+    lifeScaleRandMin: 1.25
+    speed: 1.5
+    damage: 2
+    incendChance: 0
+    shootEffect: none
+    smokeEffect: none
+    chargeEffect: none
+    hitEffect: none
+    despawnEffect: {
+      type: ParticleEffect
+      colorFrom: BF3F3FBF
+      colorTo: BF3F3F00
+      particles: 1
+      randLength: false
+      length: 0
+      baseLength: 0
+      lifetime: 45
+      sizeFrom: 5
+      sizeTo: 5
+      strokeFrom: 0
+      strokeTo: 0
+    }
+    hitSound: none
+    despawnSound: pew
+    trailLength: 16
+    trailWidth: 2.4
+    trailColor: BF3F3FFF
+    ammoMultiplier: 1
+    recoil: 0
+    pierce: true
+    pierceBuilding: true
+    pierceCap: -1
+    hitSize: 3
+    status: none
+    statusDuration: 0
+    hittable: false
+    reflectable: true
+    absorbable: false
+    setDefaults: true
+    hitColor: 00000000
+    healColor: 00000000
+    healEffect: none
+    sprite: touhou-huge-bullet
+    fragOnHit: false
+    fragBullets: 1
+    fragOffsetMin: 0
+    fragOffsetMax: 0
+    fragVelocityMin: 1
+    fragVelocityMax: 1
+    fragRandomSpread: 360
+    fragBullet: {
+      type: BasicBulletType
+      shrinkX: 0
+      shrinkY: 0
+      backColor: BF3F3FFF
+      frontColor: FF7F7FFF
+      mixColorFrom: 00000000
+      mixColorTo: 00000000
+      lightColor: BF3F3FFF
+      lightRadius: 24
+      width: 6
+      height: 6
+      lifetime: 20
+      lifeScaleRandMin: 0.75
+      lifeScaleRandMin: 1.25
+      speed: 1.5
+      damage: 2
+      incendChance: 0
+      shootEffect: none
+      smokeEffect: none
+      chargeEffect: none
+      hitEffect: none
+      despawnEffect: {
+        type: ParticleEffect
+        colorFrom: BF3F3FBF
+        colorTo: BF3F3F00
+        particles: 1
+        randLength: false
+        length: 0
+        baseLength: 0
+        lifetime: 45
+        sizeFrom: 5
+        sizeTo: 5
+        strokeFrom: 0
+        strokeTo: 0
+      }
+      hitSound: none
+      despawnSound: pew
+      trailLength: 16
+      trailWidth: 2.4
+      trailColor: BF3F3FFF
+      ammoMultiplier: 1
+      recoil: 0
+      pierce: true
+      pierceBuilding: true
+      pierceCap: -1
+      hitSize: 3
+      status: none
+      statusDuration: 0
+      hittable: false
+      reflectable: true
+      absorbable: false
+      setDefaults: true
+      hitColor: 00000000
+      healColor: 00000000
+      healEffect: none
+      sprite: touhou-huge-bullet
+      fragOnHit: false
+      fragBullets: 1
+      fragOffsetMin: 0
+      fragOffsetMax: 0
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragRandomSpread: 360
+      fragBullet: {
+        type: BasicBulletType
+        shrinkX: 0
+        shrinkY: 0
+        backColor: BF3F3FFF
+        frontColor: FF7F7FFF
+        mixColorFrom: 00000000
+        mixColorTo: 00000000
+        lightColor: BF3F3FFF
+        lightRadius: 24
+        width: 6
+        height: 6
+        lifetime: 40
+        lifeScaleRandMin: 0.75
+        lifeScaleRandMin: 1.25
+        speed: 1.5
+        damage: 2
+        incendChance: 0
+        shootEffect: none
+        smokeEffect: none
+        chargeEffect: none
+        hitEffect: none
+        despawnEffect: none
+        hitSound: none
+        despawnSound: none
+        trailLength: 16
+        trailWidth: 2.4
+        trailColor: BF3F3FFF
+        ammoMultiplier: 1
+        recoil: 0
+        pierce: true
+        pierceBuilding: true
+        pierceCap: 3
+        hitSize: 3
+        status: none
+        statusDuration: 0
+        hittable: false
+        reflectable: true
+        absorbable: false
+        setDefaults: true
+        hitColor: 00000000
+        healColor: 00000000
+        healEffect: none
+        sprite: touhou-huge-bullet
+      }
+    }
+  }
+}
+reload: 180
+shoot: {
+  type: ShootPattern
+  shots: 1
+}
+range: 32
+rotateSpeed: 360
+fogRadiusMultiplier: 0
+coolEffect: none
+coolantMultiplier: 1
+hasLiquids: false
+hasItems: false
+shootCone: 0.5
+shootX: 0
+shootY: 0
+targetAir: true
+targetGround: true
+shootSound: pew
+smokeEffect: none
+ammoUseEffect: none
+heatColor: 00000000
+consumes: {
+  power: 0.2
+}
+size: 2
+health: 640
+requirements: [
+  a-c-laser-element/16
+  touhou-azac-alice/8
+]
+hasItems: false
+itemCapacity: 0
+hasLiquids: false
+liquidCapacity: 0
+category: defense
+research: w-ma-seeker-wire-wall
+destroyBullet: {
+  type: MultiBulletType
+  repeat: 4
+  damage: 0
+  lifetime: 0
+  speed: 0
+  hitEffect: none
+  despawnEffect: none
+  shootEffect: none
+  smokeEffect: none
+  ammoMultiplier: 1
+  hitSound: none
+  hittable: false
+  absorbable: false
+  reflectable: false
+  bullets: [
+    {
+      type: BasicBulletType
+      shrinkX: 0
+      shrinkY: 0
+      backColor: 00000000
+      frontColor: 00000000
+      mixColorFrom: 00000000
+      mixColorTo: 00000000
+      lightColor: 00000000
+      lightRadius: 0
+      width: 0
+      height: 0
+      lifetime: 0
+      speed: 0
+      damage: 0
+      incendChance: 0
+      shootEffect: none
+      smokeEffect: none
+      chargeEffect: none
+      hitEffect: none
+      knockback: 0
+      despawnEffect: none
+      hitSound: none
+      despawnSound: none
+      ammoMultiplier: 1
+      recoil: 0
+      pierce: true
+      pierceBuilding: true
+      pierceCap: -1
+      drawSize: 0.01
+      hitSize: 0.01
+      status: none
+      hittable: false
+      reflectable: false
+      absorbable: false
+      setDefaults: true
+      hitColor: 00000000
+      healColor: 00000000
+      healEffect: none
+      fragBullets: 1
+      fragRandomSpread: 360
+      fragOffsetMax: 3
+      fragOffsetMin: 0
+      fragVelocityMin: 0.6
+      fragVelocityMax: 1.2
+      fragBullet: {
+        type: BasicBulletType
+        damage: 0
+        lifetime: 0
+        height: 0
+        width: 0
+        speed: 0
+        hitEffect: none
+        despawnEffect: none
+        shootEffect: none
+        smokeEffect: none
+        ammoMultiplier: 1
+        hitSound: none
+        despawnSound: none
+        hittable: false
+        absorbable: false
+        reflectable: false
+        createChance: 1
+        spawnUnit: u-umc-seeker-wire-doll
+      }
+    }
+    {
+      type: BasicBulletType
+      shrinkX: 0
+      shrinkY: 0
+      backColor: 00000000
+      frontColor: 00000000
+      mixColorFrom: 00000000
+      mixColorTo: 00000000
+      lightColor: 00000000
+      lightRadius: 0
+      width: 0
+      height: 0
+      lifetime: 0
+      speed: 0
+      damage: 0
+      incendChance: 0
+      shootEffect: none
+      smokeEffect: none
+      chargeEffect: none
+      hitEffect: none
+      knockback: 0
+      despawnEffect: none
+      hitSound: none
+      despawnSound: none
+      ammoMultiplier: 1
+      recoil: 0
+      pierce: true
+      pierceBuilding: true
+      pierceCap: -1
+      drawSize: 0.01
+      hitSize: 0.01
+      status: none
+      hittable: false
+      reflectable: false
+      absorbable: false
+      setDefaults: true
+      hitColor: 00000000
+      healColor: 00000000
+      healEffect: none
+      fragBullets: 1
+      fragRandomSpread: 360
+      fragOffsetMax: 3
+      fragOffsetMin: 0
+      fragVelocityMin: 0.6
+      fragVelocityMax: 1.2
+      fragBullet: {
+        type: BasicBulletType
+        damage: 0
+        lifetime: 0
+        height: 0
+        width: 0
+        speed: 0
+        hitEffect: none
+        despawnEffect: none
+        shootEffect: none
+        smokeEffect: none
+        ammoMultiplier: 1
+        hitSound: none
+        despawnSound: none
+        hittable: false
+        absorbable: false
+        reflectable: false
+        createChance: 0.5
+        spawnUnit: u-umc-seeker-wire-doll
+      }
+    }
+    {
+      type: BasicBulletType
+      shrinkX: 0
+      shrinkY: 0
+      backColor: 00000000
+      frontColor: 00000000
+      mixColorFrom: 00000000
+      mixColorTo: 00000000
+      lightColor: 00000000
+      lightRadius: 0
+      width: 0
+      height: 0
+      lifetime: 0
+      speed: 0
+      damage: 0
+      incendChance: 0
+      shootEffect: none
+      smokeEffect: none
+      chargeEffect: none
+      hitEffect: none
+      knockback: 0
+      despawnEffect: none
+      hitSound: none
+      despawnSound: none
+      ammoMultiplier: 1
+      recoil: 0
+      pierce: true
+      pierceBuilding: true
+      pierceCap: -1
+      drawSize: 0.01
+      hitSize: 0.01
+      status: none
+      hittable: false
+      reflectable: false
+      absorbable: false
+      setDefaults: true
+      hitColor: 00000000
+      healColor: 00000000
+      healEffect: none
+      fragBullets: 1
+      fragRandomSpread: 360
+      fragOffsetMax: 3
+      fragOffsetMin: 0
+      fragVelocityMin: 0.6
+      fragVelocityMax: 1.2
+      fragBullet: {
+        type: BasicBulletType
+        damage: 0
+        lifetime: 0
+        height: 0
+        width: 0
+        speed: 0
+        hitEffect: none
+        despawnEffect: none
+        shootEffect: none
+        smokeEffect: none
+        ammoMultiplier: 1
+        hitSound: none
+        despawnSound: none
+        hittable: false
+        absorbable: false
+        reflectable: false
+        createChance: 0.5
+        spawnUnit: u-umc-seeker-wire-doll
+      }
+    }
+  ]
+}
+destroyBulletSameTeam: true
+buildCostMultiplier: 3.2
+conductivePower: true

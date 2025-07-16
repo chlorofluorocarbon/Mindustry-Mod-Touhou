@@ -1,0 +1,135 @@
+type: UnitAssembler
+size: 5
+itemCapacity: 20
+requirements: [
+  touhou-azac-alice/600
+  touhou-ab-marisa/400
+  touhou-ae-patchouli/300
+  touhou-aa-reimu/200
+  /*
+  a-a-dynamic-element/400
+  a-b-explosion-element/400
+  a-c-laser-element/400
+  a-d-danmaku-element/400
+  */
+]
+areaSize: 11
+consumes: {
+  power: 2
+  liquids: [
+    touhou-eya-p-juice/0.5
+  ]
+}
+plans: [
+  {
+    unit: u-uba-doll-placement
+    // 操创
+    requirements: [
+      // TODO
+      alice-dolls-extension-u-uaa-alice/1
+      alice-dolls-extension-w-ba-doll-placement-wall/6
+    ]
+    time: 1200
+  }
+  {
+    unit: u-uca-returning-doll
+    // 归巢
+    requirements: [
+      alice-dolls-extension-u-uaa-alice/1
+      alice-dolls-extension-w-ca-returning-doll-wall/6
+    ]
+    time: 1200
+  }
+  {
+    unit: u-uda-doll-ambush
+    // 伏兵
+    requirements: [
+      alice-dolls-extension-u-uaa-alice/1
+      alice-dolls-extension-w-da-doll-ambush-wall/6
+    ]
+    time: 1200
+  }
+  {
+    unit: u-uea-volatile-doll
+    // 无操
+    requirements: [
+      alice-dolls-extension-u-uaa-alice/1
+      alice-dolls-extension-w-ea-volatile-doll-wall/6
+    ]
+    time: 1200
+  }
+  {
+    unit: u-ufa-doll-cremation
+    // 火葬
+    requirements: [
+      alice-dolls-extension-u-uaa-alice/1
+      alice-dolls-extension-w-fa-doll-cremation-wall/6
+    ]
+    time: 1200
+  }
+  {
+    unit: u-uga-edo-high-explosive-pawn
+    // 大江户
+    requirements: [
+      alice-dolls-extension-u-uaa-alice/1
+      alice-dolls-extension-w-ga-edo-high-explosive-pawn-wall/6
+    ]
+    time: 1200
+  }
+  {
+    unit: u-uha-doll-arrangement
+    // 置操
+    requirements: [
+      alice-dolls-extension-u-uaa-alice/1
+      alice-dolls-extension-w-ha-doll-arrangement-wall/6
+    ]
+    time: 1200
+  }
+  {
+    unit: u-uia-thousand-spear-doll
+    // 千枪
+    requirements: [
+      alice-dolls-extension-u-uaa-alice/1
+      alice-dolls-extension-w-ia-thousand-spear-doll-wall/6
+    ]
+    time: 1200
+  }
+  {
+    unit: u-uja-doll-archer
+    // 弓兵
+    requirements: [
+      alice-dolls-extension-u-uaa-alice/1
+      alice-dolls-extension-w-ja-doll-archer-wall/6
+    ]
+    time: 1200
+  }
+  {
+    unit: u-uka-doll-activation
+    // 振起
+    requirements: [
+      alice-dolls-extension-u-uaa-alice/1
+      alice-dolls-extension-w-ka-doll-activation-wall/6
+    ]
+    time: 1200
+  }
+  {
+    unit: u-ula-sp-doll
+    // SP
+    requirements: [
+      alice-dolls-extension-u-uaa-alice/1
+      alice-dolls-extension-w-la-sp-doll-wall/6
+    ]
+    time: 1200
+  }
+  {
+    unit: u-uma-seeker-wire
+    // 折射
+    requirements: [
+      alice-dolls-extension-u-uaa-alice/1
+      alice-dolls-extension-w-ma-seeker-wire-wall/6
+    ]
+    time: 1200
+  }
+]
+research: u-ba-alice-factory
+category: units

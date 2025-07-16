@@ -1,0 +1,51 @@
+type: GenericCrafter
+size: 2
+itemCapacity: 30
+hasPower: true
+hasLiquids: false
+hasItems: true
+craftTime: 270
+consumes: {
+  power: 0.8
+  items: [
+    touhou-azac-alice/6
+    touhou-ab-marisa/3
+  ]
+}
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawFlame
+      flameRadius: 0
+      flameColor: FF7FBFFF
+      lightRadius: 40
+      lightAlpha: 0.4
+    }
+    DrawDefault
+  ]
+}
+craftEffect: mine
+updateEffect: {
+  type: ParticleEffect
+  line: true
+  colorFrom: FFFF00FF
+  colorTo: B4B47EBF
+  particles: 3
+  length: 18
+  baseLength: 0
+  strokeFrom: 1.4
+  strokeTo: 0.7
+  lenFrom: 4
+  lenTo: 0
+  lifetime: 30
+  lightScl: 0
+}
+updateEffectChance: 0.169
+outputItem: a-c-laser-element/6
+category: crafting
+requirements: [
+  touhou-azac-alice/45
+  touhou-ab-marisa/15
+]
+research: touhou-hce-pachumari-alice-converter

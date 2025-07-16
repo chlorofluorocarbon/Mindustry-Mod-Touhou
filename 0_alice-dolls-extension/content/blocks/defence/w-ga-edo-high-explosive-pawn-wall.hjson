@@ -1,0 +1,201 @@
+type: Wall
+size: 1
+health: 120
+category: defense
+research: w-aa-alice-wall
+destroyEffect: {
+  type: WaveEffect
+  sizeFrom: 0
+  sizeTo: 18
+  colorFrom: BF7F00FF
+  colorTo: BF7F00FF
+  sides: -1
+  strokeFrom: 2
+  strokeTo: 0
+  rotWithParent: true
+  lifetime: 15
+}
+destroyBullet: {
+  type: MultiBulletType
+  repeat: 1
+  damage: 0
+  lifetime: 0
+  speed: 0
+  hitEffect: none
+  despawnEffect: none
+  shootEffect: none
+  smokeEffect: none
+  ammoMultiplier: 1
+  hitSound: none
+  hittable: false
+  absorbable: false
+  reflectable: false
+  bullets: [
+    {
+      type: BasicBulletType
+      shrinkX: 0
+      shrinkY: 0
+      backColor: 00000000
+      frontColor: 00000000
+      mixColorFrom: 00000000
+      mixColorTo: 00000000
+      lightColor: 00000000
+      lightRadius: 0
+      width: 0
+      height: 0
+      lifetime: 0
+      speed: 0
+      damage: 0
+      splashDamage: 8
+      splashDamageRadius: 16
+      splashDamagePierce: true
+      incendChance: 0
+      shootEffect: none
+      smokeEffect: none
+      chargeEffect: none
+      hitEffect: none
+      knockback: 0
+      despawnEffect: none
+      hitSound: none
+      despawnSound: none
+      ammoMultiplier: 1
+      recoil: 0
+      pierce: true
+      pierceBuilding: true
+      pierceCap: -1
+      drawSize: 0.01
+      hitSize: 0.01
+      status: none
+      hittable: false
+      reflectable: false
+      absorbable: false
+      setDefaults: true
+      hitColor: 00000000
+      healColor: 00000000
+      healEffect: none
+    }
+    {
+      type: MultiBulletType
+      repeat: 1
+      damage: 0
+      lifetime: 0
+      speed: 0
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: none
+      ammoMultiplier: 1
+      hitSound: none
+      hittable: false
+      absorbable: false
+      reflectable: false
+      bullets: [
+        {
+          type: BasicBulletType
+          randomAngleOffset: 20
+          shrinkX: 0
+          shrinkY: 0
+          backColor: BF7F00FF
+          frontColor: FFFFFFFF
+          mixColorFrom: 00000000
+          mixColorTo: 00000000
+          lightColor: BF7F00FF
+          lightRadius: 24
+          width: 8
+          height: 8
+          lifetime: 300
+          speed: 0.4
+          damage: 0
+          splashDamage: 1
+          splashDamageRadius: 8
+          homingRange: 180
+          homingPower: 0.08
+          incendChance: 0
+          shootEffect: none
+          smokeEffect: none
+          chargeEffect: none
+          hitEffect: none
+          knockback: 0
+          despawnEffect: none
+          hitSound: none
+          despawnSound: none
+          ammoMultiplier: 1
+          recoil: 0
+          pierce: false
+          pierceBuilding: false
+          pierceCap: -1
+          drawSize: 0.01
+          hitSize: 0.01
+          status: none
+          hittable: false
+          reflectable: false
+          absorbable: false
+          setDefaults: true
+          hitColor: 00000000
+          healColor: 00000000
+          healEffect: none
+          sprite: touhou-simple-bullet
+          createChance: 1
+          despawnUnitChance: 1
+          despawnUnit: u-ugc-edo-high-explosive-pawn-doll
+        }
+        {
+          type: BasicBulletType
+          randomAngleOffset: 20
+          shrinkX: 0
+          shrinkY: 0
+          backColor: BF7F00FF
+          frontColor: FFFFFFFF
+          mixColorFrom: 00000000
+          mixColorTo: 00000000
+          lightColor: BF7F00FF
+          lightRadius: 24
+          width: 8
+          height: 8
+          lifetime: 150
+          speed: 1.2
+          damage: 0
+          splashDamage: 1
+          splashDamageRadius: 8
+          homingRange: 180
+          homingPower: 0.08
+          incendChance: 0
+          shootEffect: none
+          smokeEffect: none
+          chargeEffect: none
+          hitEffect: none
+          knockback: 0
+          despawnEffect: none
+          hitSound: none
+          despawnSound: none
+          ammoMultiplier: 1
+          recoil: 0
+          pierce: false
+          pierceBuilding: false
+          pierceCap: -1
+          drawSize: 0.01
+          hitSize: 0.01
+          status: none
+          hittable: false
+          reflectable: false
+          absorbable: false
+          setDefaults: true
+          hitColor: 00000000
+          healColor: 00000000
+          healEffect: none
+          sprite: touhou-simple-bullet
+          createChance: 1
+          despawnUnitChance: 1
+          despawnUnit: u-ugc-edo-high-explosive-pawn-doll
+        }
+      ]
+    }
+  ]
+}
+destroyBulletSameTeam: true
+requirements: [
+  a-a-dynamic-element/3
+  a-b-explosion-element/3
+]
+buildCostMultiplier: 3.2
+conductivePower: true

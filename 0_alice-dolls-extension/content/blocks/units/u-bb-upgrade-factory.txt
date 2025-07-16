@@ -1,0 +1,24 @@
+type: Reconstructor
+size: 3
+itemCapacity: 40
+requirements: [
+  touhou-azac-alice/800
+]
+constructTime: 1200
+research: u-ba-alice-factory
+researchCost: [
+  touhou-azac-alice/2000
+]
+category: units
+consumes: {
+  power: 2
+  items: [
+    touhou-ya-p-point/20  
+  ]
+}
+upgrades: [
+  [
+    u-uaa-alice
+    u-uab-alice-upgraded
+  ]
+]

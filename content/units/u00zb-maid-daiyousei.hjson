@@ -19,7 +19,7 @@ accel: 0.4
 waveTrailX: 0
 waveTrailY: 0
 trailScl: 4
-itemCapacity: 120
+itemCapacity: 12
 health: 16
 hitSize: 8
 engineOffset: 0

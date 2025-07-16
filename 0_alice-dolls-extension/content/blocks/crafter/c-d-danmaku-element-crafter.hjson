@@ -1,0 +1,47 @@
+type: GenericCrafter
+size: 2
+itemCapacity: 10
+hasPower: true
+hasLiquids: false
+hasItems: true
+craftTime: 90
+consumes: {
+  power: 0.8
+  items: [
+    touhou-azac-alice/2
+    touhou-aa-reimu/1
+  ]
+}
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawCultivator
+      plantColor: 919166FF
+      plantColorLight: FF8D8DFF
+      bottomColor: 8C3838FF
+      bubbles: 12
+      sides: 16
+      strokeMin: 0.3
+      radius: 2.8
+    }
+    DrawDefault
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}
+craftEffect: mine
+updateEffect: none
+outputItem: a-d-danmaku-element/2
+category: crafting
+requirements: [
+  touhou-azac-alice/45
+  touhou-aa-reimu/15
+]
+research: touhou-hce-pachumari-alice-converter

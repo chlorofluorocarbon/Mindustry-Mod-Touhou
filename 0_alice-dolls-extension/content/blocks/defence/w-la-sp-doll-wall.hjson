@@ -1,0 +1,326 @@
+type: PowerTurret
+shootType: {
+  type: ContinuousLaserBulletType
+  chargeEffect: {
+    type: MultiEffect
+    effects: [
+      {
+        type: WaveEffect
+        lifetime: 60
+        sizeFrom: 20
+        sizeTo: 20
+        strokeFrom: 2
+        strokeTo: 0
+        colorFrom: BF3FFFFF
+        colorTo: BF3FFFFF
+      }
+      {
+        type: WaveEffect
+        lifetime: 60
+        sizeFrom: 20
+        sizeTo: 1
+        strokeFrom: 0
+        strokeTo: 2
+        colorFrom: BF3FFFFF
+        colorTo: DF9FFFFF
+      }
+    ]
+  }
+  shake: 0
+  length: 32
+  damageInterval: 5
+  fadeTime: 20
+  lightStroke: 8
+  divisions: 36
+  colors: [
+    7F00FF6F
+    7F00FFAF
+    BF3FFFFF
+    DF9FFFFF
+  ]
+  ammoMultiplier: 1
+  strokeFrom: 1
+  strokeTo: 0.8
+  backLength: 6
+  frontLength: 8
+  width: 3.5
+  oscScl: 0
+  oscMag: 0
+  collidesTeam: false
+  keepVelocity: false
+  damage: 0.5
+  hitSize: 2.5
+  pierce: true
+  pierceCap: 3
+  pierceBuilding: false
+  lifetime: 60
+  speed: 0
+  setDefaults: false
+  despawnEffect: none
+  makeFire: false
+  status: none
+  hitEffect: none
+  smokeEffect: none
+  reflectable: true
+  shootEffect: none
+  collidesAir: true
+  collidesGround: true
+  hitShake: 0
+  despawnShake: 0
+}
+reload: 180
+shoot: {
+  type: ShootPattern
+  shots: 1
+  firstShotDelay: 60
+}
+range: 20
+rotateSpeed: 360
+fogRadiusMultiplier: 0
+coolEffect: none
+coolantMultiplier: 1
+hasLiquids: false
+hasItems: false
+shootCone: 0.5
+shootX: 0
+shootY: 0
+targetAir: true
+targetGround: true
+shootSound: pew
+smokeEffect: none
+ammoUseEffect: none
+heatColor: 00000000
+consumes: {
+  power: 0.05
+}
+size: 1
+health: 150
+requirements: [
+  a-c-laser-element/5
+  a-d-danmaku-element/1
+]
+hasItems: false
+itemCapacity: 0
+hasLiquids: false
+liquidCapacity: 0
+category: defense
+research: w-aa-alice-wall
+destroyBullet: {
+  type: MultiBulletType
+  repeat: 1
+  damage: 0
+  lifetime: 0
+  speed: 0
+  hitEffect: none
+  despawnEffect: none
+  shootEffect: none
+  smokeEffect: none
+  ammoMultiplier: 1
+  hitSound: none
+  hittable: false
+  absorbable: false
+  reflectable: false
+  bullets: [
+    {
+      type: BasicBulletType
+      shrinkX: 0
+      shrinkY: 0
+      backColor: 00000000
+      frontColor: 00000000
+      mixColorFrom: 00000000
+      mixColorTo: 00000000
+      lightColor: 00000000
+      lightRadius: 0
+      width: 0
+      height: 0
+      lifetime: 0
+      speed: 0
+      damage: 0
+      incendChance: 0
+      shootEffect: none
+      smokeEffect: none
+      chargeEffect: none
+      hitEffect: none
+      knockback: 0
+      despawnEffect: none
+      hitSound: none
+      despawnSound: none
+      ammoMultiplier: 1
+      recoil: 0
+      pierce: true
+      pierceBuilding: true
+      pierceCap: -1
+      drawSize: 0.01
+      hitSize: 0.01
+      status: none
+      hittable: false
+      reflectable: false
+      absorbable: false
+      setDefaults: true
+      hitColor: 00000000
+      healColor: 00000000
+      healEffect: none
+      fragBullets: 1
+      fragRandomSpread: 360
+      fragOffsetMax: 3
+      fragOffsetMin: 0
+      fragVelocityMin: 0.6
+      fragVelocityMax: 1.2
+      fragBullet: {
+        type: BasicBulletType
+        damage: 0
+        lifetime: 0
+        height: 0
+        width: 0
+        speed: 0
+        hitEffect: none
+        despawnEffect: none
+        shootEffect: none
+        smokeEffect: none
+        ammoMultiplier: 1
+        hitSound: none
+        despawnSound: none
+        hittable: false
+        absorbable: false
+        reflectable: false
+        createChance: 1
+        spawnUnit: u-ulc-sp-doll-doll
+      }
+    }
+    {
+      type: BasicBulletType
+      shrinkX: 0
+      shrinkY: 0
+      backColor: 00000000
+      frontColor: 00000000
+      mixColorFrom: 00000000
+      mixColorTo: 00000000
+      lightColor: 00000000
+      lightRadius: 0
+      width: 0
+      height: 0
+      lifetime: 0
+      speed: 0
+      damage: 0
+      incendChance: 0
+      shootEffect: none
+      smokeEffect: none
+      chargeEffect: none
+      hitEffect: none
+      knockback: 0
+      despawnEffect: none
+      hitSound: none
+      despawnSound: none
+      ammoMultiplier: 1
+      recoil: 0
+      pierce: true
+      pierceBuilding: true
+      pierceCap: -1
+      drawSize: 0.01
+      hitSize: 0.01
+      status: none
+      hittable: false
+      reflectable: false
+      absorbable: false
+      setDefaults: true
+      hitColor: 00000000
+      healColor: 00000000
+      healEffect: none
+      fragBullets: 1
+      fragRandomSpread: 360
+      fragOffsetMax: 3
+      fragOffsetMin: 0
+      fragVelocityMin: 0.6
+      fragVelocityMax: 1.2
+      fragBullet: {
+        type: BasicBulletType
+        damage: 0
+        lifetime: 0
+        height: 0
+        width: 0
+        speed: 0
+        hitEffect: none
+        despawnEffect: none
+        shootEffect: none
+        smokeEffect: none
+        ammoMultiplier: 1
+        hitSound: none
+        despawnSound: none
+        hittable: false
+        absorbable: false
+        reflectable: false
+        createChance: 0.5
+        spawnUnit: u-ulc-sp-doll-doll
+      }
+    }
+    {
+      type: BasicBulletType
+      shrinkX: 0
+      shrinkY: 0
+      backColor: 00000000
+      frontColor: 00000000
+      mixColorFrom: 00000000
+      mixColorTo: 00000000
+      lightColor: 00000000
+      lightRadius: 0
+      width: 0
+      height: 0
+      lifetime: 0
+      speed: 0
+      damage: 0
+      incendChance: 0
+      shootEffect: none
+      smokeEffect: none
+      chargeEffect: none
+      hitEffect: none
+      knockback: 0
+      despawnEffect: none
+      hitSound: none
+      despawnSound: none
+      ammoMultiplier: 1
+      recoil: 0
+      pierce: true
+      pierceBuilding: true
+      pierceCap: -1
+      drawSize: 0.01
+      hitSize: 0.01
+      status: none
+      hittable: false
+      reflectable: false
+      absorbable: false
+      setDefaults: true
+      hitColor: 00000000
+      healColor: 00000000
+      healEffect: none
+      fragBullets: 1
+      fragRandomSpread: 360
+      fragOffsetMax: 3
+      fragOffsetMin: 0
+      fragVelocityMin: 0.6
+      fragVelocityMax: 1.2
+      fragBullet: {
+        type: BasicBulletType
+        damage: 0
+        lifetime: 0
+        height: 0
+        width: 0
+        speed: 0
+        hitEffect: none
+        despawnEffect: none
+        shootEffect: none
+        smokeEffect: none
+        ammoMultiplier: 1
+        hitSound: none
+        despawnSound: none
+        hittable: false
+        absorbable: false
+        reflectable: false
+        createChance: 0.5
+        spawnUnit: u-ulc-sp-doll-doll
+      }
+    }
+  ]
+}
+destroyBulletSameTeam: true
+buildCostMultiplier: 3.2
+conductivePower: true

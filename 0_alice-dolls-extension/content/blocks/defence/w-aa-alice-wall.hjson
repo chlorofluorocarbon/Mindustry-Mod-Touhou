@@ -1,0 +1,297 @@
+type: ForceProjector
+size: 1
+health: 270
+requirements: [
+  touhou-azac-alice/6
+]
+hasItems: false
+itemCapacity: 0
+hasLiquids: false
+liquidCapacity: 0
+phaseUseTime: 2147483647
+shieldHealth: 120
+category: defense
+research: touhou-fzcaa-alice-wall
+radius: 20
+sides: 7
+shieldBreakEffect: {
+  type: WaveEffect
+  sizeFrom: 20
+  sizeTo: 20
+  colorFrom: FFD37FFF
+  colorTo: FFD37FFF
+  sides: 7
+  baseRotation: -18.5
+  strokeFrom: 2
+  strokeTo: 0
+  rotWithParent: true
+}
+destroyBullet: {
+  type: MultiBulletType
+  repeat: 2
+  damage: 0
+  lifetime: 0
+  speed: 0
+  hitEffect: none
+  despawnEffect: none
+  shootEffect: none
+  smokeEffect: none
+  ammoMultiplier: 1
+  hitSound: none
+  hittable: false
+  absorbable: false
+  reflectable: false
+  bullets: [
+    {
+      type: BasicBulletType
+      damage: 0
+      lifetime: 0
+      height: 0
+      width: 0
+      speed: 0
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: none
+      ammoMultiplier: 1
+      hitSound: none
+      despawnSound: none
+      hittable: false
+      absorbable: false
+      reflectable: false
+      createChance: 0.0833333333
+      spawnUnit: u-ubc-doll-placement-doll
+    }
+    {
+      type: BasicBulletType
+      damage: 0
+      lifetime: 0
+      height: 0
+      width: 0
+      speed: 0
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: none
+      ammoMultiplier: 1
+      hitSound: none
+      despawnSound: none
+      hittable: false
+      absorbable: false
+      reflectable: false
+      createChance: 0.0833333333
+      spawnUnit: u-ucc-returning-doll-doll
+    }
+    {
+      type: BasicBulletType
+      damage: 0
+      lifetime: 0
+      height: 0
+      width: 0
+      speed: 0
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: none
+      ammoMultiplier: 1
+      hitSound: none
+      despawnSound: none
+      hittable: false
+      absorbable: false
+      reflectable: false
+      createChance: 0.0833333333
+      spawnUnit: u-udc-doll-ambush-doll
+    }
+    /*
+    {
+      type: BasicBulletType
+      damage: 0
+      lifetime: 0
+      height: 0
+      width: 0
+      speed: 0
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: none
+      ammoMultiplier: 1
+      hitSound: none
+      despawnSound: none
+      hittable: false
+      absorbable: false
+      reflectable: false
+      createChance: 0.0833333333
+      spawnUnit: u-uec-volatile-doll-doll
+    }
+    {
+      type: BasicBulletType
+      damage: 0
+      lifetime: 0
+      height: 0
+      width: 0
+      speed: 0
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: none
+      ammoMultiplier: 1
+      hitSound: none
+      despawnSound: none
+      hittable: false
+      absorbable: false
+      reflectable: false
+      createChance: 0.0833333333
+      spawnUnit: u-ufc-doll-cremation-doll
+    }
+    {
+      type: BasicBulletType
+      damage: 0
+      lifetime: 0
+      height: 0
+      width: 0
+      speed: 0
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: none
+      ammoMultiplier: 1
+      hitSound: none
+      despawnSound: none
+      hittable: false
+      absorbable: false
+      reflectable: false
+      createChance: 0.0833333333
+      spawnUnit: u-ugc-edo-high-explosive-pawn-doll
+    }
+    {
+      type: BasicBulletType
+      damage: 0
+      lifetime: 0
+      height: 0
+      width: 0
+      speed: 0
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: none
+      ammoMultiplier: 1
+      hitSound: none
+      despawnSound: none
+      hittable: false
+      absorbable: false
+      reflectable: false
+      createChance: 0.0833333333
+      spawnUnit: u-uhc-doll-arrangement-doll
+    }
+    {
+      type: BasicBulletType
+      damage: 0
+      lifetime: 0
+      height: 0
+      width: 0
+      speed: 0
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: none
+      ammoMultiplier: 1
+      hitSound: none
+      despawnSound: none
+      hittable: false
+      absorbable: false
+      reflectable: false
+      createChance: 0.0833333333
+      spawnUnit: u-uic-thousand-spear-doll-doll
+    }
+    {
+      type: BasicBulletType
+      damage: 0
+      lifetime: 0
+      height: 0
+      width: 0
+      speed: 0
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: none
+      ammoMultiplier: 1
+      hitSound: none
+      despawnSound: none
+      hittable: false
+      absorbable: false
+      reflectable: false
+      createChance: 0.0833333333
+      spawnUnit: u-ujc-doll-archer-doll
+    }
+    {
+      type: BasicBulletType
+      damage: 0
+      lifetime: 0
+      height: 0
+      width: 0
+      speed: 0
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: none
+      ammoMultiplier: 1
+      hitSound: none
+      despawnSound: none
+      hittable: false
+      absorbable: false
+      reflectable: false
+      createChance: 0.0833333333
+      spawnUnit: u-ukc-doll-activation-doll
+    }
+    {
+      type: BasicBulletType
+      damage: 0
+      lifetime: 0
+      height: 0
+      width: 0
+      speed: 0
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: none
+      ammoMultiplier: 1
+      hitSound: none
+      despawnSound: none
+      hittable: false
+      absorbable: false
+      reflectable: false
+      createChance: 0.0833333333
+      spawnUnit: u-ulc-sp-doll-doll
+    }
+    {
+      type: BasicBulletType
+      damage: 0
+      lifetime: 0
+      height: 0
+      width: 0
+      speed: 0
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: none
+      ammoMultiplier: 1
+      hitSound: none
+      despawnSound: none
+      hittable: false
+      absorbable: false
+      reflectable: false
+      createChance: 0.0833333333
+      spawnUnit: u-umc-seeker-wire-doll
+    }
+    */
+  ]
+}
+destroyBulletSameTeam: true
+cooldownNormal: 0.022222
+cooldownBrokenBase: 0.044444
+hasPower: false
+phaseShieldBoost: 0
+phaseRadiusBoost: 0
+lightColor: 00000000
+consumeCoolant: false
+buildCostMultiplier: 3.2

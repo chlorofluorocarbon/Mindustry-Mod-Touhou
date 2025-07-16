@@ -1,0 +1,22 @@
+type: PointDefenseTurret
+category: turret
+size: 1
+health: 300
+requirements: [
+  touhou-azac-alice/200
+  a-a-dynamic-element/400
+  a-b-explosion-element/400
+  a-c-laser-element/400
+  a-d-danmaku-element/400
+]
+consumes: {
+  power: 1.5
+}
+reload: 5
+retargetTime: 0
+range: 160
+bulletDamage: 4
+rotateSpeed: 360
+coolantMultiplier: 1
+fogRadiusMultiplier: 0.1
+research: touhou-kab-mariaripache-defender
