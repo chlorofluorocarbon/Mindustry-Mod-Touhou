@@ -67,4 +67,7 @@ requirements: [
 ]
 underBullets: true
 category: defense
+targetable: false
+teamAlpha: 0.4
+hasShadow: false
 research: fzaa-letty-wall

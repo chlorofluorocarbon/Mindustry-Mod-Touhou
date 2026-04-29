@@ -1,0 +1,1616 @@
+type: ItemTurret
+size: 4
+health: 1280
+hasPower: true
+predictTarget: false
+requirements: [
+  ah-flandre/2800
+  ag-remilia/2400
+  af-sakuya/3200
+  ae-patchouli/2000
+  adzz-koakuma/2000
+  adz-meiling/3600
+  yc-bomb/16
+  yza-th6-enemy/16
+]
+recoilTime: 480
+recoil: 0
+cooldownTime: 600
+shootY: 36
+targetAir: false
+targetGround: true
+targetBlocks: true
+unitSort: farthest
+// unitFilter: false
+// TEMP
+shootSound: ataisaikyou
+chargeSound: soonanokaa
+shake: 2
+consumes: {
+  power: 18
+}
+rotateSpeed: 0.3
+coolantMultiplier: 1
+reload: 900
+drawMinRange: true
+range: 720
+minRange: 144
+ammoPerShot: 96
+moveWhileCharging: false
+shootCone: 0.5
+shoot: {
+  type: ShootPattern
+  firstShotDelay: 120
+  shots: 1
+}
+drawer: {
+  type: DrawTurret
+  parts: [
+    // Cannon
+    {
+      type: RegionPart
+      suffix: "-front"
+      outline: false
+      progress: recoil
+      // moveY min: -12
+      moveY: -9
+    }
+    {
+      type: RegionPart
+      suffix: "-back"
+      outline: false
+      progress: recoil
+      mirror: false
+      moveY: 0
+    }
+    // Charge magic
+    {
+      type: ShapePart
+      circle: true
+      hollow: true
+      sides: -1
+      radius: 36
+      radiusTo: 36
+      stroke: 0.75
+      strokeTo: 1.5
+      color: FF7FBF7F
+      colorTo: FF7FBFFF
+      progress: warmup
+    }
+    {
+      type: ShapePart
+      circle: true
+      hollow: true
+      sides: -1
+      radius: 42
+      radiusTo: 42
+      stroke: 0.75
+      strokeTo: 1.5
+      color: FF7FBF7F
+      colorTo: FF7FBFFF
+      progress: warmup
+    }
+    {
+      type: ShapePart
+      circle: false
+      hollow: true
+      sides: 3
+      radius: 36
+      radiusTo: 36
+      stroke: 1
+      strokeTo: 2
+      color: FF7FBF7F
+      colorTo: FF7FBFFF
+      rotateSpeed: -0.2
+      progress: warmup
+    }
+    {
+      type: ShapePart
+      circle: false
+      hollow: true
+      sides: 3
+      radius: 36
+      radiusTo: 36
+      stroke: 1
+      strokeTo: 2
+      color: FF7FBF7F
+      colorTo: FF7FBFFF
+      rotation: 180
+      rotateSpeed: -0.2
+      progress: warmup
+    }
+    {
+      type: HaloPart
+      tri: false
+      hollow: true
+      sides: 6
+      shapes: 6
+      radius: 2.1
+      radiusTo: 2.1
+      stroke: 0.5
+      strokeTo: 1
+      color: FF7FBF7F
+      colorTo: FF7FBFFF
+      progress: warmup
+      haloRotateSpeed: 0.4
+      haloRadius: 39
+      haloRadiusTo: 39
+    }
+    {
+      type: HaloPart
+      tri: false
+      hollow: true
+      sides: 4
+      shapes: 6
+      radius: 2.1
+      radiusTo: 2.1
+      stroke: 0.5
+      strokeTo: 1
+      color: FF7FBF7F
+      colorTo: FF7FBFFF
+      progress: warmup
+      haloRotateSpeed: 0.4
+      haloRotation: 30
+      haloRadius: 39
+      haloRadiusTo: 39
+    }
+    {
+      type: ShapePart
+      circle: false
+      hollow: true
+      sides: 6
+      radius: 20.7846097
+      radiusTo: 0
+      stroke: 2
+      strokeTo: 0
+      color: 468ED79F
+      colorTo: 468ED700
+      progress: smoothReload
+      rotation: 30
+      rotateSpeed: -0.2
+    }
+    // Bullet ring
+    /*
+    {
+      type: ShapePart
+      circle: true
+      hollow: true
+      sides: -1
+      radius: 60
+      radiusTo: 60
+      stroke: 0
+      strokeTo: 1.5
+      color: FFFFFFFF
+      colorTo: FFFFFFFF
+      progress: warmup
+      y: 36
+    }
+    {
+      type: ShapePart
+      circle: true
+      hollow: true
+      sides: -1
+      radius: 52
+      radiusTo: 52
+      stroke: 0
+      strokeTo: 1.5
+      color: FFFFFFFF
+      colorTo: FFFFFFFF
+      progress: warmup
+      y: 36
+    }
+    */
+    {
+      type: HaloPart
+      tri: false
+      hollow: false
+      sides: 5
+      shapes: 9
+      radius: 3.5
+      radiusTo: 3.5
+      stroke: 1.5
+      strokeTo: 1.5
+      color: FFFFFF00
+      colorTo: FFFFFFFF
+      progress: charge
+      haloRotateSpeed: 0
+      haloRadius: 56
+      haloRadiusTo: 56
+      y: 36
+    }
+    {
+      type: HaloPart
+      tri: false
+      hollow: false
+      sides: 3
+      shapes: 9
+      radius: 3.5
+      radiusTo: 3.5
+      stroke: 1.5
+      strokeTo: 1.5
+      color: FFFFFF00
+      colorTo: FFFFFFFF
+      progress: charge
+      haloRotateSpeed: 0
+      haloRotation: 20
+      haloRadius: 56
+      haloRadiusTo: 56
+      y: 36
+    }
+  ]
+}
+shootWarmupSpeed: 0.03765
+minWarmup: 0.99
+maxAmmo: 192
+ammoTypes: {
+  ae-patchouli: {
+    type: ArtilleryBulletType
+    fragBullets: 12
+    fragRandomSpread: 360
+    fragVelocityMin: 0
+    fragVelocityMax: 1.5
+    fragOffsetMin: 0
+    fragOffsetMax: 0
+    fragLifeMin: 0.6
+    fragLifeMax: 1.8
+    fragBullet: {
+      type: EmpBulletType
+      radius: 80
+      timeIncrease: 0
+      timeDuration: 600
+      powerDamageScl: 10000
+      powerSclDecrease: 0.69
+      hitUnits: false
+      unitDamageScl: 0
+      collidesTeam: false
+      keepVelocity: false
+      damage: 0.0008
+      buildingDamageMultiplier: 1
+      shieldDamageMultiplier: 600000
+      applyEffect: none
+      collidesAir: false
+      hitSize: 3
+      pierce: false
+      pierceBuilding: false
+      lifetime: 120
+      drag: 0.02
+      speed: 4
+      setDefaults: false
+      despawnEffect: none
+      width: 8
+      height: 8
+      makeFire: false
+      status: none
+      hitEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: ParticleEffect
+            lifetime: 60
+            colorFrom: E271A99F
+            colorTo: E271A900
+            sizeFrom: 80
+            sizeTo: 80
+            length: 0
+            baseLength: 0
+            cone: 0
+            randLength: false
+            particles: 1
+          }
+          {
+            type: WaveEffect
+            lifetime: 60
+            sizeFrom: 16
+            sizeTo: 16
+            strokeFrom: 1.5
+            strokeTo: 0
+            colorFrom: FF7FBFFF
+            colorTo: FF7FBFFF
+          }
+          {
+            type: WaveEffect
+            lifetime: 60
+            sizeFrom: 20
+            sizeTo: 20
+            strokeFrom: 1.5
+            strokeTo: 0
+            colorFrom: FF7FBFFF
+            colorTo: FF7FBFFF
+          }
+        ]
+      }
+      hitPowerEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: WaveEffect
+            lifetime: 120
+            sizeFrom: 6
+            sizeTo: 6
+            strokeFrom: 1
+            strokeTo: 1
+            colorFrom: FF7FBFFF
+            colorTo: FF7FBF00
+          }
+          {
+            type: ParticleEffect
+            colorFrom: FF7FBFFF
+            colorTo: FF7FBFFF
+            particles: 5
+            randLength: true
+            cone: 180
+            length: 16
+            baseLength: 0
+            lightOpacity: 0
+            lightScl: 0
+            line: false
+            sizeFrom: 2
+            sizeTo: 0
+            lifetime: 120
+            interp: pow2Out
+            sizeInterp: pow3In
+          }
+        ]
+      }
+      smokeEffect: none
+      reflectable: false
+      hittable: false
+      shootEffect: none
+      collidesGround: false
+      collidesAir: false
+      collides: false
+      backColor: FF7FBFFF
+      frontColor: FFFFFF9F
+      lightRadius: 24
+      lightOpacity: 0.7
+      lightColor: FF7FBFFF
+      shrinkX: 0
+      shrinkY: 0.45
+      sprite: "touhou-simple-bullet"
+      despawnHit: true
+      hitSound: spark
+      hitSoundVolume: 0.8
+      parts: [
+        {
+          type: ShapePart
+          circle: true
+          hollow: true
+          sides: -1
+          radius: 80
+          radiusTo: 80
+          stroke: 1.5
+          strokeTo: 1.5
+          color: FF7FBF7F
+          colorTo: FF7FBF7F
+          progress: life
+        }
+        {
+          type: ShapePart
+          circle: true
+          hollow: true
+          sides: -1
+          radius: 0
+          radiusTo: 80
+          stroke: 1.5
+          strokeTo: 1.5
+          color: FF7FBFBF
+          colorTo: FF7FBFBF
+          progress: life
+        }
+        {
+          type: ShapePart
+          circle: true
+          hollow: true
+          sides: -1
+          radius: 16
+          radiusTo: 16
+          stroke: 1
+          strokeTo: 1
+          color: FF7FBFFF
+          colorTo: FF7FBFFF
+          progress: life
+        }
+        {
+          type: ShapePart
+          circle: true
+          hollow: true
+          sides: -1
+          radius: 20
+          radiusTo: 20
+          stroke: 1
+          strokeTo: 1
+          color: FF7FBFFF
+          colorTo: FF7FBFFF
+          progress: life
+        }
+        {
+          type: ShapePart
+          circle: false
+          hollow: true
+          sides: 3
+          radius: 16
+          radiusTo: 16
+          stroke: 1
+          strokeTo: 1
+          color: FF7FBFFF
+          colorTo: FF7FBFFF
+          progress: life
+          rotateSpeed: 1
+        }
+        {
+          type: ShapePart
+          circle: false
+          hollow: true
+          sides: 3
+          radius: 16
+          radiusTo: 16
+          stroke: 1
+          strokeTo: 1
+          color: FF7FBFFF
+          colorTo: FF7FBFFF
+          progress: life
+          rotateSpeed: 1
+          rotation: 180
+        }
+      ]
+    }
+    intervalBullets: 2
+    bulletInterval: 2
+    intervalRandomSpread: 360
+    intervalBullet: {
+      type: LightningBulletType
+      despawnSound: none
+      despawnEffect: {
+        type: SoundEffect
+        sound: spark
+        minVolume: 0.25
+        maxVolume: 0.35
+        minPitch: 0.95
+        maxPitch: 1.05
+        effect: none
+      }
+      hitEffect: {
+        type: SoundEffect
+        sound: spark
+        minVolume: 0.3
+        maxVolume: 0.4
+        minPitch: 0.95
+        maxPitch: 1.05
+        effect: none
+      }
+      damage: 0.0001
+      // Buggy: doesn't really apply? Use lightningType...
+      // Fixed. 
+      buildingDamageMultiplier: 10000
+      lightningLength: 10
+      collidesAir: false
+      collidesGround: true
+      collides: true
+      collidesTiles: true
+      // absorbable: true
+      shieldDamageMultiplier: 3000000
+      lightningType: {
+        type: BulletType
+        speed: 0
+        lifetime: 10
+        damage: 0
+        pierce: true
+        pierceBuilding: true
+        hitEffect: {
+          type: ParticleEffect
+          colorFrom: FF7FBFFF
+          colorTo: FF7FBF7F
+          particles: 5
+          randLength: true
+          cone: 180
+          length: 12
+          lightOpacity: 0
+          lightScl: 0
+          line: true
+          lenFrom: 5
+          lenTo: 1
+          strokeFrom: 2
+          strokeTo: 0
+          lifetime: 20
+        }
+        // status: none
+        hittable: false
+        despawnEffect: none
+        // absorbable: true
+        collidesAir: false
+        buildingDamageMultiplier: 10000
+        shieldDamageMultiplier: 3000000
+      }
+      // Doesn't work if not "shot" by turret. 
+      // shootSound: spark
+      /*
+      shootEffect: {
+        type: SoundEffect
+        sound: spark
+        minVolume: 0.3
+        maxVolume: 0.4
+        effect: none
+      }
+      */
+    }
+    chargeEffect: {
+      type: MultiEffect
+      rotWithParent: true
+      effects: [
+        {
+          type: ParticleEffect
+          lifetime: 120
+          colorFrom: FF7FBF00
+          colorTo: FF7FBFDF
+          sizeFrom: 12
+          sizeTo: 12
+          length: 0
+          baseLength: 0
+          cone: 0
+          randLength: false
+          particles: 1
+          region: touhou-circle-bullet-back
+        }
+        {
+          type: ParticleEffect
+          lifetime: 120
+          colorFrom: FF7FBF00
+          colorTo: FF7FBFDF
+          sizeFrom: 12
+          sizeTo: 12
+          length: 0
+          baseLength: 0
+          cone: 0
+          randLength: false
+          particles: 1
+          region: touhou-circle-bullet
+        }
+        {
+          type: WaveEffect
+          colorFrom: FF7FBFFF
+          colorTo: FF7FBFFF
+          sizeFrom: 0
+          sizeTo: 42
+          sides: 32
+          strokeFrom: 0
+          strokeTo: 2
+          lifetime: 120
+          // WHY?? Is it because rotWithParent = true? 
+          offsetX: -36
+        }
+        /*
+        {
+          type: WaveEffect
+          colorFrom: FF7FBFFF
+          colorTo: FF7FBFFF
+          sizeFrom: 0
+          sizeTo: 60
+          sides: 32
+          strokeFrom: 0
+          strokeTo: 2
+          lifetime: 120
+        }
+        */
+        {
+          type: WaveEffect
+          colorFrom: FF7FBF00
+          colorTo: FF7FBFFF
+          sizeFrom: 60
+          sizeTo: 60
+          sides: 32
+          strokeFrom: 2
+          strokeTo: 2
+          lifetime: 120
+        }
+        {
+          type: WaveEffect
+          colorFrom: FF7FBF00
+          colorTo: FF7FBFFF
+          sizeFrom: 52
+          sizeTo: 52
+          sides: 32
+          strokeFrom: 2
+          strokeTo: 2
+          lifetime: 120
+        }
+        {
+          type: WaveEffect
+          colorFrom: FF7FBF00
+          colorTo: FF7FBFFF
+          sizeFrom: 52
+          sizeTo: 52
+          sides: 3
+          strokeFrom: 3
+          strokeTo: 3
+          lifetime: 120
+        }
+        {
+          type: WaveEffect
+          colorFrom: FF7FBF00
+          colorTo: FF7FBFFF
+          sizeFrom: 52
+          sizeTo: 52
+          sides: 3
+          strokeFrom: 3
+          strokeTo: 3
+          lifetime: 120
+          baseRotation: 180
+        }
+      ]
+    }
+    damage: 996.1
+    // damage = 12
+    splashDamage: 0.0012
+    buildingDamageMultiplier: 10000
+    splashDamageRadius: 120
+    splashDamagePierce: true
+    hitShake: 2
+    speed: 1.5
+    /*
+    trailInterval: 60
+    trailChance: 1
+    */
+    trailMult: 1.8
+    trailSize: 9
+    trailColor: FF7FBFFF
+    /*
+    trailEffect: {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 60
+      sizeFrom: 12
+      sizeTo: 0
+      region: touhou-reimu-orb-back
+      colorFrom: FF7FBFFF
+      colorTo: FF7FBF7F
+    }
+    */
+    ammoMultiplier: 1
+    absorbable: true
+    reflectable: true
+    smokeEffect: {
+      type: MultiEffect
+      rotWithParent: true
+      effects: [
+        {
+          type: ParticleEffect
+          colorFrom: E271A99F
+          colorTo: E271A99F
+          particles: 18
+          randLength: true
+          cone: 20
+          length: 116
+          lightOpacity: 0
+          lightScl: 0
+          line: false
+          sizeFrom: 5
+          sizeTo: 0
+          sizeChangeStart: 0
+          interp: pow4Out
+          sizeInterp: pow4In
+          lifetime: 150
+          offsetX: -9
+        }
+        {
+          type: ParticleEffect
+          colorFrom: E271A99F
+          colorTo: E271A99F
+          particles: 18
+          randLength: true
+          cone: 20
+          length: 128
+          lightOpacity: 0
+          lightScl: 0
+          line: false
+          sizeFrom: 7
+          sizeTo: 0
+          sizeChangeStart: 0
+          interp: pow4Out
+          sizeInterp: pow4In
+          lifetime: 180
+          offsetX: -9
+        }
+      ]
+    }    
+    shootEffect: {
+      type: MultiEffect
+      rotWithParent: true
+      effects: [
+        {
+          type: SoundEffect
+          sound: mediumCannon
+          effect: none
+        }
+        // Circles
+        /*
+        {
+          type: WaveEffect
+          colorFrom: FF7FBFFF
+          colorTo: FF7FBF00
+          sizeFrom: 60
+          sizeTo: 60
+          sides: 32
+          strokeFrom: 2
+          strokeTo: 2
+          lifetime: 120
+        }
+        {
+          type: WaveEffect
+          colorFrom: FF7FBFFF
+          colorTo: FF7FBF00
+          sizeFrom: 52
+          sizeTo: 52
+          sides: 32
+          strokeFrom: 2
+          strokeTo: 2
+          lifetime: 120
+        }
+        */
+        // Triangles
+        /*
+        {
+          type: WaveEffect
+          colorFrom: FF7FBFFF
+          colorTo: FF7FBF00
+          sizeFrom: 52
+          sizeTo: 52
+          sides: 3
+          strokeFrom: 2
+          strokeTo: 2
+          lifetime: 120
+        }
+        {
+          type: WaveEffect
+          colorFrom: FF7FBFFF
+          colorTo: FF7FBF00
+          sizeFrom: 52
+          sizeTo: 52
+          sides: 3
+          strokeFrom: 3
+          strokeTo: 3
+          lifetime: 120
+          baseRotation: 180
+        }
+        */
+        // Old
+        /*
+        {
+          type: WaveEffect
+          colorFrom: FF7FBFFF
+          colorTo: FF7FBF00
+          sizeFrom: 16
+          sizeTo: 16
+          sides: 48
+          strokeFrom: 1.5
+          strokeTo: 0
+          lifetime: 60
+        }
+        {
+          type: WaveEffect
+          colorFrom: FF7FBFFF
+          colorTo: FF7FBF00
+          sizeFrom: 12
+          sizeTo: 12
+          sides: 48
+          strokeFrom: 1.5
+          strokeTo: 0
+          lifetime: 60
+        }
+        {
+          type: WaveEffect
+          colorFrom: FF7FBFFF
+          colorTo: FF7FBF00
+          sizeFrom: 12
+          sizeTo: 12
+          rotation: 120
+          sides: 3
+          strokeFrom: 1.5
+          strokeTo: 0
+          lifetime: 60
+          followParent: true
+          rotWithParent: true
+        }
+        {
+          type: WaveEffect
+          colorFrom: FF7FBFFF
+          colorTo: FF7FBF00
+          sizeFrom: 12
+          sizeTo: 12
+          rotation: 120
+          baseRotation: 180
+          sides: 3
+          strokeFrom: 1.5
+          strokeTo: 0
+          lifetime: 60
+          followParent: true
+          rotWithParent: true
+        }
+        */
+      ]
+    }
+    hitEffect: {
+      type: MultiEffect
+      effects: [
+        // Explosion wave
+        {
+          type: WaveEffect
+          lifetime: 60
+          sizeFrom: 0
+          sizeTo: 150
+          strokeFrom: 5
+          strokeTo: 1
+          colorFrom: FF7FBFFF
+          colorTo: FF7FBF7F
+        }
+        // Explosion particles
+        {
+          type: ParticleEffect
+          colorFrom: FF7FBFFF
+          colorTo: FF7FBF7F
+          particles: 36
+          randLength: true
+          cone: 180
+          length: 160
+          baseLength: 15
+          lightOpacity: 0
+          lightScl: 0
+          line: true
+          lenFrom: 28
+          lenTo: 2
+          strokeFrom: 5
+          strokeTo: 0
+          lifetime: 90
+        }
+        // Smoke
+        {
+          type: ParticleEffect
+          colorFrom: E271A99F
+          colorTo: E271A99F
+          particles: 12
+          randLength: true
+          cone: 180
+          length: 110
+          lightOpacity: 0
+          lightScl: 0
+          line: false
+          sizeFrom: 24
+          sizeTo: 0
+          sizeChangeStart: 80
+          interp: pow3Out
+          sizeInterp: pow4In
+          lifetime: 270
+        }
+        {
+          type: ParticleEffect
+          colorFrom: E271A99F
+          colorTo: E271A99F
+          particles: 12
+          randLength: true
+          cone: 180
+          length: 110
+          lightOpacity: 0
+          lightScl: 0
+          line: false
+          sizeFrom: 20
+          sizeTo: 0
+          sizeChangeStart: 60
+          interp: pow3Out
+          sizeInterp: pow4In
+          lifetime: 210
+        }
+      ]
+    }
+    despawnHit: true
+    despawnEffect: none
+    hitSound: titanExplosion
+    lightRadius: 136
+    lightOpacity: 0.8
+    lightColor: FF7FBFFF
+    hitSize: 18
+    width: 24
+    height: 24
+    backColor: FF7FBFFF
+    frontColor: FF7FBFFF
+    sprite: touhou-circle-bullet
+    shrinkX: 0
+    shrinkY: 0
+    parts: [
+      {
+        type: ShapePart
+        circle: true
+        hollow: true
+        sides: -1
+        radius: 120
+        radiusTo: 120
+        stroke: 2
+        strokeTo: 2
+        color: FF7FBF7F
+        colorTo: FF7FBF7F
+        progress: life
+      }
+      {
+        type: ShapePart
+        circle: true
+        hollow: true
+        sides: -1
+        radius: 60
+        radiusTo: 60
+        stroke: 2
+        strokeTo: 2
+        color: FF7FBFFF
+        colorTo: FF7FBFFF
+        progress: life
+      }
+      {
+        type: ShapePart
+        circle: true
+        hollow: true
+        sides: -1
+        radius: 52
+        radiusTo: 52
+        stroke: 2
+        strokeTo: 2
+        color: FF7FBFFF
+        colorTo: FF7FBFFF
+        progress: life
+      }
+      {
+        type: ShapePart
+        circle: false
+        hollow: true
+        sides: 3
+        radius: 52
+        radiusTo: 52
+        stroke: 3
+        strokeTo: 3
+        color: FF7FBFFF
+        colorTo: FF7FBFFF
+        progress: life
+        rotateSpeed: 1.5
+      }
+      {
+        type: ShapePart
+        circle: false
+        hollow: true
+        sides: 3
+        radius: 52
+        radiusTo: 52
+        stroke: 3
+        strokeTo: 3
+        color: FF7FBFFF
+        colorTo: FF7FBFFF
+        progress: life
+        rotateSpeed: 1.5
+        rotation: 180
+      }
+      {
+        type: HaloPart
+        tri: false
+        hollow: false
+        sides: 5
+        shapes: 9
+        radius: 3.5
+        radiusTo: 3.5
+        stroke: 2
+        strokeTo: 2
+        color: FF7FBFFF
+        colorTo: FF7FBFFF
+        progress: life
+        haloRotateSpeed: -1
+        haloRadius: 56
+        haloRadiusTo: 56
+      }
+      {
+        type: HaloPart
+        tri: false
+        hollow: false
+        sides: 3
+        shapes: 9
+        radius: 3.5
+        radiusTo: 3.5
+        stroke: 2
+        strokeTo: 2
+        color: FF7FBFFF
+        colorTo: FF7FBFFF
+        progress: life
+        haloRotateSpeed: -1
+        haloRotation: 20
+        haloRadius: 56
+        haloRadiusTo: 56
+      }
+    ]
+  }
+  af-sakuya: {
+    type: BasicBulletType
+    fragOnHit: false
+    fragBullets: 1
+    fragRandomSpread: 0
+    fragVelocityMin: 1
+    fragVelocityMax: 1
+    fragOffsetMin: 0
+    fragOffsetMax: 0
+    fragLifeMin: 1
+    fragLifeMax: 1
+    fragBullet: {
+      type: EmpBulletType
+      radius: 72
+      timeIncrease: 0
+      timeDuration: 120
+      powerDamageScl: 1
+      powerSclDecrease: 1.00
+      hitUnits: false
+      unitDamageScl: 0
+      collidesTeam: false
+      keepVelocity: false
+      damage: 0
+      splashDamage: 0.0016
+      splashDamageRadius: 72
+      splashDamagePierce: true      
+      buildingDamageMultiplier: 10000
+      applyEffect: none
+      collidesAir: false
+      hitSize: 0.01
+      pierce: true
+      pierceBuilding: true
+      lifetime: 0
+      drag: 0
+      speed: 0
+      setDefaults: false
+      despawnEffect: none
+      width: 0
+      height: 0
+      makeFire: false
+      status: sakuya-timestop
+      statusDuration: 120
+      hitEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: ParticleEffect
+            lifetime: 60
+            colorFrom: 366DA59F
+            colorTo: 366DA500
+            sizeFrom: 72
+            sizeTo: 72
+            length: 0
+            baseLength: 0
+            cone: 0
+            randLength: false
+            particles: 1
+          }
+        ]
+      }
+      hitPowerEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: WaveEffect
+            lifetime: 120
+            sizeFrom: 6
+            sizeTo: 6
+            strokeFrom: 1
+            strokeTo: 1
+            colorFrom: 7F7F7FFF
+            colorTo: 7F7F7F00
+          }
+          {
+            type: ParticleEffect
+            colorFrom: 7F7F7FFF
+            colorTo: 7F7F7F00
+            particles: 5
+            randLength: true
+            cone: 180
+            length: 0
+            baseLength: 16
+            lightOpacity: 0
+            lightScl: 0
+            line: false
+            sizeFrom: 2
+            sizeTo: 0
+            lifetime: 120
+            interp: pow2Out
+            sizeInterp: pow3In
+          }
+        ]
+      }
+      smokeEffect: none
+      reflectable: false
+      hittable: false
+      absorbable: false
+      shootEffect: none
+      collidesGround: false
+      collidesAir: false
+      collides: false
+      backColor: 00000000
+      frontColor: 00000000
+      lightRadius: 0
+      lightOpacity: 0
+      lightColor: FF7FBFFF
+      shrinkX: 0
+      shrinkY: 0
+      sprite: "touhou-simple-bullet"
+      despawnHit: true
+      hitSound: spark
+      hitSoundVolume: 0.8
+    }
+    /*
+    intervalBullets: 2
+    bulletInterval: 2
+    intervalRandomSpread: 360
+    intervalBullet: {
+      type: LightningBulletType
+      despawnSound: none
+      despawnEffect: {
+        type: SoundEffect
+        sound: spark
+        minVolume: 0.25
+        maxVolume: 0.35
+        minPitch: 0.95
+        maxPitch: 1.05
+        effect: none
+      }
+      hitEffect: {
+        type: SoundEffect
+        sound: spark
+        minVolume: 0.3
+        maxVolume: 0.4
+        minPitch: 0.95
+        maxPitch: 1.05
+        effect: none
+      }
+      damage: 0.0001
+      // Buggy: doesn't really apply? Use lightningType...
+      // Fixed. 
+      buildingDamageMultiplier: 10000
+      lightningLength: 10
+      collidesAir: false
+      collidesGround: true
+      collides: true
+      collidesTiles: true
+      // absorbable: true
+      shieldDamageMultiplier: 3000000
+      lightningType: {
+        type: BulletType
+        speed: 0
+        lifetime: 10
+        damage: 0
+        pierce: true
+        pierceBuilding: true
+        hitEffect: {
+          type: ParticleEffect
+          colorFrom: FF7FBFFF
+          colorTo: FF7FBF7F
+          particles: 5
+          randLength: true
+          cone: 180
+          length: 12
+          lightOpacity: 0
+          lightScl: 0
+          line: true
+          lenFrom: 5
+          lenTo: 1
+          strokeFrom: 2
+          strokeTo: 0
+          lifetime: 20
+        }
+        // status: none
+        hittable: false
+        despawnEffect: none
+        // absorbable: true
+        collidesAir: false
+        buildingDamageMultiplier: 10000
+        shieldDamageMultiplier: 3000000
+      }
+    }
+    */
+    chargeEffect: {
+      type: MultiEffect
+      rotWithParent: true
+      effects: [
+        {
+          type: ParticleEffect
+          lifetime: 120
+          colorFrom: 468ED700
+          colorTo: 468ED7DF
+          sizeFrom: 12
+          sizeTo: 12
+          length: 0
+          baseLength: 0
+          cone: 0
+          randLength: false
+          particles: 1
+          region: touhou-simple-bullet-back
+          baseRotation: 90
+        }
+        {
+          type: ParticleEffect
+          lifetime: 120
+          colorFrom: FFFFFF00
+          colorTo: FFFFFF7F
+          sizeFrom: 12
+          sizeTo: 12
+          length: 0
+          baseLength: 0
+          cone: 0
+          randLength: false
+          particles: 1
+          region: touhou-simple-bullet
+          baseRotation: 90
+        }
+        {
+          type: WaveEffect
+          colorFrom: FF7FBFFF
+          colorTo: FF7FBFFF
+          sizeFrom: 0
+          sizeTo: 42
+          sides: 32
+          strokeFrom: 0
+          strokeTo: 2
+          lifetime: 120
+          offsetX: -36
+        }
+        {
+          type: WaveEffect
+          colorFrom: 468ED700
+          colorTo: 468ED7FF
+          sizeFrom: 60
+          sizeTo: 60
+          sides: 32
+          strokeFrom: 2
+          strokeTo: 2
+          lifetime: 120
+        }
+        {
+          type: WaveEffect
+          colorFrom: 468ED700
+          colorTo: 468ED7FF
+          sizeFrom: 52
+          sizeTo: 52
+          sides: 32
+          strokeFrom: 2
+          strokeTo: 2
+          lifetime: 120
+        }
+        {
+          type: WaveEffect
+          colorFrom: 468ED700
+          colorTo: 468ED7FF
+          sizeFrom: 52
+          sizeTo: 52
+          sides: 3
+          strokeFrom: 3
+          strokeTo: 3
+          lifetime: 120
+        }
+        {
+          type: WaveEffect
+          colorFrom: 468ED700
+          colorTo: 468ED7FF
+          sizeFrom: 52
+          sizeTo: 52
+          sides: 3
+          strokeFrom: 3
+          strokeTo: 3
+          lifetime: 120
+          baseRotation: 180
+        }
+      ]
+    }
+    // BUG (confirmed): damage is capped at (target health * 40%) but capped BEFORE damage * buildingDamageMultiplier. 
+    // damage: 48; 40% (should be, failed)
+    // damage: 32; --%
+    damage: 0.0032
+    rangeChange: 128
+    minRangeChange: -144
+    // maxDamageFraction: 0.4
+    buildingDamageMultiplier: 10000
+    shieldDamageMultiplier: 600000
+    pierce: true
+    pierceBuilding: true
+    pierceCap: -1
+    // pierceDamageFactor < 0 still means won't increase damage. 
+    // pierceDamageFactor: -0.01
+    hitUnder: true
+    // splashDamage change to despawn
+    /*
+    splashDamage: 0.0016
+    splashDamageRadius: 72
+    splashDamagePierce: true
+    */
+    hitShake: 2
+    speed: 4.2
+    lifetime: 180
+    accel: 0.0057107
+    // With scaleLife = true, can fly to up to ~120.54 blocks away (2025.08.20)
+    /*
+    speed: 1.8
+    lifetime: 240
+    accel: 0.014505
+    // With scaleLife = true, can fly to up to ~306.66 blocks away (2025.08.04)
+    */
+    // Caution: scaleLife doesn't work properly with bullets with accel. The bullet may fly to somewhere VERY far away. 
+    scaleLife: true
+    trailInterval: 30
+    trailChance: 1
+    trailEffect: {
+      type: ParticleEffect
+      particles: 2
+      length: 24
+      // cone: 12
+      // baseRotation: 180
+      randLength: true
+      lifetime: 60
+      sizeFrom: 7
+      sizeTo: 0
+      interp: pow4Out
+      sizeInterp: pow4In
+      followParent: true
+      rotWithParent: true
+      colorFrom: 468ED7FF
+      colorTo: 468ED77F
+    }
+    ammoMultiplier: 1
+    hittable: false
+    absorbable: true
+    reflectable: true
+    smokeEffect: {
+      type: MultiEffect
+      rotWithParent: true
+      effects: [
+        {
+          type: ParticleEffect
+          colorFrom: 366DA59F
+          colorTo: 366DA59F
+          particles: 18
+          randLength: true
+          cone: 20
+          length: 116
+          lightOpacity: 0
+          lightScl: 0
+          line: false
+          sizeFrom: 5
+          sizeTo: 0
+          sizeChangeStart: 0
+          interp: pow4Out
+          sizeInterp: pow4In
+          lifetime: 150
+          offsetX: -9
+        }
+        {
+          type: ParticleEffect
+          colorFrom: 366DA59F
+          colorTo: 366DA59F
+          particles: 18
+          randLength: true
+          cone: 20
+          length: 128
+          lightOpacity: 0
+          lightScl: 0
+          line: false
+          sizeFrom: 7
+          sizeTo: 0
+          sizeChangeStart: 0
+          interp: pow4Out
+          sizeInterp: pow4In
+          lifetime: 180
+          offsetX: -9
+        }
+      ]
+    }    
+    shootEffect: {
+      type: MultiEffect
+      rotWithParent: true
+      effects: [
+        {
+          type: SoundEffect
+          sound: mediumCannon
+          effect: none
+        }
+      ]
+    }
+    despawnEffect: {
+      type: MultiEffect
+      effects: [
+        // Explosion wave
+        {
+          type: WaveEffect
+          lifetime: 60
+          sizeFrom: 0
+          sizeTo: 90
+          strokeFrom: 5
+          strokeTo: 1
+          colorFrom: 468ED7FF
+          colorTo: 468ED77F
+        }
+        // Explosion particles
+        {
+          type: ParticleEffect
+          colorFrom: 468ED7FF
+          colorTo: 468ED77F
+          particles: 36
+          randLength: true
+          cone: 180
+          length: 96
+          baseLength: 15
+          lightOpacity: 0
+          lightScl: 0
+          line: true
+          lenFrom: 28
+          lenTo: 2
+          strokeFrom: 5
+          strokeTo: 0
+          lifetime: 90
+        }
+        // Smoke
+        {
+          type: ParticleEffect
+          // May be particles that aren't light-coloured. 
+          colorFrom: 366DA59F
+          colorTo: 366DA59F
+          particles: 10
+          randLength: true
+          cone: 180
+          length: 72
+          lightOpacity: 0
+          lightScl: 0
+          line: false
+          sizeFrom: 18
+          sizeTo: 0
+          sizeChangeStart: 80
+          interp: pow3Out
+          sizeInterp: pow4In
+          lifetime: 270
+        }
+        {
+          type: ParticleEffect
+          colorFrom: 366DA59F
+          colorTo: 366DA59F
+          particles: 10
+          randLength: true
+          cone: 180
+          length: 70
+          lightOpacity: 0
+          lightScl: 0
+          line: false
+          sizeFrom: 15
+          sizeTo: 0
+          sizeChangeStart: 60
+          interp: pow3Out
+          sizeInterp: pow4In
+          lifetime: 210
+        }
+        // Sound
+        {
+          type: SoundEffect
+          sound: titanExplosion
+          effect: none
+        }
+      ]
+    }
+    despawnHit: true
+    hitEffect: none
+    hitSound: none
+    lightRadius: 136
+    lightOpacity: 0.8
+    lightColor: 468ED7FF
+    hitSize: 18
+    width: 24
+    height: 24
+    backColor: 468ED7FF
+    frontColor: FFFFFF9F
+    sprite: touhou-simple-bullet
+    shrinkX: 0
+    shrinkY: 0
+    parts: [
+      {
+        type: ShapePart
+        circle: true
+        hollow: true
+        sides: -1
+        radius: 72
+        radiusTo: 72
+        stroke: 2
+        strokeTo: 2
+        color: 468ED77F
+        colorTo: 468ED77F
+        progress: life
+      }
+      {
+        type: ShapePart
+        circle: true
+        hollow: true
+        sides: -1
+        radius: 60
+        radiusTo: 60
+        stroke: 2
+        strokeTo: 2
+        color: 468ED7FF
+        colorTo: 468ED7FF
+        progress: life
+      }
+      {
+        type: ShapePart
+        circle: true
+        hollow: true
+        sides: -1
+        radius: 52
+        radiusTo: 52
+        stroke: 2
+        strokeTo: 2
+        color: 468ED7FF
+        colorTo: 468ED7FF
+        progress: life
+      }
+      {
+        type: ShapePart
+        circle: false
+        hollow: true
+        sides: 3
+        radius: 52
+        radiusTo: 52
+        stroke: 3
+        strokeTo: 3
+        color: 468ED7FF
+        colorTo: 468ED7FF
+        progress: life
+        rotateSpeed: 1.5
+      }
+      {
+        type: ShapePart
+        circle: false
+        hollow: true
+        sides: 3
+        radius: 52
+        radiusTo: 52
+        stroke: 3
+        strokeTo: 3
+        color: 468ED7FF
+        colorTo: 468ED7FF
+        progress: life
+        rotateSpeed: 1.5
+        rotation: 180
+      }
+      {
+        type: HaloPart
+        tri: false
+        hollow: false
+        sides: 5
+        shapes: 9
+        radius: 3.5
+        radiusTo: 3.5
+        stroke: 2
+        strokeTo: 2
+        color: 468ED7FF
+        colorTo: 468ED7FF
+        progress: life
+        haloRotateSpeed: -1
+        haloRadius: 56
+        haloRadiusTo: 56
+      }
+      {
+        type: HaloPart
+        tri: false
+        hollow: false
+        sides: 3
+        shapes: 9
+        radius: 3.5
+        radiusTo: 3.5
+        stroke: 2
+        strokeTo: 2
+        color: 468ED7FF
+        colorTo: 468ED7FF
+        progress: life
+        haloRotateSpeed: -1
+        haloRotation: 20
+        haloRadius: 56
+        haloRadiusTo: 56
+      }
+    ]
+  }
+}
+research: kca-patchouli-7-turret
+category: turret
+fogRadiusMultiplier: 0.4
+outlineColor: FFFFFF00
+outlineRadius: 0
