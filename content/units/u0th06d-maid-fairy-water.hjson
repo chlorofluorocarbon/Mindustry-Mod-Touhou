@@ -89,6 +89,7 @@ weapons: [
       maxRange: 48
     }
   }
+  /*
   {
     name: water-wood-producer
     mirror: false
@@ -156,6 +157,7 @@ weapons: [
       sprite: "touhou-shanghai-spawn"
     }
   }
+  */
 ]
 outlineColor: 00000000
 mechSideSway: 0

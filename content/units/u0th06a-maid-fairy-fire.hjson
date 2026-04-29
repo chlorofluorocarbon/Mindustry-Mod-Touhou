@@ -118,6 +118,7 @@ weapons: [
       sprite: "touhou-normal-bullet"
     }
   }
+  /*
   {
     name: fire-earth-producer
     mirror: false
@@ -187,6 +188,7 @@ weapons: [
       sprite: "touhou-shanghai-spawn"
     }
   }
+  */
 ]
 outlineColor: 00000000
 mechSideSway: 0
